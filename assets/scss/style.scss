@@ -1,0 +1,40 @@
+@import 'font';
+:root{
+    --theme1: #3C2B4A;
+    --theme2: #527CEB;
+    --theme2_dark: #4872E2;
+    --theme2_light: #6D93F9;
+    --pink: #FFDBEC;
+    --light: #F9F9F9;
+    --light_dark: #5F5F5F;
+    --gray: #525665;
+    --gray_light: #A5A5A5;
+    --black: #000;
+    --white: #fff;
+    --border_color: #D8D8D8;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px
+}
+::-webkit-scrollbar-track-piece {
+    background: var(--light)
+}
+::-webkit-scrollbar-thumb {
+    background: var(--theme1)
+}
+
+body{
+    color: var(--light_dark);
+    font-family: 'Cormorant Infant';
+}
+
+
+@import 'header';
+@import 'typography';
+@import 'form';
+@import 'button';
+@import 'index';
+@import 'other';
+@import 'footer';
+@import 'responsive';

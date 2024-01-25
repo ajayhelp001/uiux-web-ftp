@@ -1,0 +1,789 @@
+
+
+
+
+
+
+
+
+
+// *** Responsive**
+@media screen and (min-width: 1600px) {
+    // *Index Page Responsive Css Start 
+    .herosection {
+        & .contentSide_W {
+            flex: 0 0 auto !important;
+            width: 66.66666667% !important;
+        }
+        
+        & .left_side {
+            padding-left: 0px !important;
+            & .mainheading {
+                margin: 15px 0px !important;
+            }
+            
+        }
+    }
+    // ! * Index Page Responsive Css End *
+}
+@media screen and (max-width: 1600px) {
+    // * Index Page Responsive Css Start 
+    .herosection {
+        & .innerfluid {
+            & .left_side {
+                & .mainheading {
+                    font-size: 90px;
+                }
+            }
+        }
+    }
+    // ! * Index Page Responsive Css End *
+}
+@media screen and (max-width: 1500px) {
+    // *------- Typographu Responsive Css Start -----
+    section{
+        margin: 100px 0px;
+    }
+    
+    h1, .h1{
+        font-size: 70px;
+        // line-height: 80px;
+    }
+    h2, .h2{
+        font-size: 45px;
+        // line-height: 55px;
+    }
+    h3, .h3{
+        font-size: 35px;
+        // line-height: 45px;
+    }
+    h4, .h4{
+        font-size: 28px;
+        // line-height: 38px;
+    }
+    h5, .h5{
+        font-size: 22px;
+        // line-height: 32px;
+    }
+    // h6, .h6{
+    //     font-size: 16px;
+    //     line-height: 26px;
+    // }
+    p {
+        font-size: 18px;
+    }
+    // ! *------- Typographu Responsive Css End -----
+
+
+    // * Header Responsive Css Start **
+    .header {
+        padding: 30px 0px;
+        & .innerNav {
+            padding: 0px 20px;
+            & .menuBtn {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &.active {
+            padding: 15px 0px;
+        }
+    }
+    // ! * Header Responsive Css End **
+    // * === Button Responsive Css ===
+    .themeBtn{
+        padding: 16px 55px;
+        font-size: 16px;
+    }
+    // ! * === Button Responsive Css ===
+    // * Index Page Responsive Css Start 
+    .herosection {
+        & .innerfluid {
+        & .lhsScrollBar {
+            left: 20px;
+            bottom: 266px;
+        }
+        & .socialIcon {
+            gap: 25px;
+            bottom: 20px;
+            right: 20px;
+        }
+        & .left_side {
+            & .helloWord {
+                & .handImf {
+                    width: 35px;
+                }
+            }
+            & .mainheading {
+                font-size: 70px;
+            }
+        }
+        }
+    }
+    // testimonialSection
+    .testimonialSection {
+        & .innerFluid {
+            padding: 130px 90px 0px 90px;
+        }
+        & .slider {
+            margin-top: 90px;
+            & .card{
+                & .card-body{
+                    padding: 70px 60px;
+                    & .item {
+                        & .clientImg{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        & .clientName {
+                            font-size: 32px;
+                            & span {
+                                font-size: 18px;
+                            }
+                        }
+                        & .shap {
+                            width: 42px;
+                            height: 42px;
+                        }
+                    }
+                    & .owl-nav{
+                        top: -46%;
+                        & button{
+                            width: 60px;
+                            height: 60px;
+                            &::after{
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lorem {
+        font-size: 20px;
+    }
+    /* Index Page Responsive Css End */
+}
+@media screen and (max-width: 1400px){
+    .themeBtnWhite {
+        font-size: 18px;
+    }
+    
+    //  Index Page Responsive Css End 
+    //  Our Work Section Css
+    .ourwork_section {
+        & .innerbody {
+            padding: 70px 0px 170px;
+            & > div{
+                & .workcard {
+                    margin: 180px 0px 100px;
+                    & .card-body{
+                        padding: 50px 60px 0px; 
+                        & .blogImg {
+                            margin: 40px auto -180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // aboutProduct
+    .aboutProduct {
+        & .loremtext {
+            margin: 14px 0px 40px;
+        }
+        & .card {
+            border-radius: 40px;
+            & .card-body{
+                padding: 48px 40px;
+                & .cardHeader{
+                    padding-bottom: 24px;
+                    margin-bottom: 22px;
+                    & .cardImg {
+                        width: 32px;
+                    }
+                }
+                & .innerBody {
+                    gap: 12px;
+                }
+            }
+        }
+    }
+    // testimonialSection
+    .testimonialSection {
+        padding-bottom: 150px;
+        &::before{
+            width: 350px;
+            height: 350px;
+        }
+        & .innerFluid {
+            padding: 100px 80px 0px;
+        }
+        & .slider {
+            margin-top: 80px;
+            & .card{
+                & .card-body{
+                    padding: 60px 50px;
+                    margin-bottom: -150px;
+                    & .item {
+                        & .clientImg{
+                            width: 170px;
+                            height: 170px;
+                        }
+                        & .clientName {
+                            font-size: 30px;
+                            & span {
+                                font-size: 16px;
+                            }
+                        }
+                        & .shap {
+                            width: 38px;
+                            height: 38px;
+                        }
+                    }
+                    & .owl-nav{
+                        & button{
+                            width: 50px;
+                            height: 50px;
+                            &::after{
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // articleSection
+    .articleSection {
+        & .card {
+            border-radius: 40px;
+            & .card-body{
+                padding: 50px 45px;
+                & .timing, & .continueBtn{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+    // ! * Index Page Responsive Css End *
+    // * === Button Responsive Css ===
+    .themeBtn{
+        padding: 14px 45px;
+    }
+    
+    .lorem {
+        font-size: 18px;
+    }
+    //! * === Button Responsive Css ===
+}
+@media screen and (max-width: 1200px) {
+    //  *------- Typographu Responsive Css Start -----
+    section{
+        margin: 80px 0px;
+    }
+    
+    h1, .h1{
+        font-size: 60px;
+        // line-height: 70px;
+    }
+    h2, .h2{
+        font-size: 40px;
+        // line-height: 50px;
+    }
+    h3, .h3{
+        font-size: 30px;
+        // line-height: 40px;
+    }
+    h4, .h4{
+        font-size: 24px;
+        // line-height: 34px;
+    }
+    h5, .h5{
+        font-size: 20px;
+        // line-height: 30px;
+    }
+    // h6, .h6{
+    //     font-size: 16px;
+    //     line-height: 26px;
+    // }
+    p {
+        font-size: 16px;
+    }
+    // ! *------- Typographu Responsive Css End -----
+
+    // * Index Page Responsive Css Start **
+    .herosection {
+        & .innerfluid {
+        & .socialIcon {
+            gap: 20px;
+        }
+        & .left_side {
+            & .helloWord {
+                & .handImf {
+                    width: 30px;
+                }
+            }
+            & .mainheading {
+                font-size: 60px;
+            }
+        }
+        }
+    }
+    // *contactMe
+    .contactMe {
+        & .contactRound {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    // * Our Work Section Css
+    .ourwork_section {
+        & .innerbody {
+            padding: 50px 0px 150px;
+            & > div{
+                & .workcard {
+                    margin: 150px 0px 100px;
+                    & .card-body{
+                        padding: 30px 40px 0px; 
+                        & .blogImg {
+                            margin: 30px auto -180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // testimonialSection
+    .testimonialSection {
+        &::before{
+            width: 300px;
+            height: 300px;
+        }
+        & .innerFluid {
+            padding: 80px 70px 0px;
+        }
+        & .slider {
+            margin-top: 60px;
+            & .card{
+                & .card-body{
+                    padding: 50px 40px;
+                    & .item {
+                        & .clientImg{
+                            width: 150px;
+                            height: 150px;
+                        }
+                        & .clientName {
+                            font-size: 28px;
+                        }
+                        & .shap {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                    & .owl-nav{
+                        top: -44%;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+    // articleSection
+    .articleSection {
+        & .card {
+            & .card-body{
+                padding: 40px 30px;
+                & .card-title {
+                    margin: 14px 0px 16px;
+                }
+                & .continueBtn {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    .lorem {
+        font-size: 16px;
+    }
+    // ! * Index Page Responsive Css End *
+
+}
+@media screen and (max-width: 991px) {
+    // *------- Typographu Responsive Css Start -----
+    section{
+        margin: 50px 0px;
+    }
+    
+    h1, .h1{
+        font-size: 50px;
+        // line-height: 60px;
+    }
+    h2, .h2{
+        font-size: 35px;
+        // line-height: 45px;
+    }
+    h3, .h3{
+        font-size: 26px;
+        // line-height: 36px;
+    }
+    h4, .h4{
+        font-size: 22px;
+        // line-height: 32px;
+    }
+    h5, .h5{
+        font-size: 18px;
+        // line-height: 28px;
+    }
+    h6, .h6{
+        font-size: 14px;
+        // line-height: 24px;
+    }
+    // ! *------- Typographu Responsive Css End -----
+    // ! * Header Responsive Css End **
+    // * === Button Responsive Css ===
+    .themeBtn{
+        padding: 11px 40px;
+        font-size: 16px;
+    }
+    .themeBtnWhite {
+        font-size: 16px;
+    }
+    // ! * === Button Responsive Css ===
+    // * Index Page Responsive Css Start **
+        .herosection {
+            & .innerfluid {
+            & .left_side {
+                & .loremtext {
+                    width: 100%;
+                }
+            }
+            }
+        }
+    // * Our Work Section Css
+    .ourwork_section {
+        & .innerbody {
+            padding: 40px 0px 150px;
+            & > div{
+                & .workcard {
+                    margin: 150px 0px 70px;
+                    & .card-body{
+                        padding: 20px 30px 0px; 
+                        & .blogImg {
+                            margin: 20px auto -150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // aboutProduct
+    .aboutProduct {
+        & .loremtext {
+            margin: 14px 0px 40px;
+        }
+        & .card {
+            border-radius: 34px;
+            & .card-body{
+                padding: 38px 30px;
+                & .cardHeader{
+                    padding-bottom: 20px;
+                    margin-bottom: 18px;
+                    & .cardImg {
+                        width: 28px;
+                    }
+                }
+                & .innerBody {
+                    gap: 12px;
+                }
+            }
+        }
+    }
+    // testimonialSection
+    .testimonialSection {
+        &::before{
+            width: 200px;
+            height: 200px;
+            bottom: -10%;
+        }
+        & .innerFluid {
+            padding: 70px 60px 0px;
+        }
+        & .slider {
+            margin-top: 50px;
+            & .card{
+                & .card-body{
+                    // padding: 50px 40px;
+                    & .item {
+                        & .clientImg{
+                            width: 120px;
+                            height: 120px;
+                        }
+                        & .clientName {
+                            font-size: 24px;
+                            & span {
+                                font-size: 14px;
+                            }
+                        }
+                        & .shap {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                    & .owl-nav{
+                        top: -37%;
+                    }
+                }
+            }
+        }
+    }
+    // articleSection
+    .articleSection {
+        & .card {
+            border-radius: 34px;
+            & .card-body{
+                padding: 38px 30px;
+            }
+        }
+    }
+    // brandSection
+    .brandSection {
+        & .card {
+            & .card-body{
+                padding: 40px;
+            }
+        }
+    }
+    // ! * Index Page Responsive Css End *
+}
+@media screen and (max-width: 768px) {
+    // * Index Page Responsive Css Start **
+    // *contactMe
+    .contactMe {
+        & .contactRound {
+            width: 120px;
+            height: 120px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        & .aboutUser {
+            margin: 20px 0px 30px;
+        }
+        & .mail {
+            margin-top: 26px;
+            & span {
+                width: 38px;
+                height: 38px;
+            }
+        }
+    }
+    // * Our Work Section Css
+    .ourwork_section {
+        & .innerbody {
+            padding: 30px 0px 150px;
+            & > div{
+                & .workcard {
+                    margin: 150px 0px 50px;
+                    & .card-body{
+                        padding: 30px 40px 0px; 
+                    }
+                }
+                &:nth-child(odd){
+                    & .workcard {
+                        margin: 150px 0px 50px;
+                    }
+                }
+                &:first-child{
+                    & .workcard{
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+    // testimonialSection
+    .testimonialSection {
+        & .innerFluid {
+            padding: 50px 40px 0px;
+        }
+        & .slider {
+            margin-top: 40px;
+            & .card{
+                & .card-body{
+                    padding: 40px 30px;
+                    & .item {
+                        & .clientImg{
+                            width: 100px;
+                            height: 100px;
+                        }
+                        & .clientName {
+                            font-size: 22px;
+                        }
+                        & .shap {
+                            width: 28px;
+                            height: 28px;
+                        }
+                    }
+                    & .owl-nav{
+                        top: -37%;
+                    }
+                }
+            }
+        }
+    }
+    // ! * Index Page Responsive Css End *
+}
+@media screen and (max-width: 576px) {
+    // *------- Typographu Responsive Css Start -----
+    h1, .h1{
+        font-size: 45px;
+        // line-height: 55px;
+    }
+    h2, .h2{
+        font-size: 32px;
+        // line-height: 42px;
+    }
+    h3, .h3{
+        font-size: 22px;
+        // line-height: 32px;
+    }
+    h4, .h4{
+        font-size: 20px;
+        // line-height: 30px;
+    }
+    h5, .h5{
+        font-size: 16px;
+        // line-height: 20px;
+    }
+    // ! *------- Typographu Responsive Css End -----
+
+    // * Header Responsive Css Start **
+    .header {
+        padding: 20px 0px;
+        & .innerNav {
+            padding: 0px 12px;
+            & .menuBtn {
+                width: 40px;
+                height: 40px;
+                & img {
+                    max-width: 18px;
+                }
+            }
+        }
+        &.active {
+            padding: 12px 0px;
+        }
+    }
+    // ! * Header Responsive Css Start **
+    // * Index Page Responsive Css Start **
+    .herosection {
+        & .innerfluid {
+        & .socialIcon {
+            gap: 15px;
+            right: 12px;
+        }
+        & .left_side {
+            & .helloWord {
+                & .handImf {
+                    width: 25px;
+                }
+            }
+            & .mainheading {
+                font-size: 45px;
+            }
+        }
+        }
+    }
+    // *contactMe
+    .contactMe {
+        & .userImg {
+            height: unset !important;
+        }
+        & .mail {
+            margin-top: 15px;
+            margin-bottom: 30px;
+            & span {
+                width: 38px;
+                height: 38px;
+            }
+        }
+    }
+    // * Our Work Section Css
+    .ourwork_section {
+        & .innerbody {
+            & > div{
+                & .workcard {
+                    margin: 150px 0px 50px;
+                    & .card-body{
+                        padding: 20px 30px 0px; 
+                    }
+                }
+            }
+        }
+    }
+      // testimonialSection
+      .testimonialSection {
+        &::before{
+            width: 150px;
+            height: 150px;
+        }
+        & .innerFluid {
+            padding: 40px 30px 0px;
+        }
+        & .slider {
+            margin-top: 30px;
+            & .card{
+                & .card-body{
+                    padding: 30px 20px;
+                    & .item {
+                        & .clientImg{
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // brandSection
+    .brandSection {
+        & .card {
+            & .card-body{
+                padding: 30px 20px;
+            }
+        }
+    }
+    // ! * Index Page Responsive Css End *
+}
+@media screen and (max-width: 370px) {
+    // * Index Page Responsive Css Start **
+      // testimonialSection
+    .testimonialSection {
+        & .innerFluid {
+            padding: 35px 25px 0px;
+        }
+        & .slider {
+            margin-top: 20px;
+            & .card{
+                & .card-body{
+                    padding: 30px 20px;
+                    & .item {
+                        & .clientImg{
+                            width: 70px;
+                            height: 70px;
+                        }
+                        & .shapgroup {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ! * Index Page Responsive Css End *
+}
