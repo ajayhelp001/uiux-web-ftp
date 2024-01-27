@@ -477,6 +477,42 @@
         font-size: 16px;
     }
     // ! * Index Page Responsive Css End *
+
+    // * Blog Details Page Responsive Css Start *
+    // *** blogDetailsPage
+    .list {
+        gap: 18px;
+        & li {
+            font-size: 16px;
+        }
+    }
+    .blogDetailsPage {
+        & .detailCard {
+            border-radius: 30px;
+            & .card-body{
+                padding: 45px 55px;
+            }
+        }
+        & .blogUser {
+            & .userBody {
+                & .userImg {
+                    height: 170px;
+                    width: 170px;
+                }
+                & .contant {
+                    gap: 20px;
+                    & .subtitle {
+                        font-size: 14px;
+                    }
+                }
+                & .social {
+                    gap: 18px;
+                }
+            }
+        }
+    }
+    // ! * Blog Details Page Responsive Css End *
+
     // * Footer Responsive Css Start *
     // footer
     .footer {
@@ -688,7 +724,49 @@
     }
 
     // ! * Index Page Responsive Css End *
-
+// * Blog Details Page Responsive Css Start *
+    // *** blogDetailsPage
+    .list {
+        gap: 14px;
+    }
+    .blogDetailsPage {
+        & .blogIMg {
+            border-radius: 20px;
+        }
+        & .m-60{
+            margin: 50px 0px;
+        }
+        & .categoryHeading {
+            margin-bottom: 15px;
+        }
+        & .mb-30{
+            margin: 0px 0px 25px 0px;
+        }
+        & .my-50{
+            margin: 40px 0px;
+        }
+        & .detailCard {
+            border-radius: 20px;
+            & .card-body{
+                padding: 35px 45px;
+            }
+        }
+        & .blogUser {
+            & .userBody {
+                & .userImg {
+                    height: 150px;
+                    width: 150px;
+                }
+                & .contant {
+                    gap: 16px;
+                }
+                & .social {
+                    gap: 16px;
+                }
+            }
+        }
+    }
+    // ! * Blog Details Page Responsive Css End *
     // * Footer Responsive Css Start *
     // footer
     .footer {
@@ -804,6 +882,42 @@
         }
     }
     // ! * Index Page Responsive Css End *
+    // * Blog Details Page Responsive Css Start *
+    // *** blogDetailsPage
+    .list {
+        gap: 10px;
+    }
+    .blogDetailsPage {
+        & .m-60{
+            margin: 40px 0px;
+        }
+        & .categoryHeading {
+            margin-bottom: 10px;
+        }
+        & .mb-30{
+            margin: 0px 0px 20px 0px;
+        }
+        & .my-50{
+            margin: 30px 0px;
+        }
+        & .detailCard {
+            & .card-body{
+                padding: 25px 35px;
+            }
+        }
+        & .blogUser {
+            & .userBody {
+                & .userImg {
+                    height: 100px;
+                    width: 100px;
+                }
+                & .contant {
+                    gap: 14px;
+                }
+            }
+        }
+    }
+    // ! * Blog Details Page Responsive Css End *
      // * Footer Responsive Css Start *
     // footer
     .footer {
@@ -992,7 +1106,38 @@
     }
     // ! * Index Page Responsive Css End *
 
-
+// * Blog Details Page Responsive Css Start *
+    // *** blogDetailsPage
+    .list {
+        gap: 8px;
+    }
+    .blogDetailsPage {
+        & .m-60{
+            margin: 35px 0px;
+        }
+        & .categoryHeading {
+            margin-bottom: 8px;
+        }
+        & .mb-30{
+            margin: 0px 0px 18px 0px;
+        }
+        & .my-50{
+            margin: 28px 0px;
+        }
+        & .detailCard {
+            & .card-body{
+                padding: 20px 30px;
+            }
+        }
+        & .blogUser {
+            & .userBody {
+                & .contant {
+                    gap: 12px;
+                }
+            }
+        }
+    }
+    // ! * Blog Details Page Responsive Css End *
     // * Footer Responsive Css Start *
     // footer
     .footer {
