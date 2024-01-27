@@ -12,6 +12,9 @@
     --black: #000;
     --white: #fff;
     --border_color: #D8D8D8;
+    --theme1_border: #50425A;
+    --input_border: #6E6179;
+    --input_bg: #483557;
 }
 ::-webkit-scrollbar {
     width: 4px;
@@ -27,13 +30,14 @@
 body{
     color: var(--light_dark);
     font-family: 'Cormorant Infant';
+    overflow-x: hidden
 }
 
 
-@import 'header';
 @import 'typography';
-@import 'form';
 @import 'button';
+@import 'header';
+@import 'form';
 @import 'index';
 @import 'other';
 @import 'footer';

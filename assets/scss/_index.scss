@@ -113,7 +113,7 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        border: 1px solid var(--theme1);
+        // border: 1px solid var(--theme1);
         color: var(--theme1);
         font-family: "Lexend Deca";
         font-size: 16px;
@@ -122,6 +122,27 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px dashed var(--theme1);
+            border-radius: 50%;
+            animation: rotate 10s linear infinite;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg)
+            }
+        
+            to {
+                transform: rotate(1turn)
+            }
+        }
     }
     & .aboutUser {
         margin: 27px 0px 40px;
@@ -366,9 +387,12 @@
         border: none;
         overflow: hidden;
         background-color: var(--light);
+        & .cardImages {
+            overflow: hidden;
+        }
         & .card-img-top {
             max-height: 334px;
-            object-fit: cover;
+            transition: all ease-in-out 0.3s;
         }
         & .card-body{
             padding: 55px 50px;
@@ -379,6 +403,11 @@
             }
             & .card-title {
                 margin: 16px 0px 18px;
+                color: var(--theme1);
+                transition: all ease-in-out 0.3s;
+                &:hover{
+                    color: var(--theme2);
+                }
             }
             & .timing, & .continueBtn{
                 font-family: "Lexend Deca";
@@ -387,13 +416,20 @@
                 font-weight: 400;
             }
             & .continueBtn {
-                color: var(--gray_light);
+                color: var(--theme2);
                 display: inline-block;
                 line-height: 132.5%;
                 margin-top: 40px;
                 transition: all ease-in-out 0.3s;
                 &:hover{
-                    color: var(--theme2);
+                    color: var(--theme1);
+                }
+            }
+        }
+        &:hover{
+            & .cardImages{
+                & img {
+                    transform: scale(1.1);
                 }
             }
         }
@@ -420,6 +456,44 @@
                 }
                 & img {
                     object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+
+// Gallery section
+.gallerySection{
+    & .galleryImg {
+        border-radius: 30px;
+        overflow: hidden;
+        & a {
+            display: flex;
+            position: relative;
+            &::before{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                background-color: #0003;
+                transition: all ease-in-out 0.3s;
+                opacity: 0;
+                visibility: hidden;
+                z-index: 1;
+            }
+            & img {
+                transition: all ease-in-out 0.3s;
+            }
+            &:hover{
+                & img {
+                    transform: scale(1.1);
+                }
+                &::before{
+                    opacity: 1;
+                    visibility: visible;
                 }
             }
         }

@@ -28,6 +28,16 @@
             
         }
     }
+    &.white{
+        background-color: var(--white);
+        border-color: var(--border_color);
+        color: var(--theme1);
+        &:hover{
+            background: var(--theme2_dark);
+            border-color: var(--theme2_light);
+            color: var(--white);
+        }
+    }
 }
 
 .themeBtnWhite {
