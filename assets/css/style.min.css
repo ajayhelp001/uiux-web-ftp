@@ -1355,7 +1355,8 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: solid 1px var(--border_color);
-
+    min-height: 70px;
+    line-height: 1.4;
 }
 
 .blog-comment li .avatar {
@@ -1382,10 +1383,6 @@ section {
 
 }
 
-.blog-comment li {
-    min-height: 70px;
-    line-height: 1.6em;
-}
 
 .blog-comment li li {
     margin-left: 55px;
@@ -1434,6 +1431,37 @@ section {
     background-color: transparent;
     color: var(--theme1);
 }
+
+
+/*---------- INERACTION PAGE CSS START -----------*/
+.paginationbar .page-link svg {
+    max-width: 15px;
+    height: 15px;
+}
+.paginationbar .page-link {
+    color: var(--theme1);
+    box-shadow: none;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+}
+.paginationbar .page-link span {
+    display: flex;
+    align-items: center;
+}
+.paginationbar .page-item.active .page-link {
+    background-color: var(--theme1);
+    border-color: var(--theme1_border);
+    color: var(--white);
+}
+.paginationbar .page-item {
+    margin: 0 4px;
+}
+/*---------- INERACTION PAGE CSS END -----------*/
+
 
 /* ------------============---------- BLOG DETAILS PAGE CSS END ----------==========-------- */
 
