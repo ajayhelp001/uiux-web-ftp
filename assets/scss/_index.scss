@@ -387,6 +387,7 @@
         border: none;
         overflow: hidden;
         background-color: var(--light);
+        position: relative;
         & .cardImages {
             overflow: hidden;
         }
@@ -395,7 +396,7 @@
             transition: all ease-in-out 0.3s;
         }
         & .card-body{
-            padding: 55px 50px;
+            padding:  30px;
             & .timing {
                 color: var(--theme2);
                 line-height: 129.7%;
@@ -405,9 +406,6 @@
                 margin: 16px 0px 18px;
                 color: var(--theme1);
                 transition: all ease-in-out 0.3s;
-                &:hover{
-                    color: var(--theme2);
-                }
             }
             & .timing, & .continueBtn{
                 font-family: "Lexend Deca";
@@ -419,7 +417,7 @@
                 color: var(--theme2);
                 display: inline-block;
                 line-height: 132.5%;
-                margin-top: 40px;
+                margin-top: 20px;
                 transition: all ease-in-out 0.3s;
                 &:hover{
                     color: var(--theme1);
