@@ -21,12 +21,30 @@
 <body>
     <!-- * Nav Start -->
     <nav class="navbar header">
-        <div class="container-fluid innerNav">
+        <div class="container-fluid inner_nav">
             <a href="index.html" class="navbar-brand"><img src="assets/images/logo.svg" alt="logo"></a>
-            <button class="menuBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/images/icon/menu.svg" alt="menu"></button>
+            <button class="menubtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/images/icon/menu.svg" alt="menu"></button>
         </div>
     </nav>
     <!-- ! * Nav End -->
+
+    <!-- ? Header Offcanvas Start * -->
+    <div class="offcanvas offcanvas-end header_offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasRightLabel"><img src="assets/images/logo.svg" alt="logo"></div>
+            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ? * Header Offcanvas End * -->
 
     <!-- * Hero Section Start -->
     <section class="herosection m-0">
@@ -35,18 +53,18 @@
                 <div class="row h-100">
                     <div class="col-lg-7 align-self-center content-side">
                         <div class="left_side ps-md-4" data-aos="fade-up" data-aos-duration="800">
-                            <h3 class="hero-heading" >Hello, world! <span class="handImf"><img src="assets/images/icon/handFingar.svg" alt="hand"></span></h3>
-                            <h1 class="mainheading">Hi! I’m Natasha</h1>
+                            <h3 class="hero-sub-heading" >Hello, world! <span class="thumb"><img src="assets/images/icon/handFingar.svg" alt="hand"></span></h3>
+                            <h1 class="main-heading">Hi! I’m Natasha</h1>
                             <p class="text-theme1 loremtext" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="button"><button class="themeBtn">Get Started</button></div>
+                            <div class="button"><button class="themebtn">Get Started</button></div>
                         </div>
                     </div>
                     <div class="col-lg-4 d-lg-block d-none">
-                        <div class="woamnImg h-100 " data-aos="fade-down"  data-aos-duration="800"><img src="assets/images/woman.png" alt="user"></div>
+                        <div class="portfolio-user h-100 " data-aos="fade-down"  data-aos-duration="800"><img src="assets/images/woman.png" alt="portfolio-user"></div>
                     </div>
                 </div>
-                <div class="lhsScrollBar d-md-flex d-none" data-aos="fade-down"  data-aos-duration="800">scroll down <span class="scrollArrow"><img src="assets/images/icon/scroll_arrow.svg" alt="scroll"></span></div>
-                <ul class="socialIcon" data-aos="fade-down"  data-aos-duration="800">
+                <div class="down-arrow d-md-flex d-none" data-aos="fade-down"  data-aos-duration="800">scroll down <span class="down-img"><img src="assets/images/icon/scroll_arrow.svg" alt="scroll"></span></div>
+                <ul class="social-icon" data-aos="fade-down"  data-aos-duration="800">
                     <li ><a href="javascript:;" class="icon"><img src="assets/images/icon/social.svg" alt="social"></a></li>
                     <li ><a href="javascript:;" class="icon"><img src="assets/images/icon/twitter.svg" alt="twitter"></a></li>
                     <li ><a href="javascript:;" class="icon"><img src="assets/images/icon/facebook.svg" alt="facebook"></a></li>
@@ -57,24 +75,24 @@
     <!-- ! * Hero Section End -->
 
     <!-- * contact me section start * -->
-    <section class="contactMe">
+    <section class="contactme-section" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-auto">
-                    <div class="contactRound" data-aos="fade-up"  data-aos-duration="800">Connect Me</div>
+                    <div class="contact-circle" data-aos="fade-up"  data-aos-duration="800">Connect Me</div>
                 </div>
                 <div class="col-xl-7 col-lg-8 col ms-auto" data-aos="fade-left"  data-aos-duration="800">
                     <h2>I’m Natasha, a product designer with  <span class="text-theme2">17 years experience</span> sketching, building and coaching. I love fun UI, collaboration and making helpful products that connect people.</h2>
-                    <p class="aboutUser">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anunknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p class="user-lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anunknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
                 <div class="col-xl-7 col-lg-8 ms-auto" data-aos="fade-up"  data-aos-duration="800">
                     <div class="row">
                         <div class="col-sm-7">
-                            <div class="userImg h-100"><img src="assets/images/resumeUser.png" class="h-100 object-fit-sm-cover" alt="user"></div>
+                            <div class="portfolio-user h-100"><img src="assets/images/resumeUser.png" class="h-100 object-fit-sm-cover" alt="user"></div>
                             <div class="mail d-sm-none"><span><img src="assets/images/icon/rightSideFinger.svg" alt="arrow"></span><a href="javascript:;" class="h5">hiiamnattasha@gmail.com</a></div>
                         </div>
                         <div class="col-sm-5">
-                            <a href="javascript:;" class="userImg h-100 d-flex"><img src="assets/images/Content.svg" class="h-100 object-fit-sm-cover" alt="resume"></a>
+                            <a href="javascript:;" class="portfolio-user h-100 d-flex"><img src="assets/images/Content.svg" class="h-100 object-fit-sm-cover" alt="resume"></a>
                             <div class="mail d-sm-none mb-0"><span><img src="assets/images/icon/rightSideFinger.svg" alt="arrow"></span><a href="javascript:;" class="h5">+01 99000 65000</a></div>
                         </div>
                     </div>
@@ -93,83 +111,88 @@
     <!-- ! * contact me section end * -->
 
     <!-- * our work section start * -->
-    <section class="ourwork_section">
+    <section class="ourwork_section" id="portfolio">
         <div class="container">
             <div class="text-center heading" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="800"><h2>Our Work</h2></div>
             <div class="row innerbody">
                 <div class="col-md-6">
-                    <div class="card workcard ourwork1" data-aos="fade-up"  data-aos-duration="800">
+                    <div class="card color_1" data-aos="fade-up"  data-aos-duration="800">
                         <div class="card-body">
                             <h3>Saas website for unique start-up brands</h3>
-                            <div class="blogImg"><img src="assets/images/ourwork1.png" alt=""></div>
+                            <div class="portfolioimg"><img src="assets/images/ourwork1.png" alt="Portfolio Img"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card workcard ourwork2" data-aos="fade-up"  data-aos-duration="800">
+                    <div class="card color_2" data-aos="fade-up"  data-aos-duration="800">
                         <div class="card-body">
                             <h3>Website redesign and development for new type.</h3>
-                            <div class="blogImg"><img src="assets/images/ourwork2.png" alt=""></div>
+                            <div class="portfolioimg"><img src="assets/images/ourwork2.png" alt="Portfolio Img"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card workcard ourwork3" data-aos="fade-up"  data-aos-duration="800">
+                    <div class="card color_3" data-aos="fade-up"  data-aos-duration="800">
                         <div class="card-body">
                             <h3>Think with Google interactive experience.</h3>
-                            <div class="blogImg"><img src="assets/images/ourwork3.png" alt=""></div>
+                            <div class="portfolioimg"><img src="assets/images/ourwork3.png" alt="Portfolio Img"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card workcard ourwork4" data-aos="fade-up"  data-aos-duration="800">
+                    <div class="card color_4" data-aos="fade-up"  data-aos-duration="800">
                         <div class="card-body">
                             <h3>Redesign of Google's Chrome Enterprise website.</h3>
-                            <div class="blogImg"><img src="assets/images/ourwork4.png" alt=""></div>
+                            <div class="portfolioimg"><img src="assets/images/ourwork4.png" alt="Portfolio Img"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card workcard ourwork5" data-aos="fade-up"  data-aos-duration="800">
-                        <div class="card-body">
-                            <h3>Redesign of Google's Chrome Enterprise website.</h3>
-                            <div class="blogImg"><img src="assets/images/ourwork5.png" alt=""></div>
+                <div class="col-12" id="show-more-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card color_5" data-aos="fade-up"  data-aos-duration="800">
+                                <div class="card-body">
+                                    <h3>Redesign of Google's Chrome Enterprise website.</h3>
+                                    <div class="portfolioimg"><img src="assets/images/ourwork5.png" alt="Portfolio Img"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card workcard ourwork6" data-aos="fade-up"  data-aos-duration="800">
-                        <div class="card-body">
-                            <h3>Think with Google interactive experience.</h3>
-                            <div class="blogImg"><img src="assets/images/ourwork6.png" alt=""></div>
+                        <div class="col-md-6">
+                            <div class="card color_6" data-aos="fade-up"  data-aos-duration="800">
+                                <div class="card-body">
+                                    <h3>Think with Google interactive experience.</h3>
+                                    <div class="portfolioimg"><img src="assets/images/ourwork6.png" alt="Portfolio Img"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="viewMoreBtn text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="800"><a href="javascript:;" class="themeBtn themeBtn_outline">More Work</a></div>
+            <div class="text-center" id="show-more" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="800"><a href="javascript:;" class="themebtn themebtn_outline">More Work</a></div>
+            <div class="text-center" id="show-less" data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="800"><a href="javascript:;" class="themebtn themebtn_outline">Less Work</a></div>
         </div>
     </section>
     <!-- ! * our work section end * -->
 
     <!-- * about product section start * -->
-    <section class="aboutProduct">
+    <section class="aboutproduct_section">
         <div class="container">
             <div class="row row-gap-5">
                 <div class="col-lg-4" data-aos="fade-right"  data-aos-duration="800">
                     <h2>Get benifits & work about product designer</h2>
                     <p class="loremtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                    <a href="javascript:;" class="themeBtn themeBtn_outline"> Get Started</a>
+                    <a href="javascript:;" class="themebtn themebtn_outline"> Get Started</a>
                 </div>
                 <div class="col-lg-8">
                     <div class="row g-4">
                         <div class="col-md-6">
                             <div class="card" data-aos="fade-up" data-aos-duration="800">
                                 <div class="card-body">
-                                    <div class="cardHeader">
-                                        <div class="cardImg"><img src="assets/images/icon/blub.svg" alt="icon"></div>
-                                        <a href="javascript:;" class="themeBtnWhite">STRATEGY</a>
+                                    <div class="cardheader">
+                                        <div class="card-img"><img src="assets/images/icon/blub.svg" alt="icon"></div>
+                                        <a href="javascript:;" class="themebtn-white">STRATEGY</a>
                                     </div>
-                                    <div class="innerBody">
+                                    <div class="innerbody">
                                         <h4 class="m-0">Brand Strategy & Art Direction</h4>
                                         <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                     </div>
@@ -179,11 +202,11 @@
                         <div class="col-md-6">
                             <div class="card" data-aos="fade-up" data-aos-duration="800">
                                 <div class="card-body">
-                                    <div class="cardHeader">
-                                        <div class="cardImg"><img src="assets/images/icon/desktop.svg" alt="icon"></div>
-                                        <a href="javascript:;" class="themeBtnWhite">STRATEGY</a>
+                                    <div class="cardheader">
+                                        <div class="card-img"><img src="assets/images/icon/desktop.svg" alt="icon"></div>
+                                        <a href="javascript:;" class="themebtn-white">STRATEGY</a>
                                     </div>
-                                    <div class="innerBody">
+                                    <div class="innerbody">
                                         <h4 class="m-0">Product design - UX/UI Design</h4>
                                         <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                     </div>
@@ -193,11 +216,11 @@
                         <div class="col-md-6">
                             <div class="card" data-aos="fade-up" data-aos-duration="800">
                                 <div class="card-body">
-                                    <div class="cardHeader">
-                                        <div class="cardImg"><img src="assets/images/icon/sound.svg" alt="icon"></div>
-                                        <a href="javascript:;" class="themeBtnWhite">STRATEGY</a>
+                                    <div class="cardheader">
+                                        <div class="card-img"><img src="assets/images/icon/sound.svg" alt="icon"></div>
+                                        <a href="javascript:;" class="themebtn-white">STRATEGY</a>
                                     </div>
-                                    <div class="innerBody">
+                                    <div class="innerbody">
                                         <h4 class="m-0">Marketing Campaigns & Content Creation</h4>
                                         <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                     </div>
@@ -207,11 +230,11 @@
                         <div class="col-md-6">
                             <div class="card" data-aos="fade-up" data-aos-duration="800">
                                 <div class="card-body">
-                                    <div class="cardHeader">
-                                        <div class="cardImg"><img src="assets/images/icon/setting.svg" alt="icon"></div>
-                                        <a href="javascript:;" class="themeBtnWhite">STRATEGY</a>
+                                    <div class="cardheader">
+                                        <div class="card-img"><img src="assets/images/icon/setting.svg" alt="icon"></div>
+                                        <a href="javascript:;" class="themebtn-white">STRATEGY</a>
                                     </div>
-                                    <div class="innerBody">
+                                    <div class="innerbody">
                                         <h4 class="m-0">Typography & Video Production</h4>
                                         <p class="m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                     </div>
@@ -226,9 +249,9 @@
     <!-- ! * about product section end * -->
 
     <!--  * Testimonial section Start * -->
-    <section class="testimonialSection">
+    <section class="testimonial_section">
         <div class="container">
-            <div class="innerFluid">
+            <div class="innerfluid">
                 <h2 data-aos="fade-right" data-aos-duration="800">What People Are Saying <br> About My Work</h2>
                 <div class="slider">
                     <div class="card">
@@ -237,11 +260,11 @@
                                 <div class="item">
                                     <div class="row gap-lg-5 gap-4">
                                         <div class="col-md-auto">
-                                            <div class="clientImg"><img src="assets/images/client.jpg" alt="client"></div>  
+                                            <div class="client-img"><img src="assets/images/client.jpg" alt="client"></div>  
                                         </div>
                                         <div class="col">
                                             <div class="row row-gap-lg-4 row-gap-3 align-items-center">
-                                                <div class="col"><div class="clientName">Sylvester Stallone <span>Designer</span></div></div>
+                                                <div class="col"><div class="clientname">Sylvester Stallone <span>Designer</span></div></div>
                                                 <div class="col-auto shapgroup"><div class="shap"><img src="assets/images/sliderDots.svg" alt="shap"></div></div>
                                                 <div class="col-12">
                                                     <p class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
@@ -253,11 +276,11 @@
                                 <div class="item">
                                     <div class="row gap-lg-5 gap-4">
                                         <div class="col-md-auto">
-                                            <div class="clientImg"><img src="assets/images/client-1.jpg" alt="client"></div>  
+                                            <div class="client-img"><img src="assets/images/client-1.jpg" alt="client"></div>  
                                         </div>
                                         <div class="col">
                                             <div class="row row-gap-lg-4 row-gap-3 align-items-center">
-                                                <div class="col"><div class="clientName">Samuel Schick <span>React Developer</span></div></div>
+                                                <div class="col"><div class="clientname">Samuel Schick <span>React Developer</span></div></div>
                                                 <div class="col-auto shapgroup"><div class="shap"><img src="assets/images/sliderDots.svg" alt="shap"></div></div>
                                                 <div class="col-12">
                                                     <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum, a itaque minima repellendus totam eligendi culpa distinctio laudantium voluptatem, explicabo in nemo nesciunt eum?</p>
@@ -269,11 +292,11 @@
                                 <div class="item">
                                     <div class="row gap-lg-5 gap-4">
                                         <div class="col-md-auto">
-                                            <div class="clientImg"><img src="assets/images/client.jpg" alt="client"></div>  
+                                            <div class="client-img"><img src="assets/images/client.jpg" alt="client"></div>  
                                         </div>
                                         <div class="col">
                                             <div class="row row-gap-lg-4 row-gap-3 align-items-center">
-                                                <div class="col"><div class="clientName">Sylvester Stallone <span>Designer</span></div></div>
+                                                <div class="col"><div class="clientname">Sylvester Stallone <span>Designer</span></div></div>
                                                 <div class="col-auto shapgroup"><div class="shap"><img src="assets/images/sliderDots.svg" alt="shap"></div></div>
                                                 <div class="col-12">
                                                     <p class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
@@ -285,11 +308,11 @@
                                 <div class="item">
                                     <div class="row gap-lg-5 gap-4">
                                         <div class="col-md-auto">
-                                            <div class="clientImg"><img src="assets/images/client-1.jpg" alt="client"></div>  
+                                            <div class="client-img"><img src="assets/images/client-1.jpg" alt="client"></div>  
                                         </div>
                                         <div class="col">
                                             <div class="row row-gap-lg-4 row-gap-3 align-items-center">
-                                                <div class="col"><div class="clientName">Samuel Schick <span>React Developer</span></div></div>
+                                                <div class="col"><div class="clientname">Samuel Schick <span>React Developer</span></div></div>
                                                 <div class="col-auto shapgroup"><div class="shap"><img src="assets/images/sliderDots.svg" alt="shap"></div></div>
                                                 <div class="col-12">
                                                     <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum, a itaque minima repellendus totam eligendi culpa distinctio laudantium voluptatem, explicabo in nemo nesciunt eum?</p>
@@ -308,47 +331,47 @@
     <!-- ! * Testimonial section end * -->
 
     <!--  * Artical section start * -->
-    <section class="articleSection">
+    <section class="article_section">
         <div class="container">
             <div class="row row-gap-sm-5 row-gap-4">
                 <div class="col-12">
                     <div class="row">
                         <div class="col" data-aos="fade-right" data-aos-duration="800"><h2>Latest Articles</h2></div>
-                        <div class="col-sm-auto" data-aos="fade-left" data-aos-duration="800"><a href="javascript:;" class="themeBtn themeBtn_outline">More Articles</a></div>
+                        <div class="col-sm-auto" data-aos="fade-left" data-aos-duration="800"><a href="javascript:;" class="themebtn themebtn_outline">More Articles</a></div>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="row row-gap-4">
-                        <div class="col-lg-4 col-md-">
+                        <div class="col-lg-4 col-md-6">
                             <div class="card h-100" data-aos="fade-up" data-aos-duration="800">
-                                <div class="cardImages"><img src="assets/images/article1.png" class="card-img-top" alt="Article"></div>
+                                <div class="card-img"><img src="assets/images/article1.png" class="card-img-top" alt="Article"></div>
                                 <div class="card-body">
                                     <div class="timing">November 05-22</div>
-                                    <h4 class="card-title d-flex">What's the name of your organization?</h4>
+                                    <h4 class="card-title">What's the name of your organization?</h4>
                                     <p class="m-0">It is professional, considers everyone's time, can think about the whole problem and  friendly founder company.</p>
-                                    <a href="blog-details.html" class="continueBtn stretched-link">Continue Reading</a>
+                                    <a href="blog-details.html" class="continuebtn stretched-link">Continue Reading</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-">
+                        <div class="col-lg-4 col-md-6">
                             <div class="card h-100" data-aos="fade-up" data-aos-duration="800">
-                                <div class="cardImages"><img src="assets/images/article2.png" class="card-img-top" alt="Article"></div>
+                                <div class="card-img"><img src="assets/images/article2.png" class="card-img-top" alt="Article"></div>
                                 <div class="card-body">
                                     <div class="timing">August 08-22</div>
-                                    <h4 class="card-title d-flex">UI design for the news platform La Silla Vacía.</h4>
+                                    <h4 class="card-title">UI design for the news platform La Silla Vacía.</h4>
                                     <p class="m-0">It is professional, considers everyone's time, can think about the whole problem and  friendly founder company.</p>
-                                    <a href="blog-details.html" class="continueBtn stretched-link">Continue Reading</a>
+                                    <a href="blog-details.html" class="continuebtn stretched-link">Continue Reading</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-">
+                        <div class="col-lg-4 col-md-6">
                             <div class="card h-100" data-aos="fade-up" data-aos-duration="800">
-                                <div class="cardImages"><img src="assets/images/article1.png" class="card-img-top" alt="Article"></div>
+                                <div class="card-img"><img src="assets/images/article1.png" class="card-img-top" alt="Article"></div>
                                 <div class="card-body">
                                     <div class="timing">November 05-22</div>
-                                    <h4 class="card-title d-flex">What's the name of your organization?</h4>
+                                    <h4 class="card-title">What's the name of your organization?</h4>
                                     <p class="">It is professional, considers everyone's time, can think about the whole problem and  friendly founder company.</p>
-                                    <a href="blog-details.html" class="continueBtn stretched-link">Continue Reading</a>
+                                    <a href="blog-details.html" class="continuebtn stretched-link">Continue Reading</a>
                                 </div>
                             </div>
                         </div>
@@ -360,14 +383,14 @@
     <!-- ! * Artical section end * -->
     
     <!-- * Brand section start * -->
-    <section class="brandSection">
+    <section class="brand_section">
         <div class="container">
             <div class="row">
                 <div class="card border-end-0 border-start-0" data-aos="flip-up" data-aos-duration="800">
                     <div class="card-body">
                         <div class="owl-carousel brand_slider">
                             <div class="item"><img src="assets/images/brand1.svg" alt="brands"></div>
-                            <div class="item roundedImg"><img src="assets/images/brand2.svg" alt="brands"></div>
+                            <div class="item roundedimg"><img src="assets/images/brand2.svg" alt="brands"></div>
                             <div class="item"><img src="assets/images/brand3.svg" alt="brands"></div>
                             <div class="item"><img src="assets/images/brand4.svg" alt="brands"></div>
                             <div class="item"><img src="assets/images/brand5.svg" alt="brands"></div>
@@ -380,18 +403,18 @@
     <!-- ! * Brand section end * -->
 
     <!-- * Gallery section start * -->
-    <section class="gallerySection">
+    <section class="gallery_section">
         <div class="container">
             <div class="row g-xl-4 g-md-3 g-2">
                 <div class="col-4">
-                    <div class="galleryImg h-100" data-aos="fade-up" data-aos-duration="800">
+                    <div class="galleryimg" data-aos="fade-up" data-aos-duration="800">
                         <a href="assets/images/Photo.png" class="glightbox">
                             <img src="assets/images/Photo.png" alt="phone">
                         </a>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="galleryImg h-100" data-aos="fade-down" data-aos-duration="800">
+                    <div class="galleryimg" data-aos="fade-down" data-aos-duration="800">
                         <a href="assets/images/Photo-1.png" class="glightbox">
                             <img src="assets/images/Photo-1.png" alt="phone">
                         </a>
@@ -400,14 +423,14 @@
                 <div class="col-4">
                     <div class="row g-xl-4 g-md-3 g-2 h-100" data-aos="fade-up" data-aos-duration="800">
                         <div class="col-12">
-                            <div class="galleryImg h-100">
+                            <div class="galleryimg">
                                 <a href="assets/images/Photo-2.png" class="glightbox">
                                     <img src="assets/images/Photo-2.png" alt="phone">
                                 </a>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="galleryImg h-100">
+                            <div class="galleryimg">
                                 <a href="assets/images/Photo-3.png" class="glightbox">
                                     <img src="assets/images/Photo-3.png" alt="phone">
                                 </a>
@@ -421,37 +444,37 @@
     <!-- ! * Gallery section end * -->
 
     <!-- * Footer section start * -->
-    <section class="footer m-0">
+    <section class="footer m-0" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="getInTuch_Group">
+                    <div class="getIntuch_group">
                         <div class="row row-gap-5">
                             <div class="col-xxl-4 col-lg-5">
-                                <div class="row lhs_side">
+                                <div class="row left_side">
                                     <div class="col-12" data-aos="fade-right" data-aos-duration="800">
-                                        <div class="h1 getheading text-white">Get In Touch</div>
+                                        <div class="h1 getheading">Get In Touch</div>
                                         <p class="m-0 text-white">I am graphic designer by heart, but my personal and professional experiences have taught me to deepen into</p>
                                     </div>
                                     <div class="col-12" data-aos="fade-right" data-aos-duration="800">
-                                        <div class="addresHeading text-theme2">Address</div>
+                                        <div class="address-heading">Address</div>
                                         <h3 class="m-0 text-white">4517 Washington Ave. Manchester, Kentucky 39495</h3>
                                     </div>
                                     <div class="col-12" data-aos="fade-right" data-aos-duration="800">
-                                        <div class="addresHeading text-theme2">Iinformation</div>
+                                        <div class="address-heading">Iinformation</div>
                                         <h3 class="m-0 text-white">info@hiiamnattasha.com <br>
                                             +1800 1500 1100</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 ms-auto">
-                                <div class="contactcard card" data-aos="fade-left" data-aos-duration="800">
+                                <div class="contactcard" data-aos="fade-left" data-aos-duration="800">
                                     <div class="card-body">
                                         <form action="" class="contactForm">
                                             <div class="formGroup"><input type="text" class="form-control rounded-pill" placeholder="Full Name"></div>
                                             <div class="formGroup"><input type="text" class="form-control rounded-pill" placeholder="Email Address"></div>
                                             <div class="formGroup"><textarea name="" class="form-control textarea" placeholder="Message" cols="30" rows="5"></textarea></div>
-                                            <div class="submitBtn"><button type="submit" class="themeBtn">Submit</button></div>
+                                            <div class="submitbtn"><button type="submit" class="themebtn">Submit</button></div>
                                         </form>
                                     </div>
                                 </div>
@@ -464,14 +487,14 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="bottomFooter">
+                    <div class="bottom_footer">
                         <div class="letstalk">
                             <div class="row align-items-center row-gap-3">
                                 <div class="col-xxl-5 col-lg-6 col-sm-7"><h3 class="m-0 text-white" data-aos="fade-right" data-aos-duration="800">Ready to get started with Upshot Let's get on a call.</h3></div>
-                                <div class="col-sm-auto col-12 ms-sm-auto" data-aos="fade-left" data-aos-duration="800"><a href="javascript:;" class="themeBtn white">Let’s Talk</a></div>
+                                <div class="col-sm-auto col-12 ms-sm-auto" data-aos="fade-left" data-aos-duration="800"><a href="javascript:;" class="themebtn white">Let’s Talk</a></div>
                             </div>
                         </div>
-                        <div class="pageLinkGroup" data-aos="fade-up" data-aos-duration="800">
+                        <div class="pagelinkgroup" data-aos="fade-up" data-aos-duration="800">
                             <div class="row row-gap-4">
                                 <div class="col-lg-4 col-12">
                                     <div class="logo"><a href="index.html"><img src="assets/images/footerLogo.svg" alt="logo"></a></div>
@@ -496,7 +519,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-sm-4 col-6">
-                                    <div class="footerBlog"><img src="assets/images/footerBlog.png" alt="blog"></div>
+                                    <div class="footerblog-img"><img src="assets/images/footerBlog.png" alt="blog"></div>
                                 </div>
                             </div>
                         </div>
@@ -511,23 +534,7 @@
 
 
 
-    <!-- ? Header Offcanvas Start * -->
-    <div class="offcanvas offcanvas-end headerOffcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <div class="offcanvas-title" id="offcanvasRightLabel"><img src="assets/images/logo.svg" alt="logo"></div>
-            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="javascript:;">About Us</a></li>
-                <li><a href="javascript:;">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="javascript:;">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- ? * Header Offcanvas End * -->
+
 
     
     <!-- ** Script Links Start ** -->
@@ -539,6 +546,23 @@
     <!-- ** Script Links End ** -->
     <script>
         AOS.init();
+
+
+        // Hide And Show Card JS
+        $('#show-more-content').hide();
+        $('#show-less').hide();
+
+        $('#show-more').click(function(){
+            $('#show-more-content').show(300);
+            $('#show-less').show();
+            $('#show-more').hide();
+        });
+
+        $('#show-less').click(function(){
+            $('#show-more-content').hide(150);
+            $('#show-more').show();
+            $(this).hide();
+        });
     </script>
 </body>
 </html>

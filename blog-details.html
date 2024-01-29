@@ -21,69 +21,112 @@
 <body>
     <!-- * Nav Start -->
     <nav class="navbar header">
-        <div class="container-fluid innerNav">
+        <div class="container-fluid inner_nav">
             <a href="index.html" class="navbar-brand"><img src="assets/images/logo.svg" alt="logo"></a>
-            <button class="menuBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/images/icon/menu.svg" alt="menu"></button>
+            <button class="menubtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="assets/images/icon/menu.svg" alt="menu"></button>
         </div>
     </nav>
     <!-- ! * Nav End -->
 
-    <section class="breadcrumbSection m-0 herosection">
+    <!-- ? Header Offcanvas Start * -->
+    <div class="offcanvas offcanvas-end header_offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasRightLabel"><img src="assets/images/logo.svg" alt="logo"></div>
+            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ? * Header Offcanvas End * -->
+
+    <!--  * Breadcrumb section start * -->
+    <section class="breadcrumb_section m-0 herosection">
         <div class="container left_side h-100">
-            <div class="row h-100 flex-column align-items-center justify-content-center">
+            <div class="row h-100 flex-column align-items-center justify-content-center gap-sm-0 gap-3">
                 <div class="col-12">
-                    <h1 class="mainheading text-center" data-aos="fade-up" data-aos-duration="800">What's the name of your organization?</h1>
+                    <h1 class="main-heading text-center" data-aos="fade-up" data-aos-duration="800">What's the name of your organization?</h1>
                 </div>
-                <div class="col-xl-5 col-lg-6 col-md-7 col-sm-8 col-10 mx-auto">
+                <div class="col-12">
                     <!-- <p class="text-theme1 loremtext text-center m-0" data-aos="fade-up" data-aos-duration="800">What's a Design Sprint – the Ultimate Guide</p> -->
                     <ul class="blog-upload-details">
-                        <li class="date">November 05-22</li>
-                        <li class="blogadmin">Samuel Schick</li>
-                        <li class="view">612k</li>
+                        <li class="blogadmin"><span><img src="assets/images/icon/user.svg" alt="icon"></span> Samuel Schick</li>
+                        <li class="date"><span><img src="assets/images/icon/date.svg" alt="icon"></span> 11-05-22</li>
+                        <li class="view"><span><img src="assets/images/icon/view.svg" alt="icon"></span> 612k</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <!--!  * Breadcrumb section end * -->
 
     <!--  * Blog Details section start * -->
-    <section class="blogDetailsPage pt-0">
+    <section class="blogdetailspage pt-0">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="blogIMg" data-aos="fade-up" data-aos-duration="800">
+                    <div class="blog-img" data-aos="fade-up" data-aos-duration="800">
                         <img src="assets/images/blogDetails.png" alt="Article">
                     </div>
                 </div>
-                <div class="col-xl-8 col-lg-9 col-12 mx-auto">
-                    <p class="m-60" data-aos="fade-up" data-aos-duration="800">Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements. Collaboratively expedite quality manufactured products via client-focused results quickly communicate enabled technology and turnkey leadership skills. Uniquely enable accurate supply chains rather than friction technology.</p>
-                    <h3 class="categoryHeading" data-aos="fade-up" data-aos-duration="800">The Perfect Creativity</h3>
-                    <p class="mb-30" data-aos="fade-up" data-aos-duration="800">Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.</p>
-                    <ul class="list" data-aos="fade-up" data-aos-duration="800"> 
+                <div class="col-xl-8 col-lg-9 col-12 mx-auto" data-aos="fade-up" data-aos-duration="800">
+                    <p class="m-60">Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements. Collaboratively expedite quality manufactured products via client-focused results quickly communicate enabled technology and turnkey leadership skills. Uniquely enable accurate supply chains rather than friction technology.</p>
+                    <h3 class="blogcategory_heading">The Perfect Creativity</h3>
+                    <p class="mb-30">Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.</p>
+                    <ul class="list"> 
                         <li>Scrambled it to make a type specimen book. </li>
                         <li>The understanding of our service</li>
                         <li>The perception of our application</li>
                         <li>To do this, we recruited a dozen users, we prepared several scenarios</li>
                     </ul>
-                    <div class="card detailCard my-50" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card blog_detailcard my-50">
                         <div class="card-body">
                             <div class="h3 text-center text-white">We have a powerful portfolio of brands that are well-positioned for future growth, both domestically and internationally.</div>
                         </div>
                     </div>
-                    <h3 class="categoryHeading" data-aos="fade-up" data-aos-duration="800">How to customize formatting for each rich text.</h3>
-                    <p class="mb-30" data-aos="fade-up" data-aos-duration="800">Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. matrix economically sound value through cooperative technology.</p>
-                    <ol class="list orderlist" data-aos="fade-up" data-aos-duration="800">
+                    <h3 class="blogcategory_heading">How to customize formatting for each rich text.</h3>
+                    <p class="mb-30">Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. matrix economically sound value through cooperative technology.</p>
+                    <ol class="list orderlist">
                         <li>It was popularised in the  with the release of Letraset </li>
                         <li>Maecenas tempus, tellus eget condimentum rhoncus,</li>
                         <li>Lorem Ipsum passages, and more recently with desktop publishing</li>
                         <li>Aldus PageMaker including versions of Lorem ipsum.</li>
                     </ol>
+                    <div class="my-50">
+                        <p class="mb-30">sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements. Collaboratively expedite quality manufactured products via client-focused results quickly communicate enabled technology and turnkey leadership skills. Uniquely enable accurate supply chains rather than friction technology.</p>
+                        <p class="mb-30">Competently parallel task fully researched data and enterprise process improvements. Collaboratively expedite quality manufactured products via client-focused results quickly communicate enabled technology and turnkey leadership skills. Uniquely enable accurate supply chains rather than friction technology. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.</p>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="tags p-0">
+                                    <li><h5 class="m-0">Tags:</h5></li>
+                                    <li class="tagline">Tag01</li>
+                                    <li class="tagline">Tag02</li>
+                                    <li class="tagline">Tag03</li>
+                                    <li class="tagline">Tag04</li>
+                                </ul>
+                            </div>
+                            <div class="col-auto">
+                                <ul class="tags social p-0">
+                                    <li><h5 class="m-0">Share This Artical:</h5></li>
+                                    <li><a href="javascript:;"><img src="assets/images/icon/theme_Insta.svg" alt="insta"></a></li>
+                                    <li><a href="javascript:;"><img src="assets/images/icon/theme_Fb.svg" alt="fb"></a></li>
+                                    <li><a href="javascript:;"><img src="assets/images/icon/theme_Twiter.svg" alt="twiter"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12">
-                    <div class="blogUser my-50 mb-0" data-aos="fade-up" data-aos-duration="800">
+                    <div class="bloguser">
                         <div class="row">
                             <div class="col-xl-8 col-lg-9 col-12 mx-auto">
-                                <div class="userBody my-50">
+                                <div class="usercardbody my-50">
                                     <div class="row row-gap-4">
                                         <div class="col-sm-auto "><div class="userImg"><img src="assets/images/blogUser.jpg" alt="blog user"></div></div>
                                         <div class="col">
@@ -106,30 +149,119 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-9 col-12 mx-auto">
+                            <div class="blog-comment my-50">
+                                <h4 class="mb-4">Comments (5)</h4>
+                                <ol>
+                                    <li>
+                                        <div class="avatar mainusercomment"><img src="assets/images/client-1.jpg" alt=""></div>
+                                        <div class="comment_details">
+                                            <div class="comment-info">
+                                                <h5 class="c_name">John Smith</h5>
+                                                <span class="c_date">8 August 2018</span>
+                                                <span class="c_reply"><a href="javascript:;">Reply</a></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit voluptatem   accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt   explicabo.</div>
+                                        </div>
+                                        <ol>
+                                            <li>
+                                                <div class="avatar"><img src="assets/images/client.jpg" alt=""></div>
+                                                <div class="comment_details">
+                                                    <div class="comment-info">
+                                                        <h5 class="c_name">John Smith</h5>
+                                                        <span class="c_date">8 August 2018</span>
+                                                        <span class="c_reply"><a href="javascript:;">Reply</a></span>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit voluptatem   accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt   explicabo.</div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <div class="avatar mainusercomment"><img src="assets/images/client-1.jpg" alt=""></div>
+                                        <div class="comment_details">
+                                            <div class="comment-info">
+                                                <h5 class="c_name">John Smith</h5>
+                                                <span class="c_date">8 August 2018</span>
+                                                <span class="c_reply"><a href="javascript:;">Reply</a></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit voluptatem   accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt   explicabo.</div>
+                                        </div>
+                                        <ol>
+                                            <li>
+                                                <div class="avatar"><img src="assets/images/client.jpg" alt=""></div>
+                                                <div class="comment_details">
+                                                    <div class="comment-info">
+                                                        <h5 class="c_name">John Smith</h5>
+                                                        <span class="c_date">8 August 2018</span>
+                                                        <span class="c_reply"><a href="javascript:;">Reply</a></span>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit voluptatem   accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt   explicabo.</div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <div class="avatar mainusercomment"><img src="assets/images/client-1.jpg" alt=""></div>
+                                        <div class="comment_details">
+                                            <div class="comment-info">
+                                                <h5 class="c_name">John Smith</h5>
+                                                <span class="c_date">8 August 2018</span>
+                                                <span class="c_reply"><a href="javascript:;">Reply</a></span>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit voluptatem   accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt   explicabo.</div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="comment_form footer">
+                                <h4 class="mb-3">Post Your Comments</h4>
+                                <p class="mb-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aut.</p>
+                                <div class="contactcard card">
+                                    <div class="card-body">
+                                        <form action="" class="contactForm">
+                                            <div class="formGroup"><input type="text" class="form-control rounded-pill" placeholder="Full Name"></div>
+                                            <div class="formGroup"><input type="text" class="form-control rounded-pill" placeholder="Email Address"></div>
+                                            <div class="formGroup"><textarea name="" class="form-control textarea" placeholder="Message" cols="30" rows="5"></textarea></div>
+                                            <div class="submitbtn"><button type="submit" class="themebtn">Book Now</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!-- * Footer section start * -->
-    <section class="footer m-0">
+    <section class="footer m-0" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="getInTuch_Group">
+                    <div class="getIntuch_group">
                         <div class="row row-gap-5">
                             <div class="col-xxl-4 col-lg-5">
-                                <div class="row lhs_side">
+                                <div class="row left_side">
                                     <div class="col-12" data-aos="fade-right" data-aos-duration="800">
                                         <div class="h1 getheading text-white">Get In Touch</div>
                                         <p class="m-0 text-white">I am graphic designer by heart, but my personal and professional experiences have taught me to deepen into</p>
                                     </div>
                                     <div class="col-12" data-aos="fade-right" data-aos-duration="800">
-                                        <div class="addresHeading text-theme2">Address</div>
+                                        <div class="address-heading text-theme2">Address</div>
                                         <h3 class="m-0 text-white">4517 Washington Ave. Manchester, Kentucky 39495</h3>
                                     </div>
                                     <div class="col-12" data-aos="fade-right" data-aos-duration="800">
-                                        <div class="addresHeading text-theme2">Iinformation</div>
+                                        <div class="address-heading text-theme2">Iinformation</div>
                                         <h3 class="m-0 text-white">info@hiiamnattasha.com <br>
                                             +1800 1500 1100</h3>
                                     </div>
@@ -142,7 +274,7 @@
                                             <div class="formGroup"><input type="text" class="form-control rounded-pill" placeholder="Full Name"></div>
                                             <div class="formGroup"><input type="text" class="form-control rounded-pill" placeholder="Email Address"></div>
                                             <div class="formGroup"><textarea name="" class="form-control textarea" placeholder="Message" cols="30" rows="5"></textarea></div>
-                                            <div class="submitBtn"><button type="submit" class="themeBtn">Submit</button></div>
+                                            <div class="submitbtn"><button type="submit" class="themebtn">Submit</button></div>
                                         </form>
                                     </div>
                                 </div>
@@ -155,14 +287,14 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="bottomFooter">
+                    <div class="bottom_footer">
                         <div class="letstalk">
                             <div class="row align-items-center row-gap-3">
                                 <div class="col-xxl-5 col-lg-6 col-sm-7"><h3 class="m-0 text-white" data-aos="fade-right" data-aos-duration="800">Ready to get started with Upshot Let's get on a call.</h3></div>
-                                <div class="col-sm-auto col-12 ms-sm-auto" data-aos="fade-left" data-aos-duration="800"><a href="javascript:;" class="themeBtn white">Let’s Talk</a></div>
+                                <div class="col-sm-auto col-12 ms-sm-auto" data-aos="fade-left" data-aos-duration="800"><a href="javascript:;" class="themebtn white">Let’s Talk</a></div>
                             </div>
                         </div>
-                        <div class="pageLinkGroup" data-aos="fade-up" data-aos-duration="800">
+                        <div class="pagelinkgroup" data-aos="fade-up" data-aos-duration="800">
                             <div class="row row-gap-4">
                                 <div class="col-lg-4 col-12">
                                     <div class="logo"><a href="index.html"><img src="assets/images/footerLogo.svg" alt="logo"></a></div>
@@ -198,28 +330,6 @@
         </div>
     </section>
     <!-- ! * Footer section end * -->
-
-
-
-
-    <!-- ? Header Offcanvas Start * -->
-    <div class="offcanvas offcanvas-end headerOffcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <div class="offcanvas-title" id="offcanvasRightLabel"><img src="assets/images/logo.svg" alt="logo"></div>
-            <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="javascript:;">About Us</a></li>
-                <li><a href="javascript:;">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="javascript:;">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- ? * Header Offcanvas End * -->
-
     
     <!-- ** Script Links Start ** -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
