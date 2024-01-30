@@ -573,11 +573,36 @@ section {
 .contactForm {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    row-gap: 30px;
+}
+
+.contactForm .formGroup{
+    position: relative;
+}
+
+.contactForm .formGroup .input_icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactForm .formGroup .input_icon img {
+    filter: brightness(10);
+}
+
+.contactForm .formGroup.message .input_icon{
+    top: 18px;
+    transform: unset;
 }
 
 .contactForm .formGroup .form-control {
-    padding: 18px 20px;
+    padding: 18px 20px 18px 50px;
     border: 1px solid var(--input_border);
     background: var(--input_bg);
     color: var(--white);
@@ -696,7 +721,8 @@ section {
 }
 
 .herosection .innerfluid .left_side .hero-sub-heading .thumb {
-    width: 38px;
+    /* width: 38px; */
+    width: 32px;
     display: inline-block
 }
 
@@ -806,10 +832,14 @@ section {
     background: #dae7ff;
     border: none;
     margin: 200px 0px 100px;
+    transition: all ease-in-out 0.3s;
+  cursor: pointer;
+
 }
 
 .ourwork_section .innerbody>div .card .card-body {
     padding: 62px 88px 0px;
+    transition: all ease-in-out 0.3s;
 }
 
 .ourwork_section .innerbody>div .card .card-body .portfolioimg {
@@ -836,6 +866,13 @@ section {
     background: #ddebff;
 }
 
+.ourwork_section .innerbody>div .card.card:hover{
+    box-shadow: 0px 0px 21px 0px rgb(0 0 0 / 8%);
+}
+.ourwork_section .innerbody>div .card.card:hover .card-body{
+    transform: translateY(10px);
+}
+
 .ourwork_section .innerbody>div:nth-child(odd) .card {
     margin: 0px;
 }
@@ -857,7 +894,13 @@ section {
 .aboutproduct_section .card {
     border-radius: 34px;
     background: var(--light);
-    border: none;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.3s;
+}
+
+.aboutproduct_section .card:hover{
+    border-color: var(--border_color);
+    box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, .02);
 }
 
 .aboutproduct_section .card .card-body {
@@ -1330,6 +1373,13 @@ section {
     font-weight: 400;
     color: var(--theme1);
     font-family: "Lexend Deca";
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.tags .tagline:hover{
+    background-color: var(--theme1);
+    color: var(--white);
 }
 
 /*---------- Blog Comment Css Start ------- */
@@ -1427,9 +1477,25 @@ section {
 .comment_form {
     background-color: transparent !important;
 }
+.comment_form.footer .contactcard  {
+    border: none;
+    background-color: var(--light);
+    border-radius: 34px;
+    box-shadow: none;
+}
+
+.comment_form.footer .contactcard .contactForm .formGroup .input_icon img {
+    filter: unset;
+}
+
+.comment_form.footer .contactcard .contactForm{
+    flex-direction: row;
+}
+
 .comment_form .contactForm .formGroup .form-control, .comment_form .contactForm .formGroup .form-control::placeholder{
-    background-color: transparent;
+    background-color: var(--white);
     color: var(--theme1);
+    border: none;
 }
 
 
@@ -2196,7 +2262,11 @@ section {
 
 /*============== Contact Form Responsive Css Start ==============*/
     .contactForm .formGroup .form-control {
-        padding: 16px 20px;
+        padding: 16px 20px 16px 50px;
+    }
+
+    .contactForm .formGroup.message .input_icon{
+        top: 16px;
     }
 /*-------------- Contact Form Responsive Css End -------------*/
 
@@ -2624,12 +2694,22 @@ section {
 
 /*============== Contact Form Responsive Css Start ==============*/
     .contactForm {
-        gap: 25px;
+        row-gap: 25px;
     }
 
     .contactForm .formGroup .form-control {
-        padding: 10px 18px;
+        padding: 10px 18px 10px 45px;
         border-radius: 20px;
+    }
+        
+    .contactForm .formGroup .input_icon{
+        left: 15px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .contactForm .formGroup.message .input_icon{
+        top: 10px;
     }
 /*-------------- Contact Form Responsive Css End -------------*/
 
@@ -2894,7 +2974,7 @@ section {
 
 /*============== Contact Form Responsive Css Start ==============*/
     .contactForm {
-        gap: 20px;
+        row-gap: 20px;
     }
 
     .contactForm .formGroup .form-control {

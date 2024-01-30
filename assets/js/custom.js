@@ -18,9 +18,8 @@ $('.owl_slider').owlCarousel({
     loop:true,
     margin:10,
     dots: false,
-    animateOut: 'fadeOut',
     autoplay:true,
-    autoplayTimeout:5000,
+    autoplayTimeout:3000,
     lazyLoad: true,
     autoplayHoverPause:true,
     responsive:{
