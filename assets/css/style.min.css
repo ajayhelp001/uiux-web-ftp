@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: 
-    Description: 
+    Theme Name   : UIUX WEB PORTFOLIO
+    Description  : 
     Version: 1.0
     Main Color   : #3C2B4A
     main Font    : 'Cormorant Infant'
@@ -34,159 +34,13 @@
 
 
 /*-------------- Fonts -------------*/
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-SemiBold.woff2") format("woff2"), url("../font/CormorantInfant-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-MediumItalic.woff2") format("woff2"), url("../font/CormorantInfant-MediumItalic.woff") format("woff");
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-Regular.woff2") format("woff2"), url("../font/CormorantInfant-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-Medium.woff2") format("woff2"), url("../font/CormorantInfant-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-LightItalic.woff2") format("woff2"), url("../font/CormorantInfant-LightItalic.woff") format("woff");
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-Italic.woff2") format("woff2"), url("../font/CormorantInfant-Italic.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-Light.woff2") format("woff2"), url("../font/CormorantInfant-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-SemiBoldItalic.woff2") format("woff2"), url("../font/CormorantInfant-SemiBoldItalic.woff") format("woff");
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-BoldItalic.woff2") format("woff2"), url("../font/CormorantInfant-BoldItalic.woff") format("woff");
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Cormorant Infant";
-    src: url("../font/CormorantInfant-Bold.woff2") format("woff2"), url("../font/CormorantInfant-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lexend Deca";
-    src: url("../font/LexendDeca/LexendDeca-Regular.woff2") format("woff2"), url("../font/LexendDeca/LexendDeca-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lexend Deca";
-    src: url("../font/LexendDeca/LexendDeca-Light.woff2") format("woff2"), url("../font/LexendDeca/LexendDeca-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lexend Deca";
-    src: url("../font/LexendDeca/LexendDeca-Medium.woff2") format("woff2"), url("../font/LexendDeca/LexendDeca-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lexend Deca";
-    src: url("../font/LexendDeca/LexendDeca-Thin.woff2") format("woff2"), url("../font/LexendDeca/LexendDeca-Thin.woff") format("woff");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lexend Deca";
-    src: url("../font/LexendDeca/LexendDeca-SemiBold.woff2") format("woff2"), url("../font/LexendDeca/LexendDeca-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lexend Deca";
-    src: url("../font/LexendDeca/LexendDeca-Black.woff2") format("woff2"), url("../font/LexendDeca/LexendDeca-Black.woff") format("woff");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lexend Deca";
-    src: url("../font/LexendDeca/LexendDeca-ExtraLight.woff2") format("woff2"), url("../font/LexendDeca/LexendDeca-ExtraLight.woff") format("woff");
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lexend Deca";
-    src: url("../font/LexendDeca/LexendDeca-Bold.woff2") format("woff2"), url("../font/LexendDeca/LexendDeca-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lexend Deca";
-    src: url("../font/LexendDeca/LexendDeca-ExtraBold.woff2") format("woff2"), url("../font/LexendDeca/LexendDeca-ExtraBold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+/* ----------------------------------------------------------------
+/* font-family: 'Lexend Deca', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800;900&display=swap');
+/* ----------------------------------------------------------------
+/* ----------------------------------------------------------------
+/* font-family: 'Cormorant Infant', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&display=swap');
 /* ----------------------------------------------------------------
     [ 01 Start Basics ]
 -----------------------------------------------------------------*/
@@ -298,7 +152,7 @@ h6,
 .h5,
 .h6 {
     color: var(--theme1);
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
 a {
@@ -369,9 +223,14 @@ a:hover {
 .text-light {
     color: var(--light);
 }
+
 .lorem {
     font-size: 22px;
     margin: 0px;
+}
+
+.border_bottom {
+    border-bottom: 1px solid var(--border_color);
 }
 
 .breadcrumb_section.herosection {
@@ -627,8 +486,9 @@ section {
     color: var(--white);
 }
 
-.contactForm .formGroup textarea {
+.contactForm .formGroup .form-control.textarea {
     resize: none;
+    padding: 18px 20px ;
 }
 /*-------------- Contact Form Css End -------------*/
 
@@ -768,8 +628,20 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     position: relative;
+    gap: 10px;
 }
+
+.contactme-section .contact-circle span {
+    height: 20px;
+}
+
+.contactme-section .contact-circle span img {
+    height: 100%;
+    object-fit: contain;
+}
+
 
 .contactme-section .contact-circle::before {
     content: "";
@@ -778,7 +650,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px dashed var(--theme1);
+    border: 2px dashed var(--theme1);
     border-radius: 50%;
     animation: rotate 10s linear infinite;
 }
@@ -1131,14 +1003,26 @@ section {
 
 .article_section .card .card-body .continuebtn {
     color: var(--theme2);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     line-height: 132.5%;
     margin-top: 40px;
     transition: all ease-in-out .3s;
+
 }
 
 .article_section .card .card-body .continuebtn:hover {
     color: var(--theme1);
+}
+
+.article_section .card .card-body .continuebtn img{
+    transition: all ease-in-out .3s;
+}
+
+.article_section .card .card-body .continuebtn:hover img{
+    filter: brightness(0.4);
+    transform: translateX(10px);
 }
 
 .article_section .card:hover .card-img img {
@@ -1258,6 +1142,19 @@ section {
     font-style: normal;
     font-family: "Lexend Deca";
     font-weight: 300 !important;
+    position: relative;
+    padding-left: 30px
+}
+
+.list li::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    background: url(../images/icon/check.svg) no-repeat center;
+    background-size: contain;
 }
 
 .list.orderlist {
@@ -1297,8 +1194,10 @@ section {
 }
 
 .blogdetailspage .bloguser {
-    border-top: 1px solid var(--border_color);
-    border-bottom: 1px solid var(--border_color);
+    display: flex;
+    border-radius: 30px;
+    padding: 0px 30px;
+    background-color: #fcf5f6;
 }
 
 .blogdetailspage .bloguser .usercardbody .userImg {
@@ -1316,11 +1215,11 @@ section {
 .blogdetailspage .bloguser .usercardbody .contant {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 15px;
 }
 
 .blogdetailspage .bloguser .usercardbody .contant .subtitle {
-    color: var(--light_dark);
+    color: var(--theme2);
     font-family: "Lexend Deca";
     font-size: 16px;
     font-style: normal;
@@ -1347,6 +1246,9 @@ section {
     min-height: 24px;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    transition: all ease-in-out .3s;
+
 }
 
 .blogdetailspage .bloguser .usercardbody .social li a img, .tags.social li a img {
@@ -1354,6 +1256,10 @@ section {
     object-fit: contain;
     transition: all ease-in-out .3s;
     height: 100%;
+}
+
+.blogdetailspage .bloguser .usercardbody .social li a:hover img, .tags.social li a:hover{
+    border-color: var(--theme1);
 }
 
 .blogdetailspage .bloguser .usercardbody .social li a:hover img, .tags.social li a:hover img {
@@ -1364,9 +1270,10 @@ section {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin: 0px;
 }
 .tags .tagline {
-    padding: 4px 8px;
+    padding: 5px 14px;
     border: 1px solid var(--border_color);
     border-radius: 4px;
     font-size: 16px;
@@ -1389,8 +1296,8 @@ section {
 }
 
 .blog-comment h5 {
-    margin-bottom: 0px;
-    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 22px;
 }
 
 .blog-comment ul,
@@ -1402,16 +1309,21 @@ section {
 
 .blog-comment li {
     min-height: 70px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 35px;
+    padding-bottom: 35px;
     border-bottom: solid 1px var(--border_color);
     min-height: 70px;
     line-height: 1.4;
 }
 
+.blog-comment li.reply {
+    padding-left: 90px;
+}
+
+
 .blog-comment li .avatar {
     position: absolute;
-    margin-top: 5px;
+    margin-top: 3px;
     height: 70px;
     width: 70px;
     border-radius: 5px;
@@ -1424,7 +1336,6 @@ section {
 }
 
 .blog-comment .comment {
-    margin-left: 85px;
     font-size: 14px;
     color: var(--light_dark);
     font-style: normal;
@@ -1434,22 +1345,25 @@ section {
 }
 
 
-.blog-comment li li {
+/* .blog-comment li li {
     margin-left: 55px;
     padding-bottom: 0px;
-    margin-top: 20px;
-    padding-top: 10px;
+    margin-top: 35px;
+    padding-top: 35px;
     border-top: solid 1px #eee;
     border-bottom: none;
 }
 
 .blog-comment li li .avatar {
     position: absolute;
-}
+} */
 
 .comment-info {
-    margin-left: 85px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.blog-comment .comment, .comment-info{
+    margin-left: 90px;
 }
 
 .comment-info .c_name {
@@ -1458,19 +1372,16 @@ section {
     color: var(--theme1);
 }
 
-.comment-info .c_date{
-    font-size: 14px;
-}
 
 .comment-info .c_date, .comment-info .c_reply {
-    color: var(--theme1);
+    color: var(--theme2);
     font-family: "Lexend Deca";
+    font-size: 12px;
 }
 
 .comment-info .c_reply {
-    font-size: 12px;
-    padding-left: 20px;
-    margin-left: 20px;
+    padding-left: 10px;
+    margin-left: 10px;
     border-left: solid 1px var(--border_color);
 }
 
@@ -1501,8 +1412,7 @@ section {
 
 /*---------- INERACTION PAGE CSS START -----------*/
 .paginationbar .page-link svg {
-    max-width: 15px;
-    height: 15px;
+    height: 20px;
 }
 .paginationbar .page-link {
     color: var(--theme1);
@@ -1519,8 +1429,8 @@ section {
     align-items: center;
 }
 .paginationbar .page-item.active .page-link {
-    background-color: var(--theme1);
-    border-color: var(--theme1_border);
+    background-color: var(--theme2);
+    border-color: var(--theme2);
     color: var(--white);
 }
 .paginationbar .page-item {
@@ -1543,6 +1453,8 @@ section {
 
 .footer .getIntuch_group .left_side {
     row-gap: 50px;
+    position: relative;
+    z-index: 1;
 }
 
 .footer .getIntuch_group .left_side .address-heading {
@@ -2182,8 +2094,10 @@ section {
         font-size: 16px;
     }
 
-    .blogdetailspage .blog_detailcard {
-        border-radius: 30px;
+    .list li::before {
+        width: 18px;
+        height: 18px;
+        top: 4px;
     }
 
     .blogdetailspage .blog_detailcard .card-body {
@@ -2263,6 +2177,11 @@ section {
 /*============== Contact Form Responsive Css Start ==============*/
     .contactForm .formGroup .form-control {
         padding: 16px 20px 16px 50px;
+    }
+
+    .contactForm .formGroup .form-control.textarea {
+        resize: none;
+        padding: 16px 20px;
     }
 
     .contactForm .formGroup.message .input_icon{
@@ -2446,6 +2365,10 @@ section {
         padding: 35px 45px;
     }
 
+    .blogdetailspage .bloguser {
+        border-radius: 20px;
+    }
+
     .blogdetailspage .bloguser .usercardbody .userImg {
         height: 150px;
         width: 150px;
@@ -2462,6 +2385,15 @@ section {
     .tags .tagline {
         font-size: 14px;
     }
+
+    /*---------- Blog Comment Css Start ------- */
+
+    .blog-comment li {
+        margin-bottom: 28px;
+        padding-bottom: 28px;
+    }
+
+
 /*-------------- Blog Details Page Responsive Css End -------------*/
 
 /*============== Footer Responsive Css Start ==============*/
@@ -2514,6 +2446,11 @@ section {
         height: 120px;
         font-size: 14px;
         margin-bottom: 20px;
+        gap: 5px;
+    }
+
+    .contactme-section .contact-circle span{
+        height: 16px;
     }
 
     .contactme-section .user-lorem {
@@ -2636,6 +2573,7 @@ section {
 
     .tags .tagline {
         font-size: 12px;
+        padding: 5px 8px;
     }
 /*-------------- Blog Details Page Responsive Css End -------------*/
 
@@ -2700,6 +2638,11 @@ section {
     .contactForm .formGroup .form-control {
         padding: 10px 18px 10px 45px;
         border-radius: 20px;
+    }
+
+    .contactForm .formGroup .form-control.textarea {
+        resize: none;
+        padding: 10px 18px;
     }
         
     .contactForm .formGroup .input_icon{
@@ -2885,17 +2828,27 @@ section {
         width: 50px;
     }
 
-    .blog-comment .comment {
-        margin-left: 60px;
+    .blog-comment .comment, .comment-info {
+        margin-left: 65px;
     }
 
-    .blog-comment li li {
-        margin-left: 30px;
+    .comment-info{
+        margin-bottom: 10px;
     }
 
-    .comment-info {
-        margin-left: 60px;
+    .blog-comment h5{
+        font-size: 20px;
     }
+
+    .blog-comment li {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .blog-comment li.reply {
+        padding-left: 65px;
+    }
+    
 
 /*-------------- Blog Details Page Responsive Css End -------------*/
 
@@ -3013,3 +2966,7 @@ section {
 /*-------------- Index Page Testimonial Section Responsive Css End -------------*/
 
 }
+
+
+
+/* ---------------================------------============= [ END CSS ] ================------------=============--------------- */
