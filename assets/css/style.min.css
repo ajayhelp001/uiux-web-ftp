@@ -226,7 +226,7 @@ a:hover {
 }
 
 .lorem {
-    font-size: 22px;
+    font-size: 18px;
     margin: 0px;
 }
 
@@ -727,6 +727,8 @@ section {
 
 .ourwork-section .innerbody>div .card .card-body .portfolioimg {
     margin: 40px auto -200px;
+    border-radius: 34px;
+    overflow: hidden;
 }
 
 .ourwork-section .innerbody>div .card.color-2 {
@@ -850,6 +852,7 @@ section {
 
 .testimonial-section .slider .card .card-body .inneritem {
     gap: 30px;
+    align-items: center;
 }
 
 .testimonial-section .slider .card .card-body {
@@ -1067,13 +1070,13 @@ section {
 }
 
 .brand-section .card .card-body .item {
-    max-height: 36px;
+    max-height: 50px;
     display: flex;
 }
 
-.brand-section .card .card-body .item.roundedimg {
+/* .brand-section .card .card-body .item.roundedimg {
     max-height: 80px;
-}
+} */
 
 .brand-section .card .card-body .item img {
     -o-object-fit: contain;
@@ -1638,7 +1641,7 @@ section {
     color: var(--theme2);
 }
 
-.footer .bottom-footer .footerblog-img {
+.footer .bottom-footer .footerblog {
     border-radius: 5px;
     overflow: hidden;
 }
@@ -1803,9 +1806,9 @@ section {
         height: 18px;
     }
 
-    .lorem {
+    /* .lorem {
         font-size: 20px;
-    }
+    } */
 /*-------------- Index Page Section Responsive Css End --------------*/
 
 /*============== Footer Responsive Css Start ==============*/
@@ -1824,9 +1827,9 @@ section {
     .themebtn {
         padding: 14px 45px;
     }
-    .lorem {
+    /* .lorem {
         font-size: 18px;
-    }
+    } */
 /*-------------- Button Responsive Css End -------------*/
 /*============== Index Page Section Responsive Css Start ==============*/
     .ourwork-section .innerbody {
