@@ -1055,48 +1055,48 @@ section {
 
 /*============= Brand Section Css Start ==========*/
 
-.brand-section .card {
+.brandsection .card {
     border: 1px solid var(--border_color);
     border-radius: 0px;
 }
 
-.brand-section .card .card-body {
+.brandsection .card .card-body {
     padding: 50px;
 }
 
-.brand-section .card .card-body .owl-stage {
+.brandsection .card .card-body .owl-stage {
     display: flex;
     align-items: center;
 }
 
-.brand-section .card .card-body .item {
+.brandsection .card .card-body .item {
     max-height: 50px;
     display: flex;
 }
 
-/* .brand-section .card .card-body .item.roundedimg {
+/* .brandsection .card .card-body .item.roundedimg {
     max-height: 80px;
 } */
 
-.brand-section .card .card-body .item img {
+.brandsection .card .card-body .item img {
     -o-object-fit: contain;
     object-fit: contain;
 }
 /*-------------- Brand Section Css End -------------*/
 
 /*============= Gallery Section Css Start ==========*/
-.gallery-section .galleryimg {
+.gallerysection .galleryimg {
     border-radius: 30px;
     overflow: hidden;
     height: 100%;
 }
 
-.gallery-section .galleryimg a {
+.gallerysection .galleryimg a {
     display: flex;
     position: relative;
 }
 
-.gallery-section .galleryimg a::before {
+.gallerysection .galleryimg a::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -1110,15 +1110,15 @@ section {
     z-index: 1;
 }
 
-.gallery-section .galleryimg a img {
+.gallerysection .galleryimg a img {
     transition: all ease-in-out .3s;
 }
 
-.gallery-section .galleryimg a:hover img {
+.gallerysection .galleryimg a:hover img {
     transform: scale(1.1);
 }
 
-.gallery-section .galleryimg a:hover::before {
+.gallerysection .galleryimg a:hover::before {
     opacity: 1;
     visibility: visible;
 }
@@ -1148,8 +1148,8 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 }
 
 .list {
@@ -2341,11 +2341,11 @@ section {
         top: -37%;
     }
 
-    .brand-section .card .card-body {
+    .brandsection .card .card-body {
         padding: 40px;
     }
 
-    .gallery-section .galleryimg {
+    .gallerysection .galleryimg {
         border-radius: 20px;
     }
 /*-------------- Index Page Section Responsive Css End -------------*/
@@ -2781,11 +2781,11 @@ section {
         height: 80px;
     }
 
-    .brand-section .card .card-body {
+    .brandsection .card .card-body {
         padding: 30px 20px;
     }
 
-    .gallery-section .galleryimg {
+    .gallerysection .galleryimg {
         border-radius: 15px;
     }
 /*-------------- Index Page Section Responsive Css End -------------*/

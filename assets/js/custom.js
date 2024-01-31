@@ -63,3 +63,4 @@ $('.brand-slider').owlCarousel({
 
 // **Copyright Year
 document.querySelector('.year').innerText = new Date().getFullYear();
+document.querySelector('.copyrightyear').innerText = new Date().getFullYear();
