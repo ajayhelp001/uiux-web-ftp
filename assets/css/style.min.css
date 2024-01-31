@@ -73,6 +73,7 @@
     outline: none;
     list-style: none;
     word-wrap: break-word;
+    user-select: none;
 }
 
 
@@ -226,7 +227,7 @@ a:hover {
 }
 
 .lorem {
-    font-size: 22px;
+    font-size: 18px;
     margin: 0px;
 }
 
@@ -727,6 +728,8 @@ section {
 
 .ourwork-section .innerbody>div .card .card-body .portfolioimg {
     margin: 40px auto -200px;
+    border-radius: 34px;
+    overflow: hidden;
 }
 
 .ourwork-section .innerbody>div .card.color-2 {
@@ -782,8 +785,14 @@ section {
 }
 
 .aboutproduct-section .card:hover{
-    border-color: var(--border_color);
-    box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, .02);
+    box-shadow: 4px 16px 29px 2px rgb(24 20 42 / 7%);
+    background: #fff;
+}
+
+.aboutproduct-section .card:hover .themebtn-white{
+    background-color: var(--theme2);
+    color: var(--white);
+    cursor: default;
 }
 
 .aboutproduct-section .card .card-body {
@@ -850,6 +859,7 @@ section {
 
 .testimonial-section .slider .card .card-body .inneritem {
     gap: 30px;
+    align-items: center;
 }
 
 .testimonial-section .slider .card .card-body {
@@ -1017,7 +1027,7 @@ section {
 }
 
 .article-section .card .card-body .continuebtn {
-    color: var(--theme2);
+    color: var(--black);
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1032,19 +1042,19 @@ section {
 }
 
 .article-section .card .card-body .continuebtn:hover {
-    color: var(--theme1);
+    color: var(--theme2);
 }
 
 .article-section .card .card-body .continuebtn img{
     transition: all ease-in-out .3s;
     object-fit: contain;
+    filter: brightness(0);
 }
 
 .article-section .card .card-body .continuebtn:hover img{
-    filter: brightness(0.4);
+    filter: unset;
     transform: translateX(10px);
 }
-
 .article-section .card:hover .card-img img {
     transform: scale(1.1);
 }
@@ -1145,8 +1155,8 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 }
 
 .list {
@@ -1204,13 +1214,13 @@ section {
     margin: 50px 0px;
 }
 
-.blogdetailspage .blog_detailcard {
+.blogdetailspage .blog-detailcard {
     border: none;
     border-radius: 30px;
     background-color: var(--theme2);
 }
 
-.blogdetailspage .blog_detailcard .card-body {
+.blogdetailspage .blog-detailcard .card-body {
     padding: 48px 60px;
 }
 
@@ -1803,9 +1813,9 @@ section {
         height: 18px;
     }
 
-    .lorem {
+    /* .lorem {
         font-size: 20px;
-    }
+    } */
 /*-------------- Index Page Section Responsive Css End --------------*/
 
 /*============== Footer Responsive Css Start ==============*/
@@ -1824,9 +1834,9 @@ section {
     .themebtn {
         padding: 14px 45px;
     }
-    .lorem {
+    /* .lorem {
         font-size: 18px;
-    }
+    } */
 /*-------------- Button Responsive Css End -------------*/
 /*============== Index Page Section Responsive Css Start ==============*/
     .ourwork-section .innerbody {
@@ -2115,7 +2125,7 @@ section {
         gap: 18px;
     }
 
-    .blogdetailspage .blog_detailcard .card-body {
+    .blogdetailspage .blog-detailcard .card-body {
         padding: 45px 55px;
     }
 
@@ -2372,11 +2382,11 @@ section {
         margin: 40px 0px;
     }
 
-    .blogdetailspage .blog_detailcard {
+    .blogdetailspage .blog-detailcard {
         border-radius: 20px;
     }
 
-    .blogdetailspage .blog_detailcard .card-body {
+    .blogdetailspage .blog-detailcard .card-body {
         padding: 35px 45px;
     }
 
@@ -2568,7 +2578,7 @@ section {
         margin: 30px 0px;
     }
 
-    .blogdetailspage .blog_detailcard .card-body {
+    .blogdetailspage .blog-detailcard .card-body {
         padding: 25px 35px;
     }
 
@@ -2819,7 +2829,7 @@ section {
         margin: 28px 0px;
     }
 
-    .blogdetailspage .blog_detailcard .card-body {
+    .blogdetailspage .blog-detailcard .card-body {
         padding: 20px 30px;
     }
 
