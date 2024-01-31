@@ -230,11 +230,11 @@ a:hover {
     margin: 0px;
 }
 
-.border_bottom {
+.border-bottom {
     border-bottom: 1px solid var(--border_color);
 }
 
-.breadcrumb_section.herosection {
+.breadcrumb-section.herosection {
     height: 50vh;
     min-height: 400px;
     max-height: 600px;
@@ -583,7 +583,7 @@ section {
     width: 100%;
 }
 
-.herosection .innerfluid .left_side .hero-sub-heading {
+.herosection .innerfluid .left-side .hero-sub-heading {
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -591,17 +591,17 @@ section {
     margin: 0px;
 }
 
-.herosection .innerfluid .left_side .hero-sub-heading .thumb {
+.herosection .innerfluid .left-side .hero-sub-heading .thumb {
     /* width: 38px; */
     width: 32px;
     display: inline-block
 }
 
-.herosection .innerfluid .left_side .hero-sub-heading .thumb img {
+.herosection .innerfluid .left-side .hero-sub-heading .thumb img {
     width: 100%;
 }
 
-.herosection .innerfluid .left_side .main-heading {
+.herosection .innerfluid .left-side .main-heading {
     font-size: 116px;
     line-height: 107%;
     font-weight: 700;
@@ -609,11 +609,11 @@ section {
     margin: 10px 0px;
 }
 
-.herosection .innerfluid .left_side .loremtext {
+.herosection .innerfluid .left-side .loremtext {
     width: 60%;
 }
 
-.herosection .innerfluid .left_side .button {
+.herosection .innerfluid .left-side .button {
     margin-top: 40px;
 }
 
@@ -1192,7 +1192,7 @@ section {
     margin: 60px 0px;
 }
 
-.blogdetailspage .blogcategory_heading {
+.blogdetailspage .blogcategory-heading {
     margin-bottom: 20px;
 }
 
@@ -1391,44 +1391,44 @@ section {
     margin-left: 90px;
 }
 
-.comment-info .c_name {
+.comment-info .comment-name {
     display: block;
     font-weight: 700;
     color: var(--theme1);
 }
 
 
-.comment-info .c_date, .comment-info .c_reply {
+.comment-info .comment-date, .comment-info .comment-reply {
     color: var(--theme2);
     font-family: "Lexend Deca";
     font-size: 12px;
 }
 
-.comment-info .c_reply {
+.comment-info .comment-reply {
     padding-left: 10px;
     margin-left: 10px;
     border-left: solid 1px var(--border_color);
 }
 
-.comment_form {
+.comment-form {
     background-color: transparent !important;
 }
-.comment_form.footer .contactcard  {
+.comment-form.footer .contactcard  {
     border: none;
     background-color: var(--light);
     border-radius: 34px;
     box-shadow: none;
 }
 
-.comment_form.footer .contactcard .contactForm .formGroup .input-icon img {
+.comment-form.footer .contactcard .contactForm .formGroup .input-icon img {
     filter: unset;
 }
 
-.comment_form.footer .contactcard .contactForm{
+.comment-form.footer .contactcard .contactForm{
     flex-direction: row;
 }
 
-.comment_form .contactForm .formGroup .form-control, .comment_form .contactForm .formGroup .form-control::placeholder{
+.comment-form .contactForm .formGroup .form-control, .comment-form .contactForm .formGroup .form-control::placeholder{
     background-color: var(--white);
     color: var(--theme1);
     border: none;
@@ -1476,13 +1476,13 @@ section {
     position: relative;
 }
 
-.footer .getIntuch-group .left_side {
+.footer .getIntuch-group .left-side {
     row-gap: 50px;
     position: relative;
     z-index: 1;
 }
 
-.footer .getIntuch-group .left_side .address-heading {
+.footer .getIntuch-group .left-side .address-heading {
     font-family: "Lexend Deca";
     font-size: 20px;
     font-style: normal;
@@ -1492,7 +1492,7 @@ section {
     color: var(--theme2);
 }
 
-.footer .getIntuch-group .left_side .getheading {
+.footer .getIntuch-group .left-side .getheading {
     margin-bottom: 13px;
     color: var(--white);
 }
@@ -1663,11 +1663,11 @@ section {
         width: 66.66666667% !important;
     }
 
-    .herosection .left_side {
+    .herosection .left-side {
         padding-left: 0px !important;
     }
 
-    .herosection .left_side .main-heading {
+    .herosection .left-side .main-heading {
         margin: 15px 0px !important;
     }
 /*-------------- Index Page Css End -------------*/
@@ -1675,7 +1675,7 @@ section {
 
 @media screen and (max-width: 1600px) {
 /*============== Index Page Responsive Css Start ==============*/
-    .herosection .innerfluid .left_side .main-heading {
+    .herosection .innerfluid .left-side .main-heading {
         font-size: 90px;
     }
 /*-------------- Index Page Responsive Css End -------------*/
@@ -1751,11 +1751,11 @@ section {
         right: 20px;
     }
 
-    .herosection .innerfluid .left_side .hero-sub-heading .thumb {
+    .herosection .innerfluid .left-side .hero-sub-heading .thumb {
         width: 35px;
     }
 
-    .herosection .innerfluid .left_side .main-heading {
+    .herosection .innerfluid .left-side .main-heading {
         font-size: 70px;
     }
 
@@ -1928,15 +1928,15 @@ section {
 
 /*============== Footer Responsive Css Start ==============*/
 
-    .footer .getIntuch-group .left_side {
+    .footer .getIntuch-group .left-side {
         row-gap: 45px;
     }
 
-    .footer .getIntuch-group .left_side .address-heading {
+    .footer .getIntuch-group .left-side .address-heading {
         font-size: 18px;
     }
 
-    .footer .getIntuch-group .left_side .getheading {
+    .footer .getIntuch-group .left-side .getheading {
         margin-bottom: 10px;
     }
 
@@ -2032,11 +2032,11 @@ section {
         gap: 20px;
     }
 
-    .herosection .innerfluid .left_side .hero-sub-heading .thumb {
+    .herosection .innerfluid .left-side .hero-sub-heading .thumb {
         width: 30px;
     }
 
-    .herosection .innerfluid .left_side .main-heading {
+    .herosection .innerfluid .left-side .main-heading {
         font-size: 60px;
     }
 
@@ -2142,11 +2142,11 @@ section {
         padding: 80px 0px;
     }
 
-    .footer .getIntuch-group .left_side {
+    .footer .getIntuch-group .left-side {
         row-gap: 35px;
     }
 
-    .footer .getIntuch-group .left_side .address-heading {
+    .footer .getIntuch-group .left-side .address-heading {
         font-size: 16px;
     }
 
@@ -2256,7 +2256,7 @@ section {
 
 /*============== Index Page Section Responsive Css Start ==============*/
 
-    .herosection .innerfluid .left_side .loremtext {
+    .herosection .innerfluid .left-side .loremtext {
         width: 100%;
     }
 
@@ -2360,7 +2360,7 @@ section {
         margin: 50px 0px;
     }
 
-    .blogdetailspage .blogcategory_heading {
+    .blogdetailspage .blogcategory-heading {
         margin-bottom: 15px;
     }
 
@@ -2416,7 +2416,7 @@ section {
         padding: 60px 0px;
     }
 
-    .footer .getIntuch-group .left_side {
+    .footer .getIntuch-group .left-side {
         row-gap: 30px;
     }
 
@@ -2556,7 +2556,7 @@ section {
         margin: 40px 0px;
     }
 
-    .blogdetailspage .blogcategory_heading {
+    .blogdetailspage .blogcategory-heading {
         margin-bottom: 10px;
     }
 
@@ -2726,11 +2726,11 @@ section {
         right: 12px;
     }
 
-    .herosection .innerfluid .left_side .hero-sub-heading .thumb {
+    .herosection .innerfluid .left-side .hero-sub-heading .thumb {
         width: 25px;
     }
 
-    .herosection .innerfluid .left_side .main-heading {
+    .herosection .innerfluid .left-side .main-heading {
         font-size: 45px;
     }
 
@@ -2807,7 +2807,7 @@ section {
         margin: 35px 0px;
     }
 
-    .blogdetailspage .blogcategory_heading {
+    .blogdetailspage .blogcategory-heading {
         margin-bottom: 8px;
     }
 
@@ -2864,16 +2864,16 @@ section {
 /*-------------- Blog Details Page Responsive Css End -------------*/
 
 /*============== Footer Responsive Css Start ==============*/
-    .footer .getIntuch-group .left_side {
+    .footer .getIntuch-group .left-side {
         row-gap: 30px;
     }
 
-    .footer .getIntuch-group .left_side .address-heading {
+    .footer .getIntuch-group .left-side .address-heading {
         font-size: 16px;
         margin-bottom: 4px;
     }
 
-    .footer .getIntuch-group .left_side .getheading {
+    .footer .getIntuch-group .left-side .getheading {
         margin-bottom: 4px;
     }
 
