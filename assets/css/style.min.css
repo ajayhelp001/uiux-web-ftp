@@ -166,10 +166,11 @@ ul {
 
 p {
     color: var(--light_dark);
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-family: "Lexend Deca";
     font-weight: 300 !important;
+    /*l-no. 2013 */
 }
 
     
@@ -346,22 +347,22 @@ section {
     transition: all .3s;
 }
 
-.header .inner_nav {
+.header .inner-nav {
     max-width: 1920px;
     padding: 0px 50px;
 }
 
-.header .inner_nav .navbar-brand {
+.header .inner-nav .navbar-brand {
     height: 40px;
 }
 
-.header .inner_nav .navbar-brand img {
+.header .inner-nav .navbar-brand img {
     height: 100%;
     -o-object-fit: contain;
     object-fit: contain;
 }
 
-.header .inner_nav .menubtn {
+.header .inner-nav .menubtn {
     width: 58px;
     height: 58px;
     border-radius: 50%;
@@ -372,17 +373,17 @@ section {
     transition: all ease-in-out .3s;
 }
 
-.header .inner_nav .menubtn img {
+.header .inner-nav .menubtn img {
     transition: all ease-in-out .3s;
     width: 100%;
     max-width: 25px;
 }
 
-.header .inner_nav .menubtn:hover {
+.header .inner-nav .menubtn:hover {
     background-color: var(--theme2);
 }
 
-.header .inner_nav .menubtn:hover img {
+.header .inner-nav .menubtn:hover img {
     filter: brightness(10);
 }
 
@@ -391,40 +392,50 @@ section {
     padding: 20px 0px;
 }
 
-.header_offcanvas {
+.header-offcanvas {
     border: none;
+    overflow: hidden;
 }
 
-.header_offcanvas .offcanvas-header {
+.header-offcanvas .offcanvas-header {
     border-bottom: 1px solid var(--light);
 }
 
-.header_offcanvas .offcanvas-header .offcanvas-title {
+.header-offcanvas .offcanvas-header .offcanvas-title {
     height: 40px;
 }
 
-.header_offcanvas .offcanvas-header .offcanvas-title img {
+.header-offcanvas .offcanvas-header .offcanvas-title img {
     height: 100%;
     -o-object-fit: contain;
     object-fit: contain;
 }
 
-.header_offcanvas .offcanvas-body .links {
+.header-offcanvas .offcanvas-body .links {
     margin: 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.header_offcanvas .offcanvas-body .links li a {
+.header-offcanvas .offcanvas-body .links li a {
     font-size: 20px;
     font-weight: 600;
     color: var(--theme1);
     transition: all ease-in-out .3s;
 }
 
-.header_offcanvas .offcanvas-body .links li a:hover, .header_offcanvas .offcanvas-body .links li a.active {
+.header-offcanvas .offcanvas-body .links li a:hover, .header-offcanvas .offcanvas-body .links li a.active {
     color: var(--theme2);
+}
+
+.header-offcanvas .offcanvas-footer {
+    border-top: 1px solid var(--light);
+}
+
+.header-offcanvas .offcanvas-footer p {
+    font-weight: 400 !important;
+    color: var(--theme1);
 }
 /*-------------- Header Css End -------------*/
 
@@ -439,7 +450,7 @@ section {
     position: relative;
 }
 
-.contactForm .formGroup .input_icon{
+.contactForm .formGroup .input-icon{
     position: absolute;
     top: 50%;
     left: 20px;
@@ -451,11 +462,11 @@ section {
     justify-content: center;
 }
 
-.contactForm .formGroup .input_icon img {
+.contactForm .formGroup .input-icon img {
     filter: brightness(10);
 }
 
-.contactForm .formGroup.message .input_icon{
+.contactForm .formGroup.message .input-icon{
     top: 18px;
     transform: unset;
 }
@@ -695,11 +706,11 @@ section {
 /*-------------- Contact Me (About Us) Section Css End -------------*/
 
 /*============= Our Work Section Css Start ==========*/
-.ourwork_section .innerbody {
-    padding: 90px 0px 190px;
+.ourwork-section .innerbody {
+    padding: 60px 0px 190px;
 }
 
-.ourwork_section .innerbody>div .card {
+.ourwork-section .innerbody>div .card {
     border-radius: 34px;
     background: #dae7ff;
     border: none;
@@ -709,49 +720,49 @@ section {
 
 }
 
-.ourwork_section .innerbody>div .card .card-body {
+.ourwork-section .innerbody>div .card .card-body {
     padding: 62px 88px 0px;
     transition: all ease-in-out 0.3s;
 }
 
-.ourwork_section .innerbody>div .card .card-body .portfolioimg {
+.ourwork-section .innerbody>div .card .card-body .portfolioimg {
     margin: 40px auto -200px;
 }
 
-.ourwork_section .innerbody>div .card.color_2 {
+.ourwork-section .innerbody>div .card.color-2 {
     background: #ebebfb;
 }
 
-.ourwork_section .innerbody>div .card.color_3 {
+.ourwork-section .innerbody>div .card.color-3 {
     background: #ffe3db;
 }
 
-.ourwork_section .innerbody>div .card.color_4 {
+.ourwork-section .innerbody>div .card.color-4 {
     background: #d4ecdf;
 }
 
-.ourwork_section .innerbody>div .card.color_5 {
+.ourwork-section .innerbody>div .card.color-5 {
     background: #f1eaff;
 }
 
-.ourwork_section .innerbody>div .card.color_6 {
+.ourwork-section .innerbody>div .card.color-6 {
     background: #ddebff;
 }
 
-.ourwork_section .innerbody>div .card.card:hover{
+.ourwork-section .innerbody>div .card.card:hover{
     box-shadow: 0px 0px 21px 0px rgb(0 0 0 / 8%);
 }
-.ourwork_section .innerbody>div .card.card:hover .card-body{
+.ourwork-section .innerbody>div .card.card:hover .card-body{
     transform: translateY(10px);
 }
 
-.ourwork_section .innerbody>div:nth-child(odd) .card {
+.ourwork-section .innerbody>div:nth-child(odd) .card {
     margin: 0px;
 }
-/* .ourwork_section .innerbody>div#show-more-content>div .card {
+/* .ourwork-section .innerbody>div#show-more-content>div .card {
     margin: 200px 0px 100px;
 } */
-.ourwork_section .innerbody>div#show-more-content>div>div:nth-child(even) .card {
+.ourwork-section .innerbody>div#show-more-content>div>div:nth-child(even) .card {
     margin: 200px 0px 100px !important;
 }
 
@@ -759,27 +770,27 @@ section {
 
 /*============= About Product Section Css Start ==========*/
 
-.aboutproduct_section .loremtext {
+.aboutproduct-section .loremtext {
     margin: 16px 0px 45px;
 }
 
-.aboutproduct_section .card {
+.aboutproduct-section .card {
     border-radius: 34px;
     background: var(--light);
     border: 1px solid transparent;
     transition: all ease-in-out 0.3s;
 }
 
-.aboutproduct_section .card:hover{
+.aboutproduct-section .card:hover{
     border-color: var(--border_color);
     box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, .02);
 }
 
-.aboutproduct_section .card .card-body {
+.aboutproduct-section .card .card-body {
     padding: 58px 50px;
 }
 
-.aboutproduct_section .card .card-body .cardheader {
+.aboutproduct-section .card .card-body .cardheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -788,11 +799,11 @@ section {
     margin-bottom: 26px;
 }
 
-.aboutproduct_section .card .card-body .cardheader .card-img {
+.aboutproduct-section .card .card-body .cardheader .card-img {
     width: 35px;
 }
 
-.aboutproduct_section .card .card-body .innerbody {
+.aboutproduct-section .card .card-body .innerbody {
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -801,12 +812,12 @@ section {
 
 /*============= Testimonial Section Css Start ==========*/
 
-.testimonial_section {
+.testimonial-section {
     padding-bottom: 200px;
     position: relative;
 }
 
-.testimonial_section::before {
+.testimonial-section::before {
     content: "";
     width: 412px;
     height: 412px;
@@ -820,7 +831,7 @@ section {
     transform: translateX(-50%);
 }
 
-.testimonial_section .innerfluid {
+.testimonial-section .innerfluid {
     padding: 150px 100px 0px 100px;
     border-radius: 45px;
     background: url(../images/sliderBg.svg) no-repeat center;
@@ -828,16 +839,20 @@ section {
     position: relative;
 }
 
-.testimonial_section .slider {
+.testimonial-section .slider {
     margin-top: 100px;
 }
 
-.testimonial_section .slider .card {
+.testimonial-section .slider .card {
     border: 0;
     background-color: rgba(0, 0, 0, 0);
 }
 
-.testimonial_section .slider .card .card-body {
+.testimonial-section .slider .card .card-body .inneritem {
+    gap: 30px;
+}
+
+.testimonial-section .slider .card .card-body {
     margin: 0px 0px -200px;
     border-radius: 46px;
     border: 2px solid var(--white);
@@ -848,11 +863,11 @@ section {
     padding: 80px 70px;
 }
 
-.testimonial_section .slider .card .card-body .owl-carousel {
+.testimonial-section .slider .card .card-body .owl-carousel {
     position: unset;
 }
 
-.testimonial_section .slider .card .card-body .item .client-img {
+.testimonial-section .slider .card .card-body .item .client-img {
     width: 215px;
     height: 214px;
     flex-shrink: 0;
@@ -860,7 +875,7 @@ section {
     overflow: hidden;
 }
 
-.testimonial_section .slider .card .card-body .item .clientname {
+.testimonial-section .slider .card .card-body .item .clientname {
     color: var(--theme1);
     font-size: 35px;
     font-style: normal;
@@ -871,7 +886,7 @@ section {
     gap: 2px;
 }
 
-.testimonial_section .slider .card .card-body .item .clientname span {
+.testimonial-section .slider .card .card-body .item .clientname span {
     color: var(--gray);
     font-family: "Lexend Deca";
     font-size: 20px;
@@ -880,13 +895,13 @@ section {
     line-height: 128.5%;
 }
 
-.testimonial_section .slider .card .card-body .item .shap {
+.testimonial-section .slider .card .card-body .item .shap {
     width: 45.84px;
     height: 46.349px;
     flex-shrink: 0;
 }
 
-.testimonial_section .slider .card .card-body .owl-nav {
+.testimonial-section .slider .card .card-body .owl-nav {
     position: absolute;
     top: -48%;
     right: 0%;
@@ -894,11 +909,11 @@ section {
     gap: 30px;
 }
 
-.testimonial_section .slider .card .card-body .owl-nav.disabled {
+.testimonial-section .slider .card .card-body .owl-nav.disabled {
     display: none;
 }
 
-.testimonial_section .slider .card .card-body .owl-nav button {
+.testimonial-section .slider .card .card-body .owl-nav button {
     width: 76px;
     height: 76px;
     border-radius: 50%;
@@ -908,19 +923,19 @@ section {
     transition: all ease-in-out .3s;
 }
 
-.testimonial_section .slider .card .card-body .owl-nav button span {
+.testimonial-section .slider .card .card-body .owl-nav button span {
     display: none;
 }
 
-.testimonial_section .slider .card .card-body .owl-nav button:hover {
+.testimonial-section .slider .card .card-body .owl-nav button:hover {
     background-color: var(--white);
 }
 
-.testimonial_section .slider .card .card-body .owl-nav button:hover::after {
+.testimonial-section .slider .card .card-body .owl-nav button:hover::after {
     border-color: var(--theme1);
 }
 
-.testimonial_section .slider .card .card-body .owl-nav button::before {
+.testimonial-section .slider .card .card-body .owl-nav button::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -929,7 +944,7 @@ section {
     margin: auto;
 }
 
-.testimonial_section .slider .card .card-body .owl-nav button::after {
+.testimonial-section .slider .card .card-body .owl-nav button::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -943,11 +958,11 @@ section {
     transition: all ease-in-out .3s;
 }
 
-.testimonial_section .slider .card .card-body .owl-nav button.owl-prev::after {
+.testimonial-section .slider .card .card-body .owl-nav button.owl-prev::after {
     transform: translate(-40%, -50%) rotate(-45deg);
 }
 
-.testimonial_section .slider .card .card-body .owl-nav button.owl-next::after {
+.testimonial-section .slider .card .card-body .owl-nav button.owl-next::after {
     transform: translate(-60%, -50%) rotate(135deg);
 }
 
@@ -955,11 +970,11 @@ section {
 
 /*============= Article Section Css Start ==========*/
 
-.article_section {
+.article-section {
     padding-top: 50px;
 }
 
-.article_section .card {
+.article-section .card {
     border-radius: 34px;
     border: none;
     overflow: hidden;
@@ -967,41 +982,41 @@ section {
     position: relative;
 }
 
-.article_section .card .card-img {
+.article-section .card .card-img {
     overflow: hidden;
 }
 
-.article_section .card .card-img-top {
+.article-section .card .card-img-top {
     max-height: 334px;
     transition: all ease-in-out .3s;
 }
 
-.article_section .card .card-body {
+.article-section .card .card-body {
     padding: 30px;
 }
 
-.article_section .card .card-body .timing {
+.article-section .card .card-body .timing {
     color: var(--theme2);
     line-height: 129.7%;
     text-transform: capitalize;
 }
 
-.article_section .card .card-body .card-title {
+.article-section .card .card-body .card-title {
     margin: 16px 0px 18px;
     color: var(--theme1);
     transition: all ease-in-out .3s;
     display: flex;
 }
 
-.article_section .card .card-body .timing,
-.article_section .card .card-body .continuebtn {
+.article-section .card .card-body .timing,
+.article-section .card .card-body .continuebtn {
     font-family: "Lexend Deca";
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
 }
 
-.article_section .card .card-body .continuebtn {
+.article-section .card .card-body .continuebtn {
     color: var(--theme2);
     display: inline-flex;
     align-items: center;
@@ -1009,71 +1024,76 @@ section {
     line-height: 132.5%;
     margin-top: 40px;
     transition: all ease-in-out .3s;
-
 }
 
-.article_section .card .card-body .continuebtn:hover {
+.article-section .card .card-body .continuebtn span{
+    height: 13px;
+    display: flex;
+}
+
+.article-section .card .card-body .continuebtn:hover {
     color: var(--theme1);
 }
 
-.article_section .card .card-body .continuebtn img{
+.article-section .card .card-body .continuebtn img{
     transition: all ease-in-out .3s;
+    object-fit: contain;
 }
 
-.article_section .card .card-body .continuebtn:hover img{
+.article-section .card .card-body .continuebtn:hover img{
     filter: brightness(0.4);
     transform: translateX(10px);
 }
 
-.article_section .card:hover .card-img img {
+.article-section .card:hover .card-img img {
     transform: scale(1.1);
 }
 /*-------------- Article Section Css End -------------*/
 
 /*============= Brand Section Css Start ==========*/
 
-.brand_section .card {
+.brand-section .card {
     border: 1px solid var(--border_color);
     border-radius: 0px;
 }
 
-.brand_section .card .card-body {
+.brand-section .card .card-body {
     padding: 50px;
 }
 
-.brand_section .card .card-body .owl-stage {
+.brand-section .card .card-body .owl-stage {
     display: flex;
     align-items: center;
 }
 
-.brand_section .card .card-body .item {
+.brand-section .card .card-body .item {
     max-height: 36px;
     display: flex;
 }
 
-.brand_section .card .card-body .item.roundedimg {
+.brand-section .card .card-body .item.roundedimg {
     max-height: 80px;
 }
 
-.brand_section .card .card-body .item img {
+.brand-section .card .card-body .item img {
     -o-object-fit: contain;
     object-fit: contain;
 }
 /*-------------- Brand Section Css End -------------*/
 
 /*============= Gallery Section Css Start ==========*/
-.gallery_section .galleryimg {
+.gallery-section .galleryimg {
     border-radius: 30px;
     overflow: hidden;
     height: 100%;
 }
 
-.gallery_section .galleryimg a {
+.gallery-section .galleryimg a {
     display: flex;
     position: relative;
 }
 
-.gallery_section .galleryimg a::before {
+.gallery-section .galleryimg a::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -1087,15 +1107,15 @@ section {
     z-index: 1;
 }
 
-.gallery_section .galleryimg a img {
+.gallery-section .galleryimg a img {
     transition: all ease-in-out .3s;
 }
 
-.gallery_section .galleryimg a:hover img {
+.gallery-section .galleryimg a:hover img {
     transform: scale(1.1);
 }
 
-.gallery_section .galleryimg a:hover::before {
+.gallery-section .galleryimg a:hover::before {
     opacity: 1;
     visibility: visible;
 }
@@ -1134,25 +1154,26 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0px;
 }
 
 .list li {
     color: var(--light_dark);
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-family: "Lexend Deca";
     font-weight: 300 !important;
     position: relative;
-    padding-left: 30px
+    padding-left: 28px
 }
 
 .list li::before {
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     position: absolute;
     left: 0;
-    top: 3px;
+    top: 4px;
     background: url(../images/icon/check.svg) no-repeat center;
     background-size: contain;
 }
@@ -1226,6 +1247,10 @@ section {
     font-weight: 300;
     line-height: 146.5%;
     text-transform: capitalize;
+}
+
+.blogdetailspage .bloguser .usercardbody .contant .aboutuser {
+    color: var(--black);
 }
 
 .blogdetailspage .bloguser .usercardbody .social, .tags.social {
@@ -1336,7 +1361,7 @@ section {
 }
 
 .blog-comment .comment {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--light_dark);
     font-style: normal;
     font-family: "Lexend Deca";
@@ -1395,7 +1420,7 @@ section {
     box-shadow: none;
 }
 
-.comment_form.footer .contactcard .contactForm .formGroup .input_icon img {
+.comment_form.footer .contactcard .contactForm .formGroup .input-icon img {
     filter: unset;
 }
 
@@ -1446,18 +1471,18 @@ section {
     background-color: var(--theme1);
 }
 
-.footer .getIntuch_group {
-    padding: 215px 0px 194px;
+.footer .getIntuch-group {
+    padding: 120px 0px;
     position: relative;
 }
 
-.footer .getIntuch_group .left_side {
+.footer .getIntuch-group .left_side {
     row-gap: 50px;
     position: relative;
     z-index: 1;
 }
 
-.footer .getIntuch_group .left_side .address-heading {
+.footer .getIntuch-group .left_side .address-heading {
     font-family: "Lexend Deca";
     font-size: 20px;
     font-style: normal;
@@ -1467,37 +1492,37 @@ section {
     color: var(--theme2);
 }
 
-.footer .getIntuch_group .left_side .getheading {
+.footer .getIntuch-group .left_side .getheading {
     margin-bottom: 13px;
     color: var(--white);
 }
 
-.footer .getIntuch_group .eleps {
+.footer .getIntuch-group .eleps {
     position: absolute;
 }
 
-.footer .getIntuch_group .eleps1 {
+.footer .getIntuch-group .eleps1 {
     max-width: 250px;
     top: 11%;
     right: 39%;
     animation: moment 6s linear infinite;
 }
 
-.footer .getIntuch_group .eleps2 {
+.footer .getIntuch-group .eleps2 {
     max-width: 350px;
     top: 58%;
     right: -8%;
     animation: rotate 10s linear infinite;
 }
 
-.footer .getIntuch_group .eleps3 {
+.footer .getIntuch-group .eleps3 {
     max-width: 100px;
     left: -4%;
     bottom: 13%;
     animation: move 5s linear infinite;
 }
 
-.footer .getIntuch_group .eleps4 {
+.footer .getIntuch-group .eleps4 {
     max-width: 60px;
     right: 0%;
     top: 3%;
@@ -1557,70 +1582,74 @@ section {
     padding: 75px 56px;
 }
 
-.footer .bottom_footer {
+.footer .bottom-footer {
     display: flex;
     flex-direction: column;
     gap: 100px;
 }
 
-.footer .bottom_footer .letstalk {
+.footer .bottom-footer .letstalk {
     position: relative;
     padding: 30px 0px;
     border-top: 1.5px solid var(--input_border);
     border-bottom: 1.5px solid var(--input_border);
 }
 
-.footer .bottom_footer .logo {
+.footer .bottom-footer .logo {
     height: 40px;
     display: flex;
     margin-bottom: 45px;
 }
 
-.footer .bottom_footer .logo a {
+.footer .bottom-footer .logo a {
     display: flex;
 }
 
-.footer .bottom_footer .logo a img {
+.footer .bottom-footer .logo a img {
     height: 100%;
     -o-object-fit: contain;
     object-fit: contain;
 }
 
-.footer .bottom_footer .linkcategory {
+.footer .bottom-footer .linkcategory {
     margin-bottom: 33px;
     color: var(--white);
     font-family: "Lexend Deca";
 }
 
-.footer .bottom_footer .links {
+.footer .bottom-footer .links {
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 0px;
 }
 
-.footer .bottom_footer .links li a {
+.footer .bottom-footer .links li a {
     color: var(--white);
     font-family: "Lexend Deca";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     transition: all ease-in-out .3s;
 }
 
-.footer .bottom_footer .links li a:hover {
+.footer .bottom-footer .links li a:hover {
     color: var(--theme2);
 }
 
-.footer .bottom_footer .footerblog-img {
+.footer .bottom-footer .footerblog-img {
     border-radius: 5px;
     overflow: hidden;
 }
 
-.footer .bottom_footer .copyright {
+.footer .bottom-footer .copyright {
     border-top: 1.5px solid var(--input_border);
     padding: 30px 0px;
+}
+
+.copyright p {
+    font-size: 14px;
 }
 
 /*-------------- Footer Section Css End -------------*/
@@ -1682,10 +1711,6 @@ section {
     .h5 {
         font-size: 22px;
     }
-
-    p {
-        font-size: 18px;
-    }
 /*-------------- Typography Responsive Css End -------------*/
 
 /*============== Header Responsive Css Start ==============*/
@@ -1693,11 +1718,11 @@ section {
         padding: 30px 0px;
     }
 
-    .header .inner_nav {
+    .header .inner-nav {
         padding: 0px 20px;
     }
 
-    .header .inner_nav .menubtn {
+    .header .inner-nav .menubtn {
         width: 50px;
         height: 50px;
     }
@@ -1734,46 +1759,46 @@ section {
         font-size: 70px;
     }
 
-    .testimonial_section .innerfluid {
+    .testimonial-section .innerfluid {
         padding: 130px 90px 0px 90px;
     }
 
-    .testimonial_section .slider {
+    .testimonial-section .slider {
         margin-top: 90px;
     }
 
-    .testimonial_section .slider .card .card-body {
+    .testimonial-section .slider .card .card-body {
         padding: 70px 60px;
     }
 
-    .testimonial_section .slider .card .card-body .item .client-img {
+    .testimonial-section .slider .card .card-body .item .client-img {
         width: 200px;
         height: 200px;
     }
 
-    .testimonial_section .slider .card .card-body .item .clientname {
+    .testimonial-section .slider .card .card-body .item .clientname {
         font-size: 32px;
     }
 
-    .testimonial_section .slider .card .card-body .item .clientname span {
+    .testimonial-section .slider .card .card-body .item .clientname span {
         font-size: 18px;
     }
 
-    .testimonial_section .slider .card .card-body .item .shap {
+    .testimonial-section .slider .card .card-body .item .shap {
         width: 42px;
         height: 42px;
     }
 
-    .testimonial_section .slider .card .card-body .owl-nav {
+    .testimonial-section .slider .card .card-body .owl-nav {
         top: -46%;
     }
 
-    .testimonial_section .slider .card .card-body .owl-nav button {
+    .testimonial-section .slider .card .card-body .owl-nav button {
         width: 60px;
         height: 60px;
     }
 
-    .testimonial_section .slider .card .card-body .owl-nav button::after {
+    .testimonial-section .slider .card .card-body .owl-nav button::after {
         width: 18px;
         height: 18px;
     }
@@ -1781,7 +1806,13 @@ section {
     .lorem {
         font-size: 20px;
     }
-/*============== Index Page Section Responsive Css End ==============*/
+/*-------------- Index Page Section Responsive Css End --------------*/
+
+/*============== Footer Responsive Css Start ==============*/
+    .footer .getIntuch-group {
+        padding: 100px 0px;
+    }
+/*-------------- Footer Responsive Css End --------------*/
 
 }
 
@@ -1798,133 +1829,130 @@ section {
     }
 /*-------------- Button Responsive Css End -------------*/
 /*============== Index Page Section Responsive Css Start ==============*/
-    .ourwork_section .innerbody {
-        padding: 70px 0px 170px;
+    .ourwork-section .innerbody {
+        padding: 60px 0px 170px;
     }
 
-    .ourwork_section .innerbody>div .card {
+    .ourwork-section .innerbody>div .card {
         margin: 180px 0px 100px;
     }
 
-    .ourwork_section .innerbody>div .card .card-body {
+    .ourwork-section .innerbody>div .card .card-body {
         padding: 50px 60px 0px;
     }
 
-    .ourwork_section .innerbody>div .card .card-body .portfolioimg {
+    .ourwork-section .innerbody>div .card .card-body .portfolioimg {
         margin: 40px auto -180px;
     }
 
-    .aboutproduct_section .loremtext {
+    .aboutproduct-section .loremtext {
         margin: 14px 0px 40px;
     }
 
-    .aboutproduct_section .card {
+    .aboutproduct-section .card {
         border-radius: 40px;
     }
 
-    .aboutproduct_section .card .card-body {
+    .aboutproduct-section .card .card-body {
         padding: 48px 40px;
     }
 
-    .aboutproduct_section .card .card-body .cardheader {
+    .aboutproduct-section .card .card-body .cardheader {
         padding-bottom: 24px;
         margin-bottom: 22px;
     }
 
-    .aboutproduct_section .card .card-body .cardheader .card-img {
+    .aboutproduct-section .card .card-body .cardheader .card-img {
         width: 32px;
     }
 
-    .aboutproduct_section .card .card-body .innerbody {
+    .aboutproduct-section .card .card-body .innerbody {
         gap: 12px;
     }
 
-    .testimonial_section {
+    .testimonial-section {
         padding-bottom: 150px;
     }
 
-    .testimonial_section::before {
+    .testimonial-section::before {
         width: 350px;
         height: 350px;
     }
 
-    .testimonial_section .innerfluid {
+    .testimonial-section .innerfluid {
         padding: 100px 80px 0px;
     }
 
-    .testimonial_section .slider {
+    .testimonial-section .slider {
         margin-top: 80px;
     }
 
-    .testimonial_section .slider .card .card-body {
+    .testimonial-section .slider .card .card-body {
         padding: 60px 50px;
         margin-bottom: -150px;
     }
 
-    .testimonial_section .slider .card .card-body .item .client-img {
+    .testimonial-section .slider .card .card-body .item .client-img {
         width: 170px;
         height: 170px;
     }
 
-    .testimonial_section .slider .card .card-body .item .clientname {
+    .testimonial-section .slider .card .card-body .item .clientname {
         font-size: 30px;
     }
 
-    .testimonial_section .slider .card .card-body .item .clientname span {
+    .testimonial-section .slider .card .card-body .item .clientname span {
         font-size: 16px;
     }
 
-    .testimonial_section .slider .card .card-body .item .shap {
+    .testimonial-section .slider .card .card-body .item .shap {
         width: 38px;
         height: 38px;
     }
 
-    .testimonial_section .slider .card .card-body .owl-nav button {
+    .testimonial-section .slider .card .card-body .owl-nav button {
         width: 50px;
         height: 50px;
     }
 
-    .testimonial_section .slider .card .card-body .owl-nav button::after {
+    .testimonial-section .slider .card .card-body .owl-nav button::after {
         width: 16px;
         height: 16px;
     }
 
-    .article_section .card .card-body .timing,
-    .article_section .card .card-body .continuebtn {
-        font-size: 16px;
+    .article-section .card .card-body .timing,
+    .article-section .card .card-body .continuebtn {
+        font-size: 15px;
     }
 /*-------------- Index Page Section Responsive Css End -------------*/
 
 /*============== Footer Responsive Css Start ==============*/
-    .footer .getIntuch_group {
-        padding: 180px 0px 160px;
-    }
 
-    .footer .getIntuch_group .left_side {
+    .footer .getIntuch-group .left_side {
         row-gap: 45px;
     }
 
-    .footer .getIntuch_group .left_side .address-heading {
+    .footer .getIntuch-group .left_side .address-heading {
         font-size: 18px;
     }
 
-    .footer .getIntuch_group .left_side .getheading {
+    .footer .getIntuch-group .left_side .getheading {
         margin-bottom: 10px;
     }
 
-    .footer .getIntuch_group .eleps1 {
+    .footer .getIntuch-group .eleps1 {
         max-width: 220px;
     }
 
-    .footer .getIntuch_group .eleps2 {
+    .footer .getIntuch-group .eleps2 {
         max-width: 300px;
     }
 
-    .footer .getIntuch_group .eleps3 {
+    .footer .getIntuch-group .eleps3 {
         max-width: 90px;
     }
 
-    .footer .getIntuch_group .eleps4 {
+    .footer .getIntuch-group .eleps4 {
         max-width: 50px;
     }
 
@@ -1936,25 +1964,22 @@ section {
         padding: 65px 45px;
     }
 
-    .footer .bottom_footer {
+    .footer .bottom-footer {
         gap: 90px;
     }
 
-    .footer .bottom_footer .logo {
+    .footer .bottom-footer .logo {
         margin-bottom: 40px;
     }
 
-    .footer .bottom_footer .linkcategory {
+    .footer .bottom-footer .linkcategory {
         margin-bottom: 30px;
     }
 
-    .footer .bottom_footer .links {
+    .footer .bottom-footer .links {
         gap: 22px;
     }
 
-    .footer .bottom_footer .links li a {
-        font-size: 16px;
-    }
 /*-------------- Footer Section Responsive Css End -------------*/
 
 /*============== Contact Form Responsive Css Start ==============*/
@@ -1996,9 +2021,9 @@ section {
         font-size: 20px;
     }
 
-    p {
+    /* p {
         font-size: 16px;
-    }
+    } */
 /*-------------- Typography Responsive Css End -------------*/
 
 /*============== Index Page Section Responsive Css Start ==============*/
@@ -2020,63 +2045,63 @@ section {
         height: 150px;
     }
 
-    .ourwork_section .innerbody {
+    .ourwork-section .innerbody {
         padding: 50px 0px 150px;
     }
 
-    .ourwork_section .innerbody>div .card {
+    .ourwork-section .innerbody>div .card {
         margin: 150px 0px 100px;
     }
 
-    .ourwork_section .innerbody>div .card .card-body {
+    .ourwork-section .innerbody>div .card .card-body {
         padding: 30px 40px 0px;
     }
 
-    .ourwork_section .innerbody>div .card .card-body .portfolioimg {
+    .ourwork-section .innerbody>div .card .card-body .portfolioimg {
         margin: 30px auto -180px;
     }
 
-    .testimonial_section::before {
+    .testimonial-section::before {
         width: 300px;
         height: 300px;
     }
 
-    .testimonial_section .innerfluid {
+    .testimonial-section .innerfluid {
         padding: 80px 70px 0px;
     }
 
-    .testimonial_section .slider {
+    .testimonial-section .slider {
         margin-top: 60px;
     }
 
-    .testimonial_section .slider .card .card-body {
+    .testimonial-section .slider .card .card-body {
         padding: 50px 40px;
     }
 
-    .testimonial_section .slider .card .card-body .item .client-img {
+    .testimonial-section .slider .card .card-body .item .client-img {
         width: 150px;
         height: 150px;
     }
 
-    .testimonial_section .slider .card .card-body .item .clientname {
+    .testimonial-section .slider .card .card-body .item .clientname {
         font-size: 28px;
     }
 
-    .testimonial_section .slider .card .card-body .item .shap {
+    .testimonial-section .slider .card .card-body .item .shap {
         width: 35px;
         height: 35px;
     }
 
-    .testimonial_section .slider .card .card-body .owl-nav {
+    .testimonial-section .slider .card .card-body .owl-nav {
         top: -44%;
         gap: 20px;
     }
 
-    .article_section .card .card-body .card-title {
+    .article-section .card .card-body .card-title {
         margin: 14px 0px 16px;
     }
 
-    .article_section .card .card-body .continuebtn {
+    .article-section .card .card-body .continuebtn {
         margin-top: 30px;
     }
 /*-------------- Index Page Section Responsive Css End -------------*/
@@ -2088,16 +2113,6 @@ section {
 
     .list {
         gap: 18px;
-    }
-
-    .list li {
-        font-size: 16px;
-    }
-
-    .list li::before {
-        width: 18px;
-        height: 18px;
-        top: 4px;
     }
 
     .blogdetailspage .blog_detailcard .card-body {
@@ -2123,25 +2138,25 @@ section {
 /*-------------- Blog Details Page Responsive Css End -------------*/
 
 /*============== Footer Responsive Css Start ==============*/
-    .footer .getIntuch_group {
-        padding: 150px 0px 120px;
+    .footer .getIntuch-group {
+        padding: 80px 0px;
     }
 
-    .footer .getIntuch_group .left_side {
+    .footer .getIntuch-group .left_side {
         row-gap: 35px;
     }
 
-    .footer .getIntuch_group .left_side .address-heading {
+    .footer .getIntuch-group .left_side .address-heading {
         font-size: 16px;
     }
 
-    .footer .getIntuch_group .eleps1 {
+    .footer .getIntuch-group .eleps1 {
         max-width: 180px;
         top: 8%;
         right: 40%;
     }
 
-    .footer .getIntuch_group .eleps2 {
+    .footer .getIntuch-group .eleps2 {
         max-width: 250px;
     }
 
@@ -2149,27 +2164,27 @@ section {
         padding: 55px 40px;
     }
 
-    .footer .bottom_footer {
+    .footer .bottom-footer {
         gap: 70px;
     }
 
-    .footer .bottom_footer .letstalk {
+    .footer .bottom-footer .letstalk {
         padding: 25px 0px;
     }
 
-    .footer .bottom_footer .logo {
+    .footer .bottom-footer .logo {
         margin-bottom: 35px;
     }
 
-    .footer .bottom_footer .linkcategory {
+    .footer .bottom-footer .linkcategory {
         margin-bottom: 28px;
     }
 
-    .footer .bottom_footer .links {
+    .footer .bottom-footer .links {
         gap: 18px;
     }
 
-    .footer .bottom_footer .copyright {
+    .footer .bottom-footer .copyright {
         padding: 25px 0px;
     }
 /*-------------- Footer Responsive Css End -------------*/
@@ -2184,7 +2199,7 @@ section {
         padding: 16px 20px;
     }
 
-    .contactForm .formGroup.message .input_icon{
+    .contactForm .formGroup.message .input-icon{
         top: 16px;
     }
 /*-------------- Contact Form Responsive Css End -------------*/
@@ -2245,89 +2260,89 @@ section {
         width: 100%;
     }
 
-    .ourwork_section .innerbody {
+    .ourwork-section .innerbody {
         padding: 40px 0px 150px;
     }
 
-    .ourwork_section .innerbody>div .card {
+    .ourwork-section .innerbody>div .card {
         margin: 150px 0px 70px;
     }
 
-    .ourwork_section .innerbody>div .card .card-body {
+    .ourwork-section .innerbody>div .card .card-body {
         padding: 20px 30px 0px;
     }
 
-    .ourwork_section .innerbody>div .card .card-body .portfolioimg {
+    .ourwork-section .innerbody>div .card .card-body .portfolioimg {
         margin: 20px auto -150px;
     }
 
-    .aboutproduct_section .loremtext {
+    .aboutproduct-section .loremtext {
         margin: 14px 0px 40px;
     }
 
-    .aboutproduct_section .card .card-body {
+    .aboutproduct-section .card .card-body {
         padding: 38px 30px;
     }
 
-    .aboutproduct_section .card .card-body .cardheader {
+    .aboutproduct-section .card .card-body .cardheader {
         padding-bottom: 20px;
         margin-bottom: 18px;
     }
 
-    .aboutproduct_section .card .card-body .cardheader .card-img {
+    .aboutproduct-section .card .card-body .cardheader .card-img {
         width: 28px;
     }
 
-    .aboutproduct_section .card .card-body .innerbody {
+    .aboutproduct-section .card .card-body .innerbody {
         gap: 12px;
     }
 
-    .testimonial_section::before {
+    .testimonial-section::before {
         width: 200px;
         height: 200px;
         bottom: -10%;
     }
 
-    .testimonial_section .innerfluid {
+    .testimonial-section .innerfluid {
         padding: 70px 60px 0px;
         border-radius: 34px;
     }
 
-    .testimonial_section .slider {
+    .testimonial-section .slider {
         margin-top: 50px;
     }
 
-    .testimonial_section .slider .card .card-body{
+    .testimonial-section .slider .card .card-body{
         border-radius: 34px;
     }
 
-    .testimonial_section .slider .card .card-body .item .client-img {
+    .testimonial-section .slider .card .card-body .item .client-img {
         width: 120px;
         height: 120px;
     }
 
-    .testimonial_section .slider .card .card-body .item .clientname {
+    .testimonial-section .slider .card .card-body .item .clientname {
         font-size: 24px;
     }
 
-    .testimonial_section .slider .card .card-body .item .clientname span {
+    .testimonial-section .slider .card .card-body .item .clientname span {
         font-size: 14px;
     }
 
-    .testimonial_section .slider .card .card-body .item .shap {
+    .testimonial-section .slider .card .card-body .item .shap {
         width: 30px;
         height: 30px;
     }
 
-    .testimonial_section .slider .card .card-body .owl-nav {
+    .testimonial-section .slider .card .card-body .owl-nav {
         top: -37%;
     }
 
-    .brand_section .card .card-body {
+    .brand-section .card .card-body {
         padding: 40px;
     }
 
-    .gallery_section .galleryimg {
+    .gallery-section .galleryimg {
         border-radius: 20px;
     }
 /*-------------- Index Page Section Responsive Css End -------------*/
@@ -2397,21 +2412,21 @@ section {
 /*-------------- Blog Details Page Responsive Css End -------------*/
 
 /*============== Footer Responsive Css Start ==============*/
-    .footer .getIntuch_group {
-        padding: 100px 0px 80px;
+    .footer .getIntuch-group {
+        padding: 60px 0px;
     }
 
-    .footer .getIntuch_group .left_side {
+    .footer .getIntuch-group .left_side {
         row-gap: 30px;
     }
 
-    .footer .getIntuch_group .eleps1 {
+    .footer .getIntuch-group .eleps1 {
         max-width: 150px;
         top: 38%;
         left: -12%;
     }
 
-    .footer .getIntuch_group .eleps2 {
+    .footer .getIntuch-group .eleps2 {
         max-width: 200px;
         top: 79%;
         right: -10%;
@@ -2421,19 +2436,19 @@ section {
         border-radius: 34px;
     }
 
-    .footer .bottom_footer {
+    .footer .bottom-footer {
         gap: 50px;
     }
 
-    .footer .bottom_footer .logo {
+    .footer .bottom-footer .logo {
         margin-bottom: 25px;
     }
 
-    .footer .bottom_footer .linkcategory {
+    .footer .bottom-footer .linkcategory {
         margin-bottom: 25px;
     }
 
-    .footer .bottom_footer .links {
+    .footer .bottom-footer .links {
         gap: 16px;
     }
 /*-------------- Footer Responsive Css End -------------*/
@@ -2466,56 +2481,56 @@ section {
         height: 38px;
     }
 
-    .ourwork_section .innerbody {
+    .ourwork-section .innerbody {
         padding: 30px 0px 150px;
     }
 
-    .ourwork_section .innerbody>div .card {
+    .ourwork-section .innerbody>div .card {
         margin: 150px 0px 50px;
     }
 
-    .ourwork_section .innerbody>div .card .card-body {
+    .ourwork-section .innerbody>div .card .card-body {
         padding: 30px 40px 0px;
     }
 
-    .ourwork_section .innerbody>div:nth-child(odd) .card {
+    .ourwork-section .innerbody>div:nth-child(odd) .card {
         margin: 150px 0px 50px;
     }
-    .ourwork_section .innerbody>div#show-more-content>div>div:nth-child(even) .card {
+    .ourwork-section .innerbody>div#show-more-content>div>div:nth-child(even) .card {
         margin: 150px 0px 50px !important;
     }
 
-    .ourwork_section .innerbody>div:first-child .card {
+    .ourwork-section .innerbody>div:first-child .card {
         margin-top: 0px;
     }
 
-    .testimonial_section .innerfluid {
+    .testimonial-section .innerfluid {
         padding: 50px 40px 0px;
     }
 
-    .testimonial_section .slider {
+    .testimonial-section .slider {
         margin-top: 40px;
     }
 
-    .testimonial_section .slider .card .card-body {
+    .testimonial-section .slider .card .card-body {
         padding: 40px 30px;
     }
 
-    .testimonial_section .slider .card .card-body .item .client-img {
+    .testimonial-section .slider .card .card-body .item .client-img {
         width: 100px;
         height: 100px;
     }
 
-    .testimonial_section .slider .card .card-body .item .clientname {
+    .testimonial-section .slider .card .card-body .item .clientname {
         font-size: 22px;
     }
 
-    .testimonial_section .slider .card .card-body .item .shap {
+    .testimonial-section .slider .card .card-body .item .shap {
         width: 28px;
         height: 28px;
     }
 
-    .testimonial_section .slider .card .card-body .owl-nav {
+    .testimonial-section .slider .card .card-body .owl-nav {
         top: -37%;
     }
 /*-------------- Index Page Section Responsive Css End -------------*/
@@ -2578,22 +2593,18 @@ section {
 /*-------------- Blog Details Page Responsive Css End -------------*/
 
 /*============== Footer Responsive Css Start ==============*/
-    .footer .getIntuch_group {
-        padding: 80px 0px 60px;
-    }
-
-    .footer .getIntuch_group .eleps1 {
+    .footer .getIntuch-group .eleps1 {
         top: 41%;
         left: -14%;
     }
 
-    .footer .getIntuch_group .eleps2 {
+    .footer .getIntuch-group .eleps2 {
         max-width: 180px;
         top: 79%;
         right: -10%;
     }
 
-    .footer .getIntuch_group .eleps3 {
+    .footer .getIntuch-group .eleps3 {
         left: -6%;
     }
 
@@ -2601,31 +2612,31 @@ section {
         padding: 50px 35px;
     }
 
-    .footer .bottom_footer {
+    .footer .bottom-footer {
         gap: 40px;
     }
 
-    .footer .bottom_footer .letstalk {
+    .footer .bottom-footer .letstalk {
         padding: 15px 0px;
     }
 
-    .footer .bottom_footer .logo {
+    .footer .bottom-footer .logo {
         margin-bottom: 20px;
     }
 
-    .footer .bottom_footer .linkcategory {
+    .footer .bottom-footer .linkcategory {
         margin-bottom: 20px;
     }
 
-    .footer .bottom_footer .links {
+    .footer .bottom-footer .links {
         gap: 10px;
     }
 
-    .footer .bottom_footer .links a {
+    .footer .bottom-footer .links li a {
         font-size: 15px;
     }
 
-    .footer .bottom_footer .copyright {
+    .footer .bottom-footer .copyright {
         padding: 15px 0px;
     }
 /*-------------- Footer Responsive Css End -------------*/
@@ -2645,13 +2656,13 @@ section {
         padding: 10px 18px;
     }
         
-    .contactForm .formGroup .input_icon{
+    .contactForm .formGroup .input-icon{
         left: 15px;
         width: 22px;
         height: 22px;
     }
 
-    .contactForm .formGroup.message .input_icon{
+    .contactForm .formGroup.message .input-icon{
         top: 10px;
     }
 /*-------------- Contact Form Responsive Css End -------------*/
@@ -2691,16 +2702,16 @@ section {
         padding: 20px 0px;
     }
 
-    .header .inner_nav {
+    .header .inner-nav {
         padding: 0px 12px;
     }
 
-    .header .inner_nav .menubtn {
+    .header .inner-nav .menubtn {
         width: 40px;
         height: 40px;
     }
 
-    .header .inner_nav .menubtn img {
+    .header .inner-nav .menubtn img {
         max-width: 18px;
     }
 
@@ -2737,41 +2748,41 @@ section {
         height: 38px;
     }
 
-    .ourwork_section .innerbody>div .card {
+    .ourwork-section .innerbody>div .card {
         margin: 150px 0px 50px;
     }
 
-    .ourwork_section .innerbody>div .card .card-body {
+    .ourwork-section .innerbody>div .card .card-body {
         padding: 20px 30px 0px;
     }
 
-    .testimonial_section::before {
+    .testimonial-section::before {
         width: 150px;
         height: 150px;
     }
 
-    .testimonial_section .innerfluid {
+    .testimonial-section .innerfluid {
         padding: 40px 30px 0px;
     }
 
-    .testimonial_section .slider {
+    .testimonial-section .slider {
         margin-top: 30px;
     }
 
-    .testimonial_section .slider .card .card-body {
+    .testimonial-section .slider .card .card-body {
         padding: 30px 20px;
     }
 
-    .testimonial_section .slider .card .card-body .item .client-img {
+    .testimonial-section .slider .card .card-body .item .client-img {
         width: 80px;
         height: 80px;
     }
 
-    .brand_section .card .card-body {
+    .brand-section .card .card-body {
         padding: 30px 20px;
     }
 
-    .gallery_section .galleryimg {
+    .gallery-section .galleryimg {
         border-radius: 15px;
     }
 /*-------------- Index Page Section Responsive Css End -------------*/
@@ -2853,41 +2864,37 @@ section {
 /*-------------- Blog Details Page Responsive Css End -------------*/
 
 /*============== Footer Responsive Css Start ==============*/
-    .footer .getIntuch_group {
-        padding: 70px 0px 50px;
-    }
-
-    .footer .getIntuch_group .left_side {
+    .footer .getIntuch-group .left_side {
         row-gap: 30px;
     }
 
-    .footer .getIntuch_group .left_side .address-heading {
+    .footer .getIntuch-group .left_side .address-heading {
         font-size: 16px;
         margin-bottom: 4px;
     }
 
-    .footer .getIntuch_group .left_side .getheading {
+    .footer .getIntuch-group .left_side .getheading {
         margin-bottom: 4px;
     }
 
-    .footer .getIntuch_group .eleps1 {
+    .footer .getIntuch-group .eleps1 {
         max-width: 100px;
         left: -7%;
     }
 
-    .footer .getIntuch_group .eleps2 {
+    .footer .getIntuch-group .eleps2 {
         max-width: 130px;
         top: 84%;
         right: -6%;
     }
 
-    .footer .getIntuch_group .eleps3 {
+    .footer .getIntuch-group .eleps3 {
         max-width: 80px;
         left: -6%;
         bottom: 13%;
     }
 
-    .footer .getIntuch_group .eleps4 {
+    .footer .getIntuch-group .eleps4 {
         right: 0%;
         top: 3%;
     }
@@ -2896,31 +2903,27 @@ section {
         padding: 40px 25px;
     }
 
-    .footer .bottom_footer {
+    .footer .bottom-footer {
         gap: 40px;
     }
 
-    .footer .bottom_footer .letstalk {
+    .footer .bottom-footer .letstalk {
         padding: 15px 0px;
     }
 
-    .footer .bottom_footer .logo {
+    .footer .bottom-footer .logo {
         margin-bottom: 20px;
     }
 
-    .footer .bottom_footer .linkcategory {
+    .footer .bottom-footer .linkcategory {
         margin-bottom: 20px;
     }
 
-    .footer .bottom_footer .links {
+    .footer .bottom-footer .links {
         gap: 10px;
     }
 
-    .footer .bottom_footer .links a {
-        font-size: 15px;
-    }
-
-    .footer .bottom_footer .copyright {
+    .footer .bottom-footer .copyright {
         padding: 15px 0px;
     }
 /*-------------- Footer Responsive Css End -------------*/
@@ -2943,24 +2946,24 @@ section {
         gap: 10px;
     }
 /*============== Index Page Testimonial Section Responsive Css Start ==============*/
-    .testimonial_section .innerfluid {
+    .testimonial-section .innerfluid {
         padding: 35px 25px 0px;
     }
 
-    .testimonial_section .slider {
+    .testimonial-section .slider {
         margin-top: 20px;
     }
 
-    .testimonial_section .slider .card .card-body {
+    .testimonial-section .slider .card .card-body {
         padding: 30px 20px;
     }
 
-    .testimonial_section .slider .card .card-body .item .client-img {
+    .testimonial-section .slider .card .card-body .item .client-img {
         width: 70px;
         height: 70px;
     }
 
-    .testimonial_section .slider .card .card-body .item .shapgroup {
+    .testimonial-section .slider .card .card-body .item .shapgroup {
         display: none;
     }
 /*-------------- Index Page Testimonial Section Responsive Css End -------------*/

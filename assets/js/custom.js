@@ -14,7 +14,7 @@ lightbox.on('open', (target) => {
 });
 
 
-$('.owl_slider').owlCarousel({
+$('.owl-slider').owlCarousel({
     loop:true,
     margin:10,
     dots: false,
@@ -38,7 +38,7 @@ $('.owl_slider').owlCarousel({
     }
 })
 
-$('.brand_slider').owlCarousel({
+$('.brand-slider').owlCarousel({
     loop:true,
     margin:10,
     dots: false,
