@@ -784,8 +784,14 @@ section {
 }
 
 .aboutproduct-section .card:hover{
-    border-color: var(--border_color);
-    box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, .02);
+    box-shadow: 4px 16px 29px 2px rgb(24 20 42 / 7%);
+    background: #fff;
+}
+
+.aboutproduct-section .card:hover .themebtn-white{
+    background-color: var(--theme2);
+    color: var(--white);
+    cursor: default;
 }
 
 .aboutproduct-section .card .card-body {
@@ -1020,7 +1026,7 @@ section {
 }
 
 .article-section .card .card-body .continuebtn {
-    color: var(--theme2);
+    color: var(--black);
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1035,16 +1041,17 @@ section {
 }
 
 .article-section .card .card-body .continuebtn:hover {
-    color: var(--theme1);
+    color: var(--theme2);
 }
 
 .article-section .card .card-body .continuebtn img{
     transition: all ease-in-out .3s;
     object-fit: contain;
+    filter: brightness(0);
 }
 
 .article-section .card .card-body .continuebtn:hover img{
-    filter: brightness(0.4);
+    filter: unset;
     transform: translateX(10px);
 }
 
