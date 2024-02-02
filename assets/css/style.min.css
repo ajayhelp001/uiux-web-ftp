@@ -171,6 +171,7 @@ p {
     font-style: normal;
     font-family: "Lexend Deca";
     font-weight: 300 !important;
+    margin-bottom: 10px;
     /*l-no. 2013 */
 }
 
@@ -453,7 +454,7 @@ section {
 
 .contactForm .formGroup .input-icon{
     position: absolute;
-    top: 50%;
+    top: calc(50% - 1px);
     left: 20px;
     transform: translateY(-50%);
     width: 24px;
@@ -502,6 +503,8 @@ section {
     resize: none;
     padding: 18px 20px ;
 }
+
+
 /*-------------- Contact Form Css End -------------*/
 
 /* ------------============---------- INDEX PAGE CSS ----------==========-------- */
@@ -555,21 +558,22 @@ section {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     position: absolute;
     bottom: 50px;
     right: 50px;
 }
 
 .herosection .innerfluid .social-icon li .icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--pink);
-    padding: 7px;
+    /* background-color: var(--pink); */
+    border: 1px solid var(--theme2_dark);
+    padding: 10px;
     transition: all ease-in-out .3s;
 }
 
@@ -582,6 +586,10 @@ section {
     object-fit: contain;
     height: 100%;
     width: 100%;
+}
+
+.herosection .innerfluid .social-icon li .icon:hover img {
+    filter: brightness(10);
 }
 
 .herosection .innerfluid .left-side .hero-sub-heading {
@@ -717,7 +725,6 @@ section {
     border: none;
     margin: 200px 0px 100px;
     transition: all ease-in-out 0.3s;
-  cursor: pointer;
 
 }
 
@@ -730,6 +737,7 @@ section {
     margin: 40px auto -200px;
     border-radius: 34px;
     overflow: hidden;
+    position: relative;
 }
 
 .ourwork-section .innerbody>div .card.color-2 {
@@ -1055,7 +1063,6 @@ section {
     filter: unset;
     transform: translateX(10px);
 }
-
 .article-section .card:hover .card-img img {
     transform: scale(1.1);
 }
@@ -1102,6 +1109,7 @@ section {
 .gallerysection .galleryimg a {
     display: flex;
     position: relative;
+    height: 100%;
 }
 
 .gallerysection .galleryimg a::before {
@@ -1120,6 +1128,7 @@ section {
 
 .gallerysection .galleryimg a img {
     transition: all ease-in-out .3s;
+    object-fit: cover;
 }
 
 .gallerysection .galleryimg a:hover img {
@@ -1215,13 +1224,13 @@ section {
     margin: 50px 0px;
 }
 
-.blogdetailspage .blog_detailcard {
+.blogdetailspage .blog-detailcard {
     border: none;
     border-radius: 30px;
     background-color: var(--theme2);
 }
 
-.blogdetailspage .blog_detailcard .card-body {
+.blogdetailspage .blog-detailcard .card-body {
     padding: 48px 60px;
 }
 
@@ -1277,14 +1286,23 @@ section {
 }
 .blogdetailspage .bloguser .usercardbody .social li a, .tags.social li a {
     display: inline-flex;
-    width: 24px;
-    height: 24px;
-    min-height: 24px;
+    width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--theme2);
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     transition: all ease-in-out .3s;
+}
 
+.tags.social.small li a {
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
+    padding: 8px;
 }
 
 .blogdetailspage .bloguser .usercardbody .social li a img, .tags.social li a img {
@@ -1294,12 +1312,13 @@ section {
     height: 100%;
 }
 
-.blogdetailspage .bloguser .usercardbody .social li a:hover img, .tags.social li a:hover{
-    border-color: var(--theme1);
+.blogdetailspage .bloguser .usercardbody .social li a:hover, .tags.social li a:hover{
+    border-color: var(--theme2_dark);
+    background-color: var(--theme2);
 }
 
 .blogdetailspage .bloguser .usercardbody .social li a:hover img, .tags.social li a:hover img {
-    filter: brightness(0.4);
+    filter: brightness(10);
 }
 
 .tags{
@@ -1649,7 +1668,7 @@ section {
     color: var(--theme2);
 }
 
-.footer .bottom-footer .footerblog {
+.footer .bottom-footer .footerblog-img {
     border-radius: 5px;
     overflow: hidden;
 }
@@ -1657,6 +1676,29 @@ section {
 .footer .bottom-footer .copyright {
     border-top: 1.5px solid var(--input_border);
     padding: 30px 0px;
+}
+
+.footersocial {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footersocial a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border_color);
+    padding: 10px;
+    display: flex;
+    transition: all ease-in-out 0.3s;
+}
+.footersocial a:hover {
+    border: 1px solid var(--theme2_dark);
+    background-color: var(--theme2);
+}
+
+.copyright p {
+    font-size: 14px;
 }
 
 .copyright p {
@@ -1757,7 +1799,6 @@ section {
     }
 
     .herosection .innerfluid .social-icon {
-        gap: 25px;
         bottom: 20px;
         right: 20px;
     }
@@ -2040,7 +2081,7 @@ section {
 /*============== Index Page Section Responsive Css Start ==============*/
 
     .herosection .innerfluid .social-icon {
-        gap: 20px;
+        gap: 15px;
     }
 
     .herosection .innerfluid .left-side .hero-sub-heading .thumb {
@@ -2126,7 +2167,7 @@ section {
         gap: 18px;
     }
 
-    .blogdetailspage .blog_detailcard .card-body {
+    .blogdetailspage .blog-detailcard .card-body {
         padding: 45px 55px;
     }
 
@@ -2271,6 +2312,12 @@ section {
         width: 100%;
     }
 
+    .herosection .innerfluid .social-icon li .icon {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+
     .ourwork-section .innerbody {
         padding: 40px 0px 150px;
     }
@@ -2383,11 +2430,11 @@ section {
         margin: 40px 0px;
     }
 
-    .blogdetailspage .blog_detailcard {
+    .blogdetailspage .blog-detailcard {
         border-radius: 20px;
     }
 
-    .blogdetailspage .blog_detailcard .card-body {
+    .blogdetailspage .blog-detailcard .card-body {
         padding: 35px 45px;
     }
 
@@ -2406,6 +2453,13 @@ section {
 
     .blogdetailspage .bloguser .usercardbody .social {
         gap: 16px;
+    }
+
+    .blogdetailspage .bloguser .usercardbody .social li a, .tags.social li a{
+        width: 35px;
+        height: 35px;
+        min-height: 35px;
+        padding: 8px;
     }
 
     .tags .tagline {
@@ -2461,6 +2515,12 @@ section {
 
     .footer .bottom-footer .links {
         gap: 16px;
+    }
+
+    .footersocial a {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
     }
 /*-------------- Footer Responsive Css End -------------*/
 }
@@ -2579,7 +2639,7 @@ section {
         margin: 30px 0px;
     }
 
-    .blogdetailspage .blog_detailcard .card-body {
+    .blogdetailspage .blog-detailcard .card-body {
         padding: 25px 35px;
     }
 
@@ -2590,11 +2650,6 @@ section {
 
     .blogdetailspage .bloguser .usercardbody .contant {
         gap: 14px;
-    }
-    .blogdetailspage .bloguser .usercardbody .social li a, .tags.social li a{
-        width: 20px;
-        height: 20px;
-        min-height: 20px;
     }
 
     .tags .tagline {
@@ -2733,7 +2788,6 @@ section {
 
 /*============== Index Page Section Responsive Css Start ==============*/
     .herosection .innerfluid .social-icon {
-        gap: 15px;
         right: 12px;
     }
 
@@ -2830,7 +2884,7 @@ section {
         margin: 28px 0px;
     }
 
-    .blogdetailspage .blog_detailcard .card-body {
+    .blogdetailspage .blog-detailcard .card-body {
         padding: 20px 30px;
     }
 
@@ -2984,3 +3038,4 @@ section {
 
 
 /* ---------------================------------============= [ END CSS ] ================------------=============--------------- */
+
