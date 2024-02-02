@@ -73,7 +73,7 @@
     outline: none;
     list-style: none;
     word-wrap: break-word;
-    /* user-select: none; */
+    user-select: none;
 }
 
 
@@ -171,6 +171,7 @@ p {
     font-style: normal;
     font-family: "Lexend Deca";
     font-weight: 300 !important;
+    margin-bottom: 10px;
     /*l-no. 2013 */
 }
 
@@ -502,6 +503,8 @@ section {
     resize: none;
     padding: 18px 20px ;
 }
+
+
 /*-------------- Contact Form Css End -------------*/
 
 /* ------------============---------- INDEX PAGE CSS ----------==========-------- */
@@ -555,21 +558,22 @@ section {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     position: absolute;
     bottom: 50px;
     right: 50px;
 }
 
 .herosection .innerfluid .social-icon li .icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--pink);
-    padding: 7px;
+    /* background-color: var(--pink); */
+    border: 1px solid var(--theme2_dark);
+    padding: 10px;
     transition: all ease-in-out .3s;
 }
 
@@ -582,6 +586,10 @@ section {
     object-fit: contain;
     height: 100%;
     width: 100%;
+}
+
+.herosection .innerfluid .social-icon li .icon:hover img {
+    filter: brightness(10);
 }
 
 .herosection .innerfluid .left-side .hero-sub-heading {
@@ -717,7 +725,6 @@ section {
     border: none;
     margin: 200px 0px 100px;
     transition: all ease-in-out 0.3s;
-  cursor: pointer;
 
 }
 
@@ -730,6 +737,7 @@ section {
     margin: 40px auto -200px;
     border-radius: 34px;
     overflow: hidden;
+    position: relative;
 }
 
 .ourwork-section .innerbody>div .card.color-2 {
@@ -1062,48 +1070,49 @@ section {
 
 /*============= Brand Section Css Start ==========*/
 
-.brand-section .card {
+.brandsection .card {
     border: 1px solid var(--border_color);
     border-radius: 0px;
 }
 
-.brand-section .card .card-body {
+.brandsection .card .card-body {
     padding: 50px;
 }
 
-.brand-section .card .card-body .owl-stage {
+.brandsection .card .card-body .owl-stage {
     display: flex;
     align-items: center;
 }
 
-.brand-section .card .card-body .item {
+.brandsection .card .card-body .item {
     max-height: 36px;
     display: flex;
 }
 
-.brand-section .card .card-body .item.roundedimg {
+.brandsection .card .card-body .item.roundedimg {
     max-height: 80px;
 }
 
-.brand-section .card .card-body .item img {
+.brandsection .card .card-body .item img {
     -o-object-fit: contain;
     object-fit: contain;
 }
 /*-------------- Brand Section Css End -------------*/
 
 /*============= Gallery Section Css Start ==========*/
-.gallery-section .galleryimg {
+.gallerysection .galleryimg {
     border-radius: 30px;
     overflow: hidden;
     height: 100%;
 }
 
-.gallery-section .galleryimg a {
+.gallerysection .galleryimg a {
     display: flex;
     position: relative;
+    height: 100%;
 }
 
-.gallery-section .galleryimg a::before {
+.gallerysection .galleryimg a::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -1117,15 +1126,16 @@ section {
     z-index: 1;
 }
 
-.gallery-section .galleryimg a img {
+.gallerysection .galleryimg a img {
     transition: all ease-in-out .3s;
+    object-fit: cover;
 }
 
-.gallery-section .galleryimg a:hover img {
+.gallerysection .galleryimg a:hover img {
     transform: scale(1.1);
 }
 
-.gallery-section .galleryimg a:hover::before {
+.gallerysection .galleryimg a:hover::before {
     opacity: 1;
     visibility: visible;
 }
@@ -1276,14 +1286,23 @@ section {
 }
 .blogdetailspage .bloguser .usercardbody .social li a, .tags.social li a {
     display: inline-flex;
-    width: 24px;
-    height: 24px;
-    min-height: 24px;
+    width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--theme2);
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     transition: all ease-in-out .3s;
+}
 
+.tags.social.small li a {
+    width: 30px;
+    height: 30px;
+    min-height: 30px;
+    padding: 8px;
 }
 
 .blogdetailspage .bloguser .usercardbody .social li a img, .tags.social li a img {
@@ -1293,12 +1312,13 @@ section {
     height: 100%;
 }
 
-.blogdetailspage .bloguser .usercardbody .social li a:hover img, .tags.social li a:hover{
-    border-color: var(--theme1);
+.blogdetailspage .bloguser .usercardbody .social li a:hover, .tags.social li a:hover{
+    border-color: var(--theme2_dark);
+    background-color: var(--theme2);
 }
 
 .blogdetailspage .bloguser .usercardbody .social li a:hover img, .tags.social li a:hover img {
-    filter: brightness(0.4);
+    filter: brightness(10);
 }
 
 .tags{
@@ -1658,7 +1678,6 @@ section {
     padding: 30px 0px;
 }
 
-/* s-02-02-24 */
 .footersocial {
     display: flex;
     align-items: center;
@@ -1676,6 +1695,10 @@ section {
 .footersocial a:hover {
     border: 1px solid var(--theme2_dark);
     background-color: var(--theme2);
+}
+
+.copyright p {
+    font-size: 14px;
 }
 
 .copyright p {
@@ -1776,7 +1799,6 @@ section {
     }
 
     .herosection .innerfluid .social-icon {
-        gap: 25px;
         bottom: 20px;
         right: 20px;
     }
@@ -2059,7 +2081,7 @@ section {
 /*============== Index Page Section Responsive Css Start ==============*/
 
     .herosection .innerfluid .social-icon {
-        gap: 20px;
+        gap: 15px;
     }
 
     .herosection .innerfluid .left-side .hero-sub-heading .thumb {
@@ -2290,6 +2312,12 @@ section {
         width: 100%;
     }
 
+    .herosection .innerfluid .social-icon li .icon {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+
     .ourwork-section .innerbody {
         padding: 40px 0px 150px;
     }
@@ -2368,11 +2396,11 @@ section {
         top: -37%;
     }
 
-    .brand-section .card .card-body {
+    .brandsection .card .card-body {
         padding: 40px;
     }
 
-    .gallery-section .galleryimg {
+    .gallerysection .galleryimg {
         border-radius: 20px;
     }
 /*-------------- Index Page Section Responsive Css End -------------*/
@@ -2425,6 +2453,13 @@ section {
 
     .blogdetailspage .bloguser .usercardbody .social {
         gap: 16px;
+    }
+
+    .blogdetailspage .bloguser .usercardbody .social li a, .tags.social li a{
+        width: 35px;
+        height: 35px;
+        min-height: 35px;
+        padding: 8px;
     }
 
     .tags .tagline {
@@ -2482,7 +2517,6 @@ section {
         gap: 16px;
     }
 
-    /* s-02-02-24 */
     .footersocial a {
         width: 35px;
         height: 35px;
@@ -2616,11 +2650,6 @@ section {
 
     .blogdetailspage .bloguser .usercardbody .contant {
         gap: 14px;
-    }
-    .blogdetailspage .bloguser .usercardbody .social li a, .tags.social li a{
-        width: 20px;
-        height: 20px;
-        min-height: 20px;
     }
 
     .tags .tagline {
@@ -2759,7 +2788,6 @@ section {
 
 /*============== Index Page Section Responsive Css Start ==============*/
     .herosection .innerfluid .social-icon {
-        gap: 15px;
         right: 12px;
     }
 
@@ -2815,11 +2843,11 @@ section {
         height: 80px;
     }
 
-    .brand-section .card .card-body {
+    .brandsection .card .card-body {
         padding: 30px 20px;
     }
 
-    .gallery-section .galleryimg {
+    .gallerysection .galleryimg {
         border-radius: 15px;
     }
 /*-------------- Index Page Section Responsive Css End -------------*/
