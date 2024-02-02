@@ -73,7 +73,7 @@
     outline: none;
     list-style: none;
     word-wrap: break-word;
-    user-select: none;
+    /* user-select: none; */
 }
 
 
@@ -453,7 +453,7 @@ section {
 
 .contactForm .formGroup .input-icon{
     position: absolute;
-    top: 50%;
+    top: calc(50% - 1px);
     left: 20px;
     transform: translateY(-50%);
     width: 24px;
@@ -1658,6 +1658,26 @@ section {
     padding: 30px 0px;
 }
 
+/* s-02-02-24 */
+.footersocial {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footersocial a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border_color);
+    padding: 10px;
+    display: flex;
+    transition: all ease-in-out 0.3s;
+}
+.footersocial a:hover {
+    border: 1px solid var(--theme2_dark);
+    background-color: var(--theme2);
+}
+
 .copyright p {
     font-size: 14px;
 }
@@ -2461,6 +2481,13 @@ section {
     .footer .bottom-footer .links {
         gap: 16px;
     }
+
+    /* s-02-02-24 */
+    .footersocial a {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
 /*-------------- Footer Responsive Css End -------------*/
 }
 
@@ -2983,3 +3010,4 @@ section {
 
 
 /* ---------------================------------============= [ END CSS ] ================------------=============--------------- */
+
