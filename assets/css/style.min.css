@@ -355,7 +355,7 @@ section {
 }
 
 .header .inner-nav .navbar-brand {
-    height: 40px;
+    height: 50px;
 }
 
 .header .inner-nav .navbar-brand img {
@@ -2768,6 +2768,10 @@ section {
         padding: 20px 0px;
     }
 
+    .header .inner-nav .navbar-brand {
+        height: 40px;
+    }
+
     .header .inner-nav {
         padding: 0px 12px;
     }
@@ -2931,6 +2935,10 @@ section {
 /*============== Footer Responsive Css Start ==============*/
     .footer .getIntuch-group .left-side {
         row-gap: 30px;
+    }
+
+    .footer .bottom-footer .logo a{
+        height: 30px;
     }
 
     .footer .getIntuch-group .left-side .address-heading {
