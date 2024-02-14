@@ -48,21 +48,21 @@
 /*----------- Typography -------------*/
 
 :root {
-    --theme1: #3C2B4A;
-    --theme2: #527CEB;
-    --theme2_dark: #4872E2;
-    --theme2_light: #6D93F9;
-    --pink: #FFDBEC;
-    --light: #F9F9F9;
-    --light_dark: #5F5F5F;
-    --gray: #525665;
-    --gray_light: #A5A5A5;
-    --black: #000;
-    --white: #fff;
-    --border_color: #D8D8D8;
-    --theme1_border: #50425A;
-    --input_border: #6E6179;
-    --input_bg: #483557;
+    --primary-color: #527CEB;
+    --secondary-color: #FFDBEC;
+    --teritary-color: #3C2B4A;
+    --gray-color: #F9F9F9;
+    --body-text-color: #5F5F5F;
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-dark-color: #4872E2;
+    --primary-light-color: #6D93F9;
+    --gray-dark-color: #525665;
+    --gray-light-color: #A5A5A5;
+    --border-color: #D8D8D8;
+    --teritary-border-color: #50425A;
+    --input-border-color: #6E6179;
+    --input-bg-color: #483557;
 }
 
 * {
@@ -83,32 +83,33 @@
 }
 
 ::-webkit-scrollbar-track-piece {
-    background: var(--light);
+    background: var(--gray-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--theme1);
+    background: var(--teritary-color);
 }
 
 body {
-    color: var(--light_dark);
+    color: var(--body-text-color);
     overflow: hidden auto;
 }
 
-html{
+html {
     overflow-x: hidden;
     height: 100%;
 }
 
-    html, body {
-        line-height: 1.4;
-        font-weight: 400;
-        font-size: 16px;
-        font-family: "Cormorant Infant";
-        /* overflow: hidden auto; */
-        margin: 0px;
-        padding: 0px;
-    }
+html,
+body {
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Cormorant Infant";
+    /* overflow: hidden auto; */
+    margin: 0px;
+    padding: 0px;
+}
 
 h1,
 .h1 {
@@ -158,7 +159,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    color: var(--theme1);
+    color: var(--teritary-color);
     line-height: 1.3;
 }
 
@@ -172,7 +173,7 @@ ul {
 
 
 p {
-    color: var(--light_dark);
+    color: var(--body-text-color);
     font-size: 16px;
     font-style: normal;
     font-family: "Lexend Deca";
@@ -181,7 +182,7 @@ p {
     /*l-no. 2013 */
 }
 
-    
+
 img {
     width: 100%;
     max-width: 100%;
@@ -202,35 +203,35 @@ a:hover {
 
 
 .bg-theme1 {
-    background: var(--theme1);
+    background: var(--teritary-color);
 }
 
 .bg-theme2 {
-    background: var(--theme2);
+    background: var(--primary-color);
 }
 
 .bg-pink {
-    background: var(--pink);
+    background: var(--secondary-color);
 }
 
 .bg-light {
-    background: var(--light);
+    background: var(--gray-color);
 }
 
 .text-theme1 {
-    color: var(--theme1);
+    color: var(--teritary-color);
 }
 
 .text-theme2 {
-    color: var(--theme2);
+    color: var(--primary-color);
 }
 
 .text-pink {
-    color: var(--pink);
+    color: var(--secondary-color);
 }
 
 .text-light {
-    color: var(--light);
+    color: var(--gray-color);
 }
 
 .lorem {
@@ -239,7 +240,7 @@ a:hover {
 }
 
 .border-bottom {
-    border-bottom: 1px solid var(--border_color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .breadcrumb-section.herosection {
@@ -251,6 +252,7 @@ a:hover {
     height: unset;
     padding: 180px 0px 100px;
 }
+
 .breadcrumb-section .innerpages {
     margin-bottom: 30px;
 }
@@ -279,9 +281,9 @@ button.btn:active {
     font-family: "Lexend Deca";
     gap: 10px;
     border-radius: 200px;
-    border: 1px solid var(--theme2_dark);
-    background: var(--theme2_light);
-    color: var(--white);
+    border: 1px solid var(--primary-dark-color);
+    background: var(--primary-light-color);
+    color: var(--white-color);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -290,31 +292,31 @@ button.btn:active {
 }
 
 .themebtn:hover {
-    background: var(--theme2_dark);
-    border-color: var(--theme2_light);
+    background: var(--primary-dark-color);
+    border-color: var(--primary-light-color);
 }
 
 .themebtn.themebtn_outline {
     background: rgba(0, 0, 0, 0);
-    color: var(--theme1);
-    border-color: var(--theme1);
+    color: var(--teritary-color);
+    border-color: var(--teritary-color);
 }
 
 .themebtn.themebtn_outline:hover {
-    background: var(--theme1);
-    color: var(--white);
+    background: var(--teritary-color);
+    color: var(--white-color);
 }
 
 .themebtn.white {
-    background-color: var(--white);
-    border-color: var(--border_color);
-    color: var(--theme1);
+    background-color: var(--white-color);
+    border-color: var(--border-color);
+    color: var(--teritary-color);
 }
 
 .themebtn.white:hover {
-    background: var(--theme2_dark);
-    border-color: var(--theme2_light);
-    color: var(--white);
+    background: var(--primary-dark-color);
+    border-color: var(--primary-light-color);
+    color: var(--white-color);
 }
 
 .themebtn-white {
@@ -323,8 +325,8 @@ button.btn:active {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: var(--theme2);
-    background-color: var(--white);
+    color: var(--primary-color);
+    background-color: var(--white-color);
     border-radius: 24px;
     font-family: "Lexend Deca";
     font-size: 20px;
@@ -335,8 +337,8 @@ button.btn:active {
 }
 
 .themebtn-white:hover {
-    background-color: var(--theme2);
-    color: var(--white);
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 
@@ -345,6 +347,38 @@ button.btn:active {
 section {
     margin: 120px 0px;
 }
+
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*-------------- Loader Css -------------*/
+/* .loader {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--white-color);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side, #527ceb 94%, #0000) top/9px 9px no-repeat,
+        conic-gradient(#0000 30%, #527ceb);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+    animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+    100% {
+        transform: rotate(1turn);
+    }
+} */
+
 /*-----------------------------------------------------------------*/
 
 /*============= Header Css Start ==========*/
@@ -383,7 +417,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--pink);
+    background-color: var(--secondary-color);
     transition: all ease-in-out .3s;
 }
 
@@ -394,7 +428,7 @@ section {
 }
 
 .header .inner-nav .menubtn:hover {
-    background-color: var(--theme2);
+    background-color: var(--primary-color);
 }
 
 .header .inner-nav .menubtn:hover img {
@@ -402,7 +436,7 @@ section {
 }
 
 .header.active {
-    background-color: var(--light);
+    background-color: var(--gray-color);
     padding: 20px 0px;
 }
 
@@ -412,7 +446,7 @@ section {
 }
 
 .header-offcanvas .offcanvas-header {
-    border-bottom: 1px solid var(--light);
+    border-bottom: 1px solid var(--gray-color);
 }
 
 .header-offcanvas .offcanvas-header .offcanvas-title {
@@ -435,22 +469,24 @@ section {
 .header-offcanvas .offcanvas-body .links li a {
     font-size: 20px;
     font-weight: 600;
-    color: var(--theme1);
+    color: var(--teritary-color);
     transition: all ease-in-out .3s;
 }
 
-.header-offcanvas .offcanvas-body .links li a:hover, .header-offcanvas .offcanvas-body .links li a.active {
-    color: var(--theme2);
+.header-offcanvas .offcanvas-body .links li a:hover,
+.header-offcanvas .offcanvas-body .links li a.active {
+    color: var(--primary-color);
 }
 
 .header-offcanvas .offcanvas-footer {
-    border-top: 1px solid var(--light);
+    border-top: 1px solid var(--gray-color);
 }
 
 .header-offcanvas .offcanvas-footer p {
     font-weight: 400 !important;
-    color: var(--theme1);
+    color: var(--teritary-color);
 }
+
 /*-------------- Header Css End -------------*/
 
 /*============= Contact Form Css Start ==========*/
@@ -460,11 +496,11 @@ section {
     row-gap: 30px;
 }
 
-.contactForm .formGroup{
+.contactForm .formGroup {
     position: relative;
 }
 
-.contactForm .formGroup .input-icon{
+.contactForm .formGroup .input-icon {
     position: absolute;
     top: calc(50% - 1px);
     left: 20px;
@@ -480,16 +516,16 @@ section {
     filter: brightness(10);
 }
 
-.contactForm .formGroup.message .input-icon{
+.contactForm .formGroup.message .input-icon {
     top: 21.5px;
     transform: unset;
 }
 
 .contactForm .formGroup .form-control {
     padding: 18px 20px 18px 50px;
-    border: 1px solid var(--input_border);
-    background: var(--input_bg);
-    color: var(--white);
+    border: 1px solid var(--input-border-color);
+    background: var(--input-bg-color);
+    color: var(--white-color);
     font-family: "Lexend Deca";
     font-size: 16px;
     font-style: normal;
@@ -500,20 +536,20 @@ section {
 }
 
 .contactForm .formGroup .form-control:focus {
-    border-color: var(--theme2);
+    border-color: var(--primary-color);
 }
 
 .contactForm .formGroup .form-control::-moz-placeholder {
-    color: var(--white);
+    color: var(--white-color);
 }
 
 .contactForm .formGroup .form-control::placeholder {
-    color: var(--white);
+    color: var(--white-color);
 }
 
 .contactForm .formGroup .form-control.textarea {
     resize: none;
-    padding: 18px 20px ;
+    padding: 18px 20px;
 }
 
 
@@ -536,7 +572,7 @@ section {
 
 .herosection .innerfluid .down-arrow {
     position: absolute;
-    color: var(--black);
+    color: var(--black-color);
     font-size: 16px;
     font-weight: 700;
     line-height: 17.6px;
@@ -583,14 +619,14 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--pink); */
-    border: 1px solid var(--theme2_dark);
+    /* background-color: var(--secondary-color); */
+    border: 1px solid var(--primary-dark-color);
     padding: 10px;
     transition: all ease-in-out .3s;
 }
 
 .herosection .innerfluid .social-icon li .icon:hover {
-    background-color: var(--theme2);
+    background-color: var(--primary-color);
 }
 
 .herosection .innerfluid .social-icon li .icon img {
@@ -645,6 +681,7 @@ section {
     -o-object-fit: cover;
     object-fit: cover;
 }
+
 /*-------------- Hero Section Css End -------------*/
 
 /*============= Contact Me (About Us) Section Css Start ==========*/
@@ -653,7 +690,7 @@ section {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    color: var(--theme1);
+    color: var(--teritary-color);
     font-family: "Lexend Deca";
     font-size: 16px;
     font-weight: 400;
@@ -683,7 +720,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px dashed var(--theme1);
+    border: 2px dashed var(--teritary-color);
     border-radius: 50%;
     animation: rotate 10s linear infinite;
 }
@@ -754,13 +791,15 @@ section {
     position: relative;
 }
 
-.ourwork-section .innerbody>div .card .card-body .portfolioimg::before, .ourwork-section .innerbody>div .card .card-body .portfolioimg::after {
+.ourwork-section .innerbody>div .card .card-body .portfolioimg::before,
+.ourwork-section .innerbody>div .card .card-body .portfolioimg::after {
     content: '';
     position: absolute;
     opacity: 0;
     visibility: hidden;
     transition: all ease-in-out 0.3s;
 }
+
 .ourwork-section .innerbody>div .card .card-body .portfolioimg::before {
     width: 100%;
     height: 100%;
@@ -768,6 +807,7 @@ section {
     margin: auto;
     background-color: rgb(0 0 0 / 42%);
 }
+
 .ourwork-section .innerbody>div .card .card-body .portfolioimg::after {
     width: 50px;
     height: 50px;
@@ -799,21 +839,24 @@ section {
     background: #ddebff;
 }
 
-.ourwork-section .innerbody>div .card:hover{
+.ourwork-section .innerbody>div .card:hover {
     box-shadow: 0px 0px 21px 0px rgb(0 0 0 / 8%);
 }
+
 .ourwork-section .innerbody>div .card:hover .card-body .portfolioimg::before,
-.ourwork-section .innerbody>div .card:hover .card-body .portfolioimg::after{
+.ourwork-section .innerbody>div .card:hover .card-body .portfolioimg::after {
     opacity: 1;
     visibility: visible;
 }
-.ourwork-section .innerbody>div .card:hover .card-body{
+
+.ourwork-section .innerbody>div .card:hover .card-body {
     transform: translateY(10px);
 }
 
 .ourwork-section .innerbody>div:nth-child(odd) .card {
     margin: 0px;
 }
+
 /* .ourwork-section .innerbody>div#show-more-content>div .card {
     margin: 200px 0px 100px;
 } */
@@ -831,19 +874,19 @@ section {
 
 .aboutproduct-section .card {
     border-radius: 34px;
-    background: var(--light);
+    background: var(--gray-color);
     border: 1px solid transparent;
     transition: all ease-in-out 0.3s;
 }
 
-.aboutproduct-section .card:hover{
+.aboutproduct-section .card:hover {
     box-shadow: 4px 16px 29px 2px rgb(24 20 42 / 7%);
     background: #fff;
 }
 
-.aboutproduct-section .card:hover .themebtn-white{
-    background-color: var(--theme2);
-    color: var(--white);
+.aboutproduct-section .card:hover .themebtn-white {
+    background-color: var(--primary-color);
+    color: var(--white-color);
     cursor: default;
 }
 
@@ -855,7 +898,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--border_color);
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 28px;
     margin-bottom: 26px;
 }
@@ -869,6 +912,7 @@ section {
     flex-direction: column;
     gap: 14px;
 }
+
 /*-------------- About Product Section Css End -------------*/
 
 /*============= Testimonial Section Css Start ==========*/
@@ -917,7 +961,7 @@ section {
 .testimonial-section .slider .card .card-body {
     margin: 0px 0px -200px;
     border-radius: 46px;
-    border: 2px solid var(--white);
+    border: 2px solid var(--white-color);
     background: rgba(255, 255, 255, .35);
     box-shadow: 0px 52px 56px 0px rgba(187, 231, 255, .25);
     -webkit-backdrop-filter: blur(42.5px);
@@ -938,7 +982,7 @@ section {
 }
 
 .testimonial-section .slider .card .card-body .item .clientname {
-    color: var(--theme1);
+    color: var(--teritary-color);
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
@@ -949,7 +993,7 @@ section {
 }
 
 .testimonial-section .slider .card .card-body .item .clientname span {
-    color: var(--gray);
+    color: var(--gray-dark-color);
     font-family: "Lexend Deca";
     font-size: 20px;
     font-style: normal;
@@ -980,7 +1024,7 @@ section {
     height: 76px;
     border-radius: 50%;
     position: relative;
-    border: 2px solid var(--white);
+    border: 2px solid var(--white-color);
     background-color: rgba(0, 0, 0, 0);
     transition: all ease-in-out .3s;
 }
@@ -990,11 +1034,11 @@ section {
 }
 
 .testimonial-section .slider .card .card-body .owl-nav button:hover {
-    background-color: var(--white);
+    background-color: var(--white-color);
 }
 
 .testimonial-section .slider .card .card-body .owl-nav button:hover::after {
-    border-color: var(--theme1);
+    border-color: var(--teritary-color);
 }
 
 .testimonial-section .slider .card .card-body .owl-nav button::before {
@@ -1015,8 +1059,8 @@ section {
     display: block;
     width: 20px;
     height: 20px;
-    border-top: 2px solid var(--white);
-    border-left: 2px solid var(--white);
+    border-top: 2px solid var(--white-color);
+    border-left: 2px solid var(--white-color);
     transition: all ease-in-out .3s;
 }
 
@@ -1028,7 +1072,7 @@ section {
     transform: translate(-60%, -50%) rotate(135deg);
 }
 
-.testimonial-section .slider .card .card-body .owl-dots{
+.testimonial-section .slider .card .card-body .owl-dots {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1038,15 +1082,16 @@ section {
     left: 50%;
     transform: translateX(-50%);
 }
-.testimonial-section .slider .card .card-body .owl-dots .owl-dot{
+
+.testimonial-section .slider .card .card-body .owl-dots .owl-dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: var(--theme1);
+    background-color: var(--teritary-color);
     position: relative;
 }
 
-.testimonial-section .slider .card .card-body .owl-dots .owl-dot::before{
+.testimonial-section .slider .card .card-body .owl-dots .owl-dot::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -1055,14 +1100,15 @@ section {
     width: calc(100% + 6px);
     height: calc(100% + 6px);
     border-radius: 50%;
-    border: 1px solid var(--theme1_border);
+    border: 1px solid var(--teritary-border-color);
 }
 
-.testimonial-section .slider .card .card-body .owl-dots .owl-dot.active{
-    background-color: var(--theme2);
+.testimonial-section .slider .card .card-body .owl-dots .owl-dot.active {
+    background-color: var(--primary-color);
 }
-.testimonial-section .slider .card .card-body .owl-dots .owl-dot.active::before{
-    border-color: var(--theme2);
+
+.testimonial-section .slider .card .card-body .owl-dots .owl-dot.active::before {
+    border-color: var(--primary-color);
 }
 
 /*-------------- Testimonial Section Css End -------------*/
@@ -1077,7 +1123,7 @@ section {
     border-radius: 34px;
     border: none;
     overflow: hidden;
-    background-color: var(--light);
+    background-color: var(--gray-color);
     position: relative;
 }
 
@@ -1095,14 +1141,14 @@ section {
 }
 
 .article-section .card .card-body .timing {
-    color: var(--theme2);
+    color: var(--primary-color);
     line-height: 129.7%;
     text-transform: capitalize;
 }
 
 .article-section .card .card-body .card-title {
     margin: 16px 0px 18px;
-    color: var(--theme1);
+    color: var(--teritary-color);
     transition: all ease-in-out .3s;
     display: flex;
 }
@@ -1116,7 +1162,7 @@ section {
 }
 
 .article-section .card .card-body .continuebtn {
-    color: var(--black);
+    color: var(--black-color);
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1125,34 +1171,36 @@ section {
     transition: all ease-in-out .3s;
 }
 
-.article-section .card .card-body .continuebtn span{
+.article-section .card .card-body .continuebtn span {
     height: 13px;
     display: flex;
 }
 
 .article-section .card .card-body .continuebtn:hover {
-    color: var(--theme2);
+    color: var(--primary-color);
 }
 
-.article-section .card .card-body .continuebtn img{
+.article-section .card .card-body .continuebtn img {
     transition: all ease-in-out .3s;
     object-fit: contain;
     filter: brightness(0);
 }
 
-.article-section .card .card-body .continuebtn:hover img{
+.article-section .card .card-body .continuebtn:hover img {
     filter: unset;
     transform: translateX(10px);
 }
+
 .article-section .card:hover .card-img img {
     transform: scale(1.1);
 }
+
 /*-------------- Article Section Css End -------------*/
 
 /*============= Brand Section Css Start ==========*/
 
 .brandsection .card {
-    border: 1px solid var(--border_color);
+    border: 1px solid var(--border-color);
     border-radius: 0px;
 }
 
@@ -1178,6 +1226,7 @@ section {
     -o-object-fit: contain;
     object-fit: contain;
 }
+
 /*-------------- Brand Section Css End -------------*/
 
 /*============= Gallery Section Css Start ==========*/
@@ -1220,6 +1269,7 @@ section {
     opacity: 1;
     visibility: visible;
 }
+
 /*-------------- Brand Section Css End -------------*/
 
 /* ------------============---------- BLOG DETAILS PAGE CSS ----------==========-------- */
@@ -1235,13 +1285,14 @@ section {
 .blog-upload-details li {
     font-size: 20px;
     line-height: 1.2;
-    color: var(--theme1);
+    color: var(--teritary-color);
     font-weight: 400;
     display: flex;
     align-items: center;
     gap: 5px;
     font-family: "Lexend Deca";
 }
+
 .blog-upload-details li span {
     display: inline-flex;
     align-items: center;
@@ -1259,7 +1310,7 @@ section {
 }
 
 .list li {
-    color: var(--light_dark);
+    color: var(--body-text-color);
     font-size: 16px;
     font-style: normal;
     font-family: "Lexend Deca";
@@ -1308,7 +1359,7 @@ section {
 .blogdetailspage .blog-detailcard {
     border: none;
     border-radius: 30px;
-    background-color: var(--theme2);
+    background-color: var(--primary-color);
 }
 
 .blogdetailspage .blog-detailcard .card-body {
@@ -1341,7 +1392,7 @@ section {
 }
 
 .blogdetailspage .bloguser .usercardbody .contant .subtitle {
-    color: var(--theme2);
+    color: var(--primary-color);
     font-family: "Lexend Deca";
     font-size: 16px;
     font-style: normal;
@@ -1351,10 +1402,11 @@ section {
 }
 
 .blogdetailspage .bloguser .usercardbody .contant .aboutuser {
-    color: var(--black);
+    color: var(--black-color);
 }
 
-.blogdetailspage .bloguser .usercardbody .social, .tags.social {
+.blogdetailspage .bloguser .usercardbody .social,
+.tags.social {
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -1362,17 +1414,20 @@ section {
     gap: 15px;
 }
 
-.blogdetailspage .bloguser .usercardbody .social li, .tags.social li {
+.blogdetailspage .bloguser .usercardbody .social li,
+.tags.social li {
     display: flex;
 }
-.blogdetailspage .bloguser .usercardbody .social li a, .tags.social li a {
+
+.blogdetailspage .bloguser .usercardbody .social li a,
+.tags.social li a {
     display: inline-flex;
     width: 40px;
     height: 40px;
     min-height: 40px;
     padding: 10px;
     border-radius: 50%;
-    border: 1px solid var(--theme2);
+    border: 1px solid var(--primary-color);
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -1386,43 +1441,47 @@ section {
     padding: 8px;
 }
 
-.blogdetailspage .bloguser .usercardbody .social li a img, .tags.social li a img {
+.blogdetailspage .bloguser .usercardbody .social li a img,
+.tags.social li a img {
     -o-object-fit: contain;
     object-fit: contain;
     transition: all ease-in-out .3s;
     height: 100%;
 }
 
-.blogdetailspage .bloguser .usercardbody .social li a:hover, .tags.social li a:hover{
-    border-color: var(--theme2_dark);
-    background-color: var(--theme2);
+.blogdetailspage .bloguser .usercardbody .social li a:hover,
+.tags.social li a:hover {
+    border-color: var(--primary-dark-color);
+    background-color: var(--primary-color);
 }
 
-.blogdetailspage .bloguser .usercardbody .social li a:hover img, .tags.social li a:hover img {
+.blogdetailspage .bloguser .usercardbody .social li a:hover img,
+.tags.social li a:hover img {
     filter: brightness(10);
 }
 
-.tags{
+.tags {
     display: flex;
     align-items: center;
     gap: 15px;
     margin: 0px;
 }
+
 .tags .tagline {
     padding: 5px 14px;
-    border: 1px solid var(--border_color);
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     font-size: 16px;
     font-weight: 400;
-    color: var(--theme1);
+    color: var(--teritary-color);
     font-family: "Lexend Deca";
     cursor: pointer;
     transition: all ease-in-out 0.3s;
 }
 
-.tags .tagline:hover{
-    background-color: var(--theme1);
-    color: var(--white);
+.tags .tagline:hover {
+    background-color: var(--teritary-color);
+    color: var(--white-color);
 }
 
 /*---------- Blog Comment Css Start ------- */
@@ -1447,7 +1506,7 @@ section {
     min-height: 70px;
     margin-bottom: 35px;
     padding-bottom: 35px;
-    border-bottom: solid 1px var(--border_color);
+    border-bottom: solid 1px var(--border-color);
     min-height: 70px;
     line-height: 1.4;
 }
@@ -1466,14 +1525,14 @@ section {
     overflow: hidden;
 }
 
-.blog-comment li .avatar img{
+.blog-comment li .avatar img {
     width: 100%;
     object-fit: cover;
 }
 
 .blog-comment .comment {
     font-size: 16px;
-    color: var(--light_dark);
+    color: var(--body-text-color);
     font-style: normal;
     font-family: "Lexend Deca";
     font-weight: 300;
@@ -1498,19 +1557,21 @@ section {
     margin-bottom: 15px;
 }
 
-.blog-comment .comment, .comment-info{
+.blog-comment .comment,
+.comment-info {
     margin-left: 90px;
 }
 
 .comment-info .comment-name {
     display: block;
     font-weight: 700;
-    color: var(--theme1);
+    color: var(--teritary-color);
 }
 
 
-.comment-info .comment-date, .comment-info .comment-reply {
-    color: var(--theme2);
+.comment-info .comment-date,
+.comment-info .comment-reply {
+    color: var(--primary-color);
     font-family: "Lexend Deca";
     font-size: 12px;
 }
@@ -1518,15 +1579,16 @@ section {
 .comment-info .comment-reply {
     padding-left: 10px;
     margin-left: 10px;
-    border-left: solid 1px var(--border_color);
+    border-left: solid 1px var(--border-color);
 }
 
 .comment-form {
     background-color: transparent !important;
 }
-.comment-form.footer .contactcard  {
+
+.comment-form.footer .contactcard {
     border: none;
-    background-color: var(--light);
+    background-color: var(--gray-color);
     border-radius: 34px;
     box-shadow: none;
 }
@@ -1535,13 +1597,14 @@ section {
     filter: unset;
 }
 
-.comment-form.footer .contactcard .contactForm{
+.comment-form.footer .contactcard .contactForm {
     flex-direction: row;
 }
 
-.comment-form .contactForm .formGroup .form-control, .comment-form .contactForm .formGroup .form-control::placeholder{
-    background-color: var(--white);
-    color: var(--theme1);
+.comment-form .contactForm .formGroup .form-control,
+.comment-form .contactForm .formGroup .form-control::placeholder {
+    background-color: var(--white-color);
+    color: var(--teritary-color);
     border: none;
 }
 
@@ -1550,8 +1613,9 @@ section {
 .paginationbar .page-link svg {
     height: 20px;
 }
+
 .paginationbar .page-link {
-    color: var(--theme1);
+    color: var(--teritary-color);
     box-shadow: none;
     font-size: 18px;
     line-height: 1.2;
@@ -1560,18 +1624,22 @@ section {
     height: 100%;
     display: flex;
 }
+
 .paginationbar .page-link span {
     display: flex;
     align-items: center;
 }
+
 .paginationbar .page-item.active .page-link {
-    background-color: var(--theme2);
-    border-color: var(--theme2);
-    color: var(--white);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
 }
+
 .paginationbar .page-item {
     margin: 0 4px;
 }
+
 /*---------- INERACTION PAGE CSS END -----------*/
 
 
@@ -1579,7 +1647,7 @@ section {
 
 /*============= Footer Section Css Start ==========*/
 .footer {
-    background-color: var(--theme1);
+    background-color: var(--teritary-color);
 }
 
 .footer .getIntuch-group {
@@ -1600,12 +1668,12 @@ section {
     font-weight: 400;
     line-height: 146.5%;
     margin-bottom: 10px;
-    color: var(--theme2);
+    color: var(--primary-color);
 }
 
 .footer .getIntuch-group .left-side .getheading {
     margin-bottom: 13px;
-    color: var(--white);
+    color: var(--white-color);
 }
 
 .footer .getIntuch-group .eleps {
@@ -1680,7 +1748,7 @@ section {
 
 .footer .contactcard {
     border-radius: 46px;
-    border: 1px solid var(--theme1_border);
+    border: 1px solid var(--teritary-border-color);
     background: rgba(255, 255, 255, .01);
     -webkit-backdrop-filter: blur(23px);
     backdrop-filter: blur(23px);
@@ -1702,8 +1770,8 @@ section {
 .footer .bottom-footer .letstalk {
     position: relative;
     padding: 30px 0px;
-    border-top: 1.5px solid var(--input_border);
-    border-bottom: 1.5px solid var(--input_border);
+    border-top: 1.5px solid var(--input-border-color);
+    border-bottom: 1.5px solid var(--input-border-color);
 }
 
 .footer .bottom-footer .logo {
@@ -1723,13 +1791,13 @@ section {
     width: auto;
 }
 
-.footer .bottom-footer .footersocial  {
+.footer .bottom-footer .footersocial {
     margin-top: 25px;
 }
 
 .footer .bottom-footer .linkcategory {
     margin-bottom: 33px;
-    color: var(--white);
+    color: var(--white-color);
     font-family: "Lexend Deca";
 }
 
@@ -1741,7 +1809,7 @@ section {
 }
 
 .footer .bottom-footer .links li a {
-    color: var(--white);
+    color: var(--white-color);
     font-family: "Lexend Deca";
     font-size: 16px;
     font-style: normal;
@@ -1751,7 +1819,7 @@ section {
 }
 
 .footer .bottom-footer .links li a:hover {
-    color: var(--theme2);
+    color: var(--primary-color);
 }
 
 .footer .bottom-footer .footerblog-img {
@@ -1760,7 +1828,7 @@ section {
 }
 
 .footer .bottom-footer .copyright {
-    border-top: 1.5px solid var(--input_border);
+    border-top: 1.5px solid var(--input-border-color);
     padding: 30px 0px;
 }
 
@@ -1769,18 +1837,20 @@ section {
     align-items: center;
     gap: 15px;
 }
+
 .footersocial a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid var(--border_color);
+    border: 1px solid var(--border-color);
     padding: 10px;
     display: flex;
     transition: all ease-in-out 0.3s;
 }
+
 .footersocial a:hover {
-    border: 1px solid var(--theme2_dark);
-    background-color: var(--theme2);
+    border: 1px solid var(--primary-dark-color);
+    background-color: var(--primary-color);
 }
 
 .copyright p {
@@ -1796,7 +1866,8 @@ section {
 /* ------------============---------- RESPONSIVE CSS ----------==========-------- */
 
 @media screen and (min-width: 1600px) {
-/*============== Index Page Css Start ==============*/
+
+    /*============== Index Page Css Start ==============*/
     .herosection .content-side {
         flex: 0 0 auto !important;
         width: 66.66666667% !important;
@@ -1809,20 +1880,23 @@ section {
     /* .herosection .left-side .main-heading {
         margin: 15px 0px !important;
     } */
-/*-------------- Index Page Css End -------------*/
+    /*-------------- Index Page Css End -------------*/
 }
 
 @media screen and (max-width: 1600px) {
-/*============== Index Page Responsive Css Start ==============*/
+
+    /*============== Index Page Responsive Css Start ==============*/
     .herosection .innerfluid .left-side .main-heading {
         font-size: 90px;
         line-height: 101px;
     }
-/*-------------- Index Page Responsive Css End -------------*/
+
+    /*-------------- Index Page Responsive Css End -------------*/
 }
 
 @media screen and (max-width: 1500px) {
-/*============== Typography Responsive Css Start ==============*/
+
+    /*============== Typography Responsive Css Start ==============*/
     section {
         margin: 100px 0px;
     }
@@ -1851,9 +1925,10 @@ section {
     .h5 {
         font-size: 22px;
     }
-/*-------------- Typography Responsive Css End -------------*/
 
-/*============== Header Responsive Css Start ==============*/
+    /*-------------- Typography Responsive Css End -------------*/
+
+    /*============== Header Responsive Css Start ==============*/
     .header {
         padding: 30px 0px;
     }
@@ -1870,16 +1945,18 @@ section {
     .header.active {
         padding: 15px 0px;
     }
-/*-------------- Header Responsive Css End -------------*/
 
-/*============== Button Responsive Css Start ==============*/
+    /*-------------- Header Responsive Css End -------------*/
+
+    /*============== Button Responsive Css Start ==============*/
     .themebtn {
         padding: 16px 55px;
         font-size: 16px;
     }
-/*-------------- Button Responsive Css End -------------*/
 
-/*============== Index Page Section Responsive Css Start ==============*/
+    /*-------------- Button Responsive Css End -------------*/
+
+    /*============== Index Page Section Responsive Css Start ==============*/
     .herosection .innerfluid .down-arrow {
         left: 20px;
         bottom: 266px;
@@ -1946,29 +2023,33 @@ section {
     /* .lorem {
         font-size: 20px;
     } */
-/*-------------- Index Page Section Responsive Css End --------------*/
+    /*-------------- Index Page Section Responsive Css End --------------*/
 
-/*============== Footer Responsive Css Start ==============*/
+    /*============== Footer Responsive Css Start ==============*/
     .footer .getIntuch-group {
         padding: 100px 0px;
     }
-/*-------------- Footer Responsive Css End --------------*/
+
+    /*-------------- Footer Responsive Css End --------------*/
 
 }
 
 @media screen and (max-width: 1400px) {
-/*============== Button Responsive Css Start ==============*/
+
+    /*============== Button Responsive Css Start ==============*/
     .themebtn-white {
         font-size: 18px;
     }
+
     .themebtn {
         padding: 14px 45px;
     }
+
     /* .lorem {
         font-size: 18px;
     } */
-/*-------------- Button Responsive Css End -------------*/
-/*============== Index Page Section Responsive Css Start ==============*/
+    /*-------------- Button Responsive Css End -------------*/
+    /*============== Index Page Section Responsive Css Start ==============*/
     .ourwork-section .innerbody {
         padding: 60px 0px 170px;
     }
@@ -2064,9 +2145,10 @@ section {
     .article-section .card .card-body .continuebtn {
         font-size: 15px;
     }
-/*-------------- Index Page Section Responsive Css End -------------*/
 
-/*============== Footer Responsive Css Start ==============*/
+    /*-------------- Index Page Section Responsive Css End -------------*/
+
+    /*============== Footer Responsive Css Start ==============*/
 
     .footer .getIntuch-group .left-side {
         row-gap: 45px;
@@ -2120,12 +2202,13 @@ section {
         gap: 22px;
     }
 
-/*-------------- Footer Section Responsive Css End -------------*/
+    /*-------------- Footer Section Responsive Css End -------------*/
 
 }
 
 @media screen and (max-width: 1200px) {
-/*============== Typography Responsive Css Start ==============*/
+
+    /*============== Typography Responsive Css Start ==============*/
     section {
         margin: 80px 0px;
     }
@@ -2158,9 +2241,9 @@ section {
     /* p {
         font-size: 16px;
     } */
-/*-------------- Typography Responsive Css End -------------*/
+    /*-------------- Typography Responsive Css End -------------*/
 
-/*============== Index Page Section Responsive Css Start ==============*/
+    /*============== Index Page Section Responsive Css Start ==============*/
 
     .herosection .innerfluid .social-icon {
         gap: 15px;
@@ -2239,9 +2322,10 @@ section {
     .article-section .card .card-body .continuebtn {
         margin-top: 30px;
     }
-/*-------------- Index Page Section Responsive Css End -------------*/
 
-/*============== Blog Details Page Responsive Css Start ==============*/
+    /*-------------- Index Page Section Responsive Css End -------------*/
+
+    /*============== Blog Details Page Responsive Css Start ==============*/
     .lorem {
         font-size: 16px;
     }
@@ -2270,9 +2354,10 @@ section {
     .blogdetailspage .bloguser .usercardbody .social {
         gap: 18px;
     }
-/*-------------- Blog Details Page Responsive Css End -------------*/
 
-/*============== Footer Responsive Css Start ==============*/
+    /*-------------- Blog Details Page Responsive Css End -------------*/
+
+    /*============== Footer Responsive Css Start ==============*/
     .footer .getIntuch-group {
         padding: 80px 0px;
     }
@@ -2322,9 +2407,10 @@ section {
     .footer .bottom-footer .copyright {
         padding: 25px 0px;
     }
-/*-------------- Footer Responsive Css End -------------*/
 
-/*============== Contact Form Responsive Css Start ==============*/
+    /*-------------- Footer Responsive Css End -------------*/
+
+    /*============== Contact Form Responsive Css Start ==============*/
     .contactForm .formGroup .form-control {
         padding: 16px 20px 16px 50px;
     }
@@ -2334,15 +2420,17 @@ section {
         padding: 16px 20px;
     }
 
-    .contactForm .formGroup.message .input-icon{
+    .contactForm .formGroup.message .input-icon {
         top: 16px;
     }
-/*-------------- Contact Form Responsive Css End -------------*/
+
+    /*-------------- Contact Form Responsive Css End -------------*/
 
 }
 
 @media screen and (max-width: 991px) {
-/*============== Typography Responsive Css Start ==============*/
+
+    /*============== Typography Responsive Css Start ==============*/
     section {
         margin: 50px 0px;
     }
@@ -2376,9 +2464,10 @@ section {
     .h6 {
         font-size: 14px;
     }
-/*-------------- Typography Responsive Css End -------------*/
 
-/*============== Button Responsive Css Start ==============*/
+    /*-------------- Typography Responsive Css End -------------*/
+
+    /*============== Button Responsive Css Start ==============*/
     .themebtn {
         padding: 11px 40px;
         font-size: 16px;
@@ -2387,9 +2476,10 @@ section {
     .themebtn-white {
         font-size: 16px;
     }
-/*-------------- Button Responsive Css End -------------*/
 
-/*============== Index Page Section Responsive Css Start ==============*/
+    /*-------------- Button Responsive Css End -------------*/
+
+    /*============== Index Page Section Responsive Css Start ==============*/
     .herosection {
         height: auto;
         padding: 230px 0px 150px;
@@ -2405,7 +2495,7 @@ section {
         padding: 8px;
     }
 
-    .herosection .innerfluid .social-icon{
+    .herosection .innerfluid .social-icon {
         position: unset;
         flex-direction: row;
     }
@@ -2462,7 +2552,7 @@ section {
         margin-top: 50px;
     }
 
-    .testimonial-section .slider .card .card-body{
+    .testimonial-section .slider .card .card-body {
         border-radius: 34px;
     }
 
@@ -2488,7 +2578,7 @@ section {
         top: -37%;
     }
 
-    .testimonial-section .slider .card .card-body .owl-dots{
+    .testimonial-section .slider .card .card-body .owl-dots {
         top: 105%;
         gap: 12px;
     }
@@ -2500,9 +2590,10 @@ section {
     .gallerysection .galleryimg {
         border-radius: 20px;
     }
-/*-------------- Index Page Section Responsive Css End -------------*/
 
-/*============== Blog Details Page Responsive Css Start ==============*/
+    /*-------------- Index Page Section Responsive Css End -------------*/
+
+    /*============== Blog Details Page Responsive Css Start ==============*/
     .list {
         gap: 14px;
     }
@@ -2552,7 +2643,8 @@ section {
         gap: 16px;
     }
 
-    .blogdetailspage .bloguser .usercardbody .social li a, .tags.social li a{
+    .blogdetailspage .bloguser .usercardbody .social li a,
+    .tags.social li a {
         width: 35px;
         height: 35px;
         min-height: 35px;
@@ -2571,9 +2663,9 @@ section {
     }
 
 
-/*-------------- Blog Details Page Responsive Css End -------------*/
+    /*-------------- Blog Details Page Responsive Css End -------------*/
 
-/*============== Footer Responsive Css Start ==============*/
+    /*============== Footer Responsive Css Start ==============*/
     .footer .getIntuch-group {
         padding: 60px 0px;
     }
@@ -2619,7 +2711,8 @@ section {
         height: 35px;
         padding: 8px;
     }
-/*-------------- Footer Responsive Css End -------------*/
+
+    /*-------------- Footer Responsive Css End -------------*/
 }
 
 @media screen and (max-width: 768px) {
@@ -2631,7 +2724,8 @@ section {
     .breadcrumb-section .innerpages {
         margin-bottom: 20px;
     }
-/*============== Index Page Section Responsive Css Start ==============*/
+
+    /*============== Index Page Section Responsive Css Start ==============*/
     .contactme-section .contact-circle {
         width: 120px;
         height: 120px;
@@ -2640,7 +2734,7 @@ section {
         gap: 5px;
     }
 
-    .contactme-section .contact-circle span{
+    .contactme-section .contact-circle span {
         height: 16px;
     }
 
@@ -2672,6 +2766,7 @@ section {
     .ourwork-section .innerbody>div:nth-child(odd) .card {
         margin: 150px 0px 50px;
     }
+
     .ourwork-section .innerbody>div#show-more-content>div>div:nth-child(even) .card {
         margin: 150px 0px 50px !important;
     }
@@ -2709,9 +2804,10 @@ section {
     .testimonial-section .slider .card .card-body .owl-nav {
         top: -37%;
     }
-/*-------------- Index Page Section Responsive Css End -------------*/
 
-/*============== Blog Details Page Responsive Css Start ==============*/
+    /*-------------- Index Page Section Responsive Css End -------------*/
+
+    /*============== Blog Details Page Responsive Css Start ==============*/
     .blog-upload-details {
         column-gap: 40px;
         /* gap: 15px; */
@@ -2720,10 +2816,12 @@ section {
     .blog-upload-details li {
         font-size: 18px;
     }
+
     .blog-upload-details li span {
         width: 24px;
         height: 24px;
     }
+
     .list {
         gap: 10px;
     }
@@ -2761,9 +2859,10 @@ section {
         font-size: 12px;
         padding: 5px 8px;
     }
-/*-------------- Blog Details Page Responsive Css End -------------*/
 
-/*============== Footer Responsive Css Start ==============*/
+    /*-------------- Blog Details Page Responsive Css End -------------*/
+
+    /*============== Footer Responsive Css Start ==============*/
     .footer .getIntuch-group .eleps1 {
         top: 41%;
         left: -14%;
@@ -2814,9 +2913,10 @@ section {
     .footer .contactForm.footerform {
         row-gap: 15px;
     }
-/*-------------- Footer Responsive Css End -------------*/
 
-/*============== Contact Form Responsive Css Start ==============*/
+    /*-------------- Footer Responsive Css End -------------*/
+
+    /*============== Contact Form Responsive Css Start ==============*/
     .contactForm {
         row-gap: 25px;
     }
@@ -2830,22 +2930,24 @@ section {
         resize: none;
         padding: 10px 18px;
     }
-        
-    .contactForm .formGroup .input-icon{
+
+    .contactForm .formGroup .input-icon {
         left: 15px;
         width: 20px;
         height: 20px;
     }
 
-    .contactForm .formGroup.message .input-icon{
+    .contactForm .formGroup.message .input-icon {
         top: 10px;
     }
-/*-------------- Contact Form Responsive Css End -------------*/
+
+    /*-------------- Contact Form Responsive Css End -------------*/
 
 }
 
 @media screen and (max-width: 576px) {
-/*============== Typography Responsive Css Start ==============*/
+
+    /*============== Typography Responsive Css Start ==============*/
     h1,
     .h1 {
         font-size: 45px;
@@ -2870,9 +2972,10 @@ section {
     .h5 {
         font-size: 16px;
     }
-/*-------------- Typography Responsive Css End -------------*/
 
-/*============== Header Responsive Css Start ==============*/
+    /*-------------- Typography Responsive Css End -------------*/
+
+    /*============== Header Responsive Css Start ==============*/
     .header {
         padding: 20px 0px;
     }
@@ -2897,9 +3000,10 @@ section {
     .header.active {
         padding: 12px 0px;
     }
-/*-------------- Header Responsive Css End -------------*/
 
-/*============== Index Page Section Responsive Css Start ==============*/
+    /*-------------- Header Responsive Css End -------------*/
+
+    /*============== Index Page Section Responsive Css Start ==============*/
     .herosection .innerfluid .social-icon {
         right: 12px;
     }
@@ -2964,20 +3068,23 @@ section {
     .gallerysection .galleryimg {
         border-radius: 15px;
     }
-/*-------------- Index Page Section Responsive Css End -------------*/
 
-/*============== Blog Details Page Responsive Css Start ==============*/
-.blog-upload-details {
-    gap: 15px;
-}
+    /*-------------- Index Page Section Responsive Css End -------------*/
 
-.blog-upload-details li {
-    font-size: 16px;
-}
-.blog-upload-details li span {
-    width: 20px;
-    height: 20px;
-}
+    /*============== Blog Details Page Responsive Css Start ==============*/
+    .blog-upload-details {
+        gap: 15px;
+    }
+
+    .blog-upload-details li {
+        font-size: 16px;
+    }
+
+    .blog-upload-details li span {
+        width: 20px;
+        height: 20px;
+    }
+
     .list {
         gap: 8px;
     }
@@ -3006,11 +3113,11 @@ section {
         gap: 12px;
     }
 
-    .tags{
+    .tags {
         gap: 10px !important;
     }
 
-    
+
     /*---------- Blog Comment Css Start ------- */
 
     .blog-comment li .avatar {
@@ -3018,15 +3125,16 @@ section {
         width: 50px;
     }
 
-    .blog-comment .comment, .comment-info {
+    .blog-comment .comment,
+    .comment-info {
         margin-left: 65px;
     }
 
-    .comment-info{
+    .comment-info {
         margin-bottom: 10px;
     }
 
-    .blog-comment h5{
+    .blog-comment h5 {
         font-size: 20px;
     }
 
@@ -3034,20 +3142,20 @@ section {
         margin-bottom: 20px;
         padding-bottom: 20px;
     }
-    
+
     .blog-comment li.reply {
         padding-left: 65px;
     }
-    
 
-/*-------------- Blog Details Page Responsive Css End -------------*/
 
-/*============== Footer Responsive Css Start ==============*/
+    /*-------------- Blog Details Page Responsive Css End -------------*/
+
+    /*============== Footer Responsive Css Start ==============*/
     .footer .getIntuch-group .left-side {
         row-gap: 30px;
     }
 
-    .footer .bottom-footer .logo a{
+    .footer .bottom-footer .logo a {
         height: 30px;
     }
 
@@ -3109,13 +3217,15 @@ section {
     .footer .bottom-footer .copyright {
         padding: 15px 0px;
     }
-/*-------------- Footer Responsive Css End -------------*/
 
-/*============== Contact Form Responsive Css Start ==============*/
+    /*-------------- Footer Responsive Css End -------------*/
+
+    /*============== Contact Form Responsive Css Start ==============*/
     .contactForm {
         row-gap: 20px;
     }
-/*-------------- Contact Form Responsive Css End -------------*/
+
+    /*-------------- Contact Form Responsive Css End -------------*/
 
 }
 
@@ -3124,7 +3234,8 @@ section {
         flex-direction: column;
         gap: 10px;
     }
-/*============== Index Page Testimonial Section Responsive Css Start ==============*/
+
+    /*============== Index Page Testimonial Section Responsive Css Start ==============*/
     .testimonial-section .innerfluid {
         padding: 35px 25px 0px;
     }
@@ -3145,11 +3256,11 @@ section {
     .testimonial-section .slider .card .card-body .item .shapgroup {
         display: none;
     }
-/*-------------- Index Page Testimonial Section Responsive Css End -------------*/
+
+    /*-------------- Index Page Testimonial Section Responsive Css End -------------*/
 
 }
 
 
 
 /* ---------------================------------============= [ END CSS ] ================------------=============--------------- */
-
