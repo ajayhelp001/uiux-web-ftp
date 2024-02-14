@@ -92,7 +92,12 @@
 
 body {
     color: var(--light_dark);
+    overflow: hidden auto;
+}
+
+html{
     overflow-x: hidden;
+    height: 100%;
 }
 
     html, body {
@@ -100,7 +105,9 @@ body {
         font-weight: 400;
         font-size: 16px;
         font-family: "Cormorant Infant";
-        overflow-x: hidden;
+        /* overflow: hidden auto; */
+        margin: 0px;
+        padding: 0px;
     }
 
 h1,
