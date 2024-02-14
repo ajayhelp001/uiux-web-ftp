@@ -92,7 +92,7 @@
 
 body {
     color: var(--light_dark);
-    /* overflow: hidden auto; */
+    overflow-x: hidden;
 }
 
     html, body {
@@ -100,9 +100,7 @@ body {
         font-weight: 400;
         font-size: 16px;
         font-family: "Cormorant Infant";
-        overflow: hidden auto;
-        margin: 0px;
-        padding: 0px;
+        overflow-x: hidden;
     }
 
 h1,
@@ -1161,13 +1159,13 @@ section {
 }
 
 .brandsection .card .card-body .item {
-    max-height: 36px;
+    max-height: 50px;
     display: flex;
 }
 
-.brandsection .card .card-body .item.roundedimg {
+/* .brandsection .card .card-body .item.roundedimg {
     max-height: 80px;
-}
+} */
 
 .brandsection .card .card-body .item img {
     -o-object-fit: contain;

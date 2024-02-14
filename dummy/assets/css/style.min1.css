@@ -92,18 +92,17 @@
 
 body {
     color: var(--light_dark);
-    /* overflow: hidden auto; */
+    overflow-x: hidden;
 }
 
-    html, body {
-        line-height: 1.4;
+    html,
+    body {
+        line-height: 1.5;
         font-weight: 400;
         font-size: 16px;
         font-family: "Cormorant Infant";
-        overflow: hidden auto;
-        margin: 0px;
-        padding: 0px;
     }
+    
 
 h1,
 .h1 {
@@ -238,16 +237,11 @@ a:hover {
 }
 
 .breadcrumb-section.herosection {
-    /* height: 50vh;
-    min-height: 400px; */
+    height: 50vh;
+    min-height: 400px;
     max-height: 600px;
     background: url(../images/innarPageBg.svg) no-repeat center;
     background-size: cover;
-    height: unset;
-    padding: 180px 0px 100px;
-}
-.breadcrumb-section .innerpages {
-    margin-bottom: 30px;
 }
 
 /*-----------------------------------------------------------------*/
@@ -464,8 +458,8 @@ section {
     top: calc(50% - 1px);
     left: 20px;
     transform: translateY(-50%);
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -486,11 +480,11 @@ section {
     background: var(--input_bg);
     color: var(--white);
     font-family: "Lexend Deca";
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27px;
-    border-radius: 10px !important;
+    line-height: 132.5%;
+    border-radius: 30px;
     box-shadow: none;
 }
 
@@ -603,7 +597,7 @@ section {
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 4px;
     margin: 0px;
 }
 
@@ -619,10 +613,10 @@ section {
 
 .herosection .innerfluid .left-side .main-heading {
     font-size: 116px;
-    line-height: 127px;
+    line-height: 107%;
     font-weight: 700;
     text-transform: capitalize;
-    /* margin: 10px 0px; */
+    margin: 10px 0px;
 }
 
 .herosection .innerfluid .left-side .loremtext {
@@ -631,7 +625,6 @@ section {
 
 .herosection .innerfluid .left-side .button {
     margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 .herosection .innerfluid .portfolio-user img {
@@ -718,7 +711,6 @@ section {
 
 .contactme-section .mail a {
     font-family: "Lexend Deca";
-    margin-bottom: 0px;
 }
 
 /*-------------- Contact Me (About Us) Section Css End -------------*/
@@ -749,31 +741,6 @@ section {
     position: relative;
 }
 
-.ourwork-section .innerbody>div .card .card-body .portfolioimg::before, .ourwork-section .innerbody>div .card .card-body .portfolioimg::after {
-    content: '';
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: all ease-in-out 0.3s;
-}
-.ourwork-section .innerbody>div .card .card-body .portfolioimg::before {
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    margin: auto;
-    background-color: rgb(0 0 0 / 42%);
-}
-.ourwork-section .innerbody>div .card .card-body .portfolioimg::after {
-    width: 50px;
-    height: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: url(../images/icon/arrow01.svg) no-repeat center;
-    background-size: contain;
-    filter: brightness(10);
-}
-
 .ourwork-section .innerbody>div .card.color-2 {
     background: #ebebfb;
 }
@@ -794,15 +761,10 @@ section {
     background: #ddebff;
 }
 
-.ourwork-section .innerbody>div .card:hover{
+.ourwork-section .innerbody>div .card.card:hover{
     box-shadow: 0px 0px 21px 0px rgb(0 0 0 / 8%);
 }
-.ourwork-section .innerbody>div .card:hover .card-body .portfolioimg::before,
-.ourwork-section .innerbody>div .card:hover .card-body .portfolioimg::after{
-    opacity: 1;
-    visibility: visible;
-}
-.ourwork-section .innerbody>div .card:hover .card-body{
+.ourwork-section .innerbody>div .card.card:hover .card-body{
     transform: translateY(10px);
 }
 
@@ -821,7 +783,7 @@ section {
 /*============= About Product Section Css Start ==========*/
 
 .aboutproduct-section .loremtext {
-    margin: 16px 0px 40px;
+    margin: 16px 0px 45px;
 }
 
 .aboutproduct-section .card {
@@ -1023,43 +985,6 @@ section {
     transform: translate(-60%, -50%) rotate(135deg);
 }
 
-.testimonial-section .slider .card .card-body .owl-dots{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    gap: 15px;
-    top: 111%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.testimonial-section .slider .card .card-body .owl-dots .owl-dot{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--theme1);
-    position: relative;
-}
-
-.testimonial-section .slider .card .card-body .owl-dots .owl-dot::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% + 6px);
-    height: calc(100% + 6px);
-    border-radius: 50%;
-    border: 1px solid var(--theme1_border);
-}
-
-.testimonial-section .slider .card .card-body .owl-dots .owl-dot.active{
-    background-color: var(--theme2);
-}
-.testimonial-section .slider .card .card-body .owl-dots .owl-dot.active::before{
-    border-color: var(--theme2);
-}
-
 /*-------------- Testimonial Section Css End -------------*/
 
 /*============= Article Section Css Start ==========*/
@@ -1161,13 +1086,13 @@ section {
 }
 
 .brandsection .card .card-body .item {
-    max-height: 36px;
+    max-height: 50px;
     display: flex;
 }
 
-.brandsection .card .card-body .item.roundedimg {
+/* .brandsection .card .card-body .item.roundedimg {
     max-height: 80px;
-}
+} */
 
 .brandsection .card .card-body .item img {
     -o-object-fit: contain;
@@ -1231,7 +1156,7 @@ section {
     font-size: 20px;
     line-height: 1.2;
     color: var(--theme1);
-    font-weight: 400;
+    font-weight: 500;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -1675,7 +1600,7 @@ section {
 
 .footer .contactcard {
     border-radius: 46px;
-    border: 1px solid var(--theme1_border);
+    border: 2px solid var(--theme1_border);
     background: rgba(255, 255, 255, .01);
     -webkit-backdrop-filter: blur(23px);
     backdrop-filter: blur(23px);
@@ -1704,7 +1629,7 @@ section {
 .footer .bottom-footer .logo {
     height: 40px;
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 
 .footer .bottom-footer .logo a {
@@ -1716,10 +1641,6 @@ section {
     -o-object-fit: contain;
     object-fit: contain;
     width: auto;
-}
-
-.footer .bottom-footer .footersocial  {
-    margin-top: 25px;
 }
 
 .footer .bottom-footer .linkcategory {
@@ -1801,9 +1722,9 @@ section {
         padding-left: 0px !important;
     }
 
-    /* .herosection .left-side .main-heading {
+    .herosection .left-side .main-heading {
         margin: 15px 0px !important;
-    } */
+    }
 /*-------------- Index Page Css End -------------*/
 }
 
@@ -1811,7 +1732,6 @@ section {
 /*============== Index Page Responsive Css Start ==============*/
     .herosection .innerfluid .left-side .main-heading {
         font-size: 90px;
-        line-height: 101px;
     }
 /*-------------- Index Page Responsive Css End -------------*/
 }
@@ -1891,7 +1811,6 @@ section {
 
     .herosection .innerfluid .left-side .main-heading {
         font-size: 70px;
-        line-height: 81px;
     }
 
     .testimonial-section .innerfluid {
@@ -1981,7 +1900,7 @@ section {
     }
 
     .aboutproduct-section .loremtext {
-        margin: 14px 0px 35px;
+        margin: 14px 0px 40px;
     }
 
     .aboutproduct-section .card {
@@ -2117,6 +2036,12 @@ section {
 
 /*-------------- Footer Section Responsive Css End -------------*/
 
+/*============== Contact Form Responsive Css Start ==============*/
+    .contactForm .formGroup .form-control {
+        font-size: 16px;
+    }
+/*-------------- Contact Form Responsive Css End -------------*/
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -2167,7 +2092,6 @@ section {
 
     .herosection .innerfluid .left-side .main-heading {
         font-size: 60px;
-        line-height: 71px;
     }
 
     .contactme-section .contact-circle {
@@ -2385,10 +2309,6 @@ section {
 /*-------------- Button Responsive Css End -------------*/
 
 /*============== Index Page Section Responsive Css Start ==============*/
-    .herosection {
-        height: auto;
-        padding: 230px 0px 150px;
-    }
 
     .herosection .innerfluid .left-side .loremtext {
         width: 100%;
@@ -2398,11 +2318,6 @@ section {
         width: 35px;
         height: 35px;
         padding: 8px;
-    }
-
-    .herosection .innerfluid .social-icon{
-        position: unset;
-        flex-direction: row;
     }
 
     .ourwork-section .innerbody {
@@ -2422,7 +2337,7 @@ section {
     }
 
     .aboutproduct-section .loremtext {
-        margin: 14px 0px 30px;
+        margin: 14px 0px 40px;
     }
 
     .aboutproduct-section .card .card-body {
@@ -2481,11 +2396,6 @@ section {
 
     .testimonial-section .slider .card .card-body .owl-nav {
         top: -37%;
-    }
-
-    .testimonial-section .slider .card .card-body .owl-dots{
-        top: 105%;
-        gap: 12px;
     }
 
     .brandsection .card .card-body {
@@ -2618,14 +2528,6 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-
-    .herosection {
-        padding: 200px 0px 120px;
-    }
-
-    .breadcrumb-section .innerpages {
-        margin-bottom: 20px;
-    }
 /*============== Index Page Section Responsive Css Start ==============*/
     .contactme-section .contact-circle {
         width: 120px;
@@ -2805,10 +2707,6 @@ section {
     .footer .bottom-footer .copyright {
         padding: 15px 0px;
     }
-
-    .footer .contactForm.footerform {
-        row-gap: 15px;
-    }
 /*-------------- Footer Responsive Css End -------------*/
 
 /*============== Contact Form Responsive Css Start ==============*/
@@ -2818,7 +2716,7 @@ section {
 
     .contactForm .formGroup .form-control {
         padding: 10px 18px 10px 45px;
-        font-size: 14px;
+        border-radius: 20px;
     }
 
     .contactForm .formGroup .form-control.textarea {
@@ -2828,8 +2726,8 @@ section {
         
     .contactForm .formGroup .input-icon{
         left: 15px;
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
     }
 
     .contactForm .formGroup.message .input-icon{
@@ -2905,7 +2803,6 @@ section {
 
     .herosection .innerfluid .left-side .main-heading {
         font-size: 45px;
-        line-height: 56px;
     }
 
     .contactme-section .portfolio-user {
@@ -3109,6 +3006,10 @@ section {
 /*============== Contact Form Responsive Css Start ==============*/
     .contactForm {
         row-gap: 20px;
+    }
+
+    .contactForm .formGroup .form-control {
+        border-radius: 20px;
     }
 /*-------------- Contact Form Responsive Css End -------------*/
 

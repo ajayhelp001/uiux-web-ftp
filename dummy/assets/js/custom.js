@@ -6,7 +6,11 @@ $(window).scroll(function(){
     }
 });
 
-
+// ** Glight Box
+var lightbox = GLightbox();
+lightbox.on('open', (target) => {
+    console.log('lightbox opened');
+});
 
 
 $('.owl-slider').owlCarousel({
@@ -55,13 +59,3 @@ $('.brand-slider').owlCarousel({
     }
 })
 
-
-// **Copyright Year
-// document.querySelector('.year').innerText = new Date().getFullYear();
-// document.querySelector('.copyrightyear').innerText = new Date().getFullYear();
-
-// ** Glight Box
-var lightbox = GLightbox();
-lightbox.on('open', (target) => {
-    console.log('lightbox opened');
-});
