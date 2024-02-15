@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/images/fevicone.svg">
     <!-- ** Title  ** -->
-    <title>UIUX || Blog</title>
+    <title>PRONX || Blog</title>
     <!-- **  Bootstrap Css  -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- **  Owl Css  -->
@@ -17,7 +17,10 @@
     <!-- ** Style Css  -->
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
-<body>
+<body class="overflow-hidden">
+    <div class="page-loader">
+        <div class="spinner"><img src="assets/images/loader.svg" alt="loader"></div>
+    </div>
     <!-- * Nav Start -->
     <nav class="navbar header">
         <div class="container-fluid inner-nav">
@@ -172,7 +175,7 @@
     <!-- ! * Artical section end * -->
     
     <!-- * Brand section start * -->
-    <section class="brandsection">
+    <section class="brand-section">
         <div class="container">
             <div class="row">
                 <div class="card border-end-0 border-start-0 wow slideInUp"  data-wow-duration="800" data-wow-delay="500">
@@ -229,7 +232,7 @@
                                             </div>
                                             <div class="formGroup message">
                                                 <span class="input-icon"><img src="assets/images/icon/edit.svg" alt="email"></span>
-                                                <textarea name="" class="form-control text-area" placeholder="Message" cols="30" rows="5"></textarea>
+                                                <textarea name="message" class="form-control text-area" placeholder="Message" cols="30" rows="5"></textarea>
                                             </div>
                                             <div class="submitbtn"><button type="submit" class="themebtn">Submit</button></div>
                                         </form>
@@ -311,7 +314,16 @@
     <script src="assets/js/custom.js"></script>
     <!-- ** Script Links End ** -->
     <script>
-        new WOW().init();
+       new WOW().init();
+        // Loader Js
+        window.onload = function(){
+            setTimeout(function(){
+                var loader = document.getElementsByClassName("page-loader")[0];
+                loader.className="page-loader fadeout" ;
+                setTimeout(function(){loader.style.display="none"},1000)
+                $("body").removeClass("overflow-hidden");
+            },1000)
+        }
     </script>
 </body>
 </html>

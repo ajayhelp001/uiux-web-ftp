@@ -179,6 +179,7 @@ p {
     font-family: "Lexend Deca";
     font-weight: 300 !important;
     margin-bottom: 10px;
+    line-height: 27px;
     /*l-no. 2013 */
 }
 
@@ -352,7 +353,7 @@ section {
 
 /*-----------------------------------------------------------------*/
 /*-------------- Loader Css -------------*/
-/* .loader {
+.page-loader {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -367,17 +368,7 @@ section {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: radial-gradient(farthest-side, #527ceb 94%, #0000) top/9px 9px no-repeat,
-        conic-gradient(#0000 30%, #527ceb);
-    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
-    animation: spinner-c7wet2 1s infinite linear;
 }
-
-@keyframes spinner-c7wet2 {
-    100% {
-        transform: rotate(1turn);
-    }
-} */
 
 /*-----------------------------------------------------------------*/
 
@@ -562,6 +553,8 @@ section {
     height: 100vh;
     background: url(../images/heroBg.svg) no-repeat center;
     background-size: cover;
+    min-height: 600px;
+    overflow: hidden;
 }
 
 .herosection .innerfluid {
@@ -667,7 +660,7 @@ section {
 }
 
 .herosection .innerfluid .left-side .loremtext {
-    width: 60%;
+    width: 75%;
 }
 
 .herosection .innerfluid .left-side .button {
@@ -704,7 +697,11 @@ section {
 }
 
 .contactme-section .contact-circle span {
-    height: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 4px 5px 17px #25396f21;
 }
 
 .contactme-section .contact-circle span img {
@@ -720,9 +717,11 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px dashed var(--teritary-color);
+    /* border: 2px dashed var(--teritary-color); */
+    background: url(../images/contact-Scroll.svg) no-repeat center;
+    background-size: contain;
     border-radius: 50%;
-    animation: rotate 10s linear infinite;
+    animation: rotate 15s linear infinite;
 }
 
 @keyframes rotate {
@@ -763,6 +762,47 @@ section {
     margin-bottom: 0px;
 }
 
+/* selfinformationgroup */
+.contactme-section .selfinformationgroup {
+    max-height: 460px;
+    min-height: 460px;
+}
+.contactme-section .selfinfo {
+    border: none;
+    border-radius: 30px;
+    background-color: var(--gray-color);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contactme-section .selfinfo .counters {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0px;
+}
+
+.contactme-section .selfinfo .infoname  {
+    font-family: "Lexend Deca";
+    font-size: 20px;
+    margin: 0px;
+}
+
+.contactme-section .selfinfo .counters span {
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--white-color);
+}
+
+.contactme-section .portfoliogroup {
+    height: 100%;
+}
 /*-------------- Contact Me (About Us) Section Css End -------------*/
 
 /*============= Our Work Section Css Start ==========*/
@@ -1087,7 +1127,7 @@ section {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: var(--teritary-color);
+    background-color: transparent;
     position: relative;
 }
 
@@ -1100,16 +1140,13 @@ section {
     width: calc(100% + 6px);
     height: calc(100% + 6px);
     border-radius: 50%;
-    border: 1px solid var(--teritary-border-color);
+    border: 1px solid var(--primary-color);
 }
 
 .testimonial-section .slider .card .card-body .owl-dots .owl-dot.active {
     background-color: var(--primary-color);
 }
 
-.testimonial-section .slider .card .card-body .owl-dots .owl-dot.active::before {
-    border-color: var(--primary-color);
-}
 
 /*-------------- Testimonial Section Css End -------------*/
 
@@ -1199,30 +1236,30 @@ section {
 
 /*============= Brand Section Css Start ==========*/
 
-.brandsection .card {
+.brand-section .card {
     border: 1px solid var(--border-color);
     border-radius: 0px;
 }
 
-.brandsection .card .card-body {
+.brand-section .card .card-body {
     padding: 50px;
 }
 
-.brandsection .card .card-body .owl-stage {
+.brand-section .card .card-body .owl-stage {
     display: flex;
     align-items: center;
 }
 
-.brandsection .card .card-body .item {
+.brand-section .card .card-body .item {
     max-height: 36px;
     display: flex;
 }
 
-.brandsection .card .card-body .item.roundedimg {
+.brand-section .card .card-body .item.roundedimg {
     max-height: 80px;
 }
 
-.brandsection .card .card-body .item img {
+.brand-section .card .card-body .item img {
     -o-object-fit: contain;
     object-fit: contain;
 }
@@ -1230,19 +1267,19 @@ section {
 /*-------------- Brand Section Css End -------------*/
 
 /*============= Gallery Section Css Start ==========*/
-.gallerysection .galleryimg {
+.gallery-section .galleryimg {
     border-radius: 30px;
     overflow: hidden;
     height: 100%;
 }
 
-.gallerysection .galleryimg a {
+.gallery-section .galleryimg a {
     display: flex;
     position: relative;
     height: 100%;
 }
 
-.gallerysection .galleryimg a::before {
+.gallery-section .galleryimg a::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -1256,16 +1293,16 @@ section {
     z-index: 1;
 }
 
-.gallerysection .galleryimg a img {
+.gallery-section .galleryimg a img {
     transition: all ease-in-out .3s;
     object-fit: cover;
 }
 
-.gallerysection .galleryimg a:hover img {
+.gallery-section .galleryimg a:hover img {
     transform: scale(1.1);
 }
 
-.gallerysection .galleryimg a:hover::before {
+.gallery-section .galleryimg a:hover::before {
     opacity: 1;
     visibility: visible;
 }
@@ -1799,6 +1836,7 @@ section {
     margin-bottom: 33px;
     color: var(--white-color);
     font-family: "Lexend Deca";
+    font-weight: 500;
 }
 
 .footer .bottom-footer .links {
@@ -1813,7 +1851,7 @@ section {
     font-family: "Lexend Deca";
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     transition: all ease-in-out .3s;
 }
@@ -2050,6 +2088,23 @@ section {
     } */
     /*-------------- Button Responsive Css End -------------*/
     /*============== Index Page Section Responsive Css Start ==============*/
+    .contactme-section .selfinformationgroup {
+        max-height: 397px;
+        min-height: 397px;
+    }
+
+    .contactme-section .selfinfo {
+        padding: 25px 30px;
+        gap: 10px;
+    }
+
+    .contactme-section .selfinfo .counters span {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        padding: 10px;
+    }
+    
     .ourwork-section .innerbody {
         padding: 60px 0px 170px;
     }
@@ -2207,7 +2262,14 @@ section {
 }
 
 @media screen and (max-width: 1200px) {
-
+    .contactme-section .selfinformationgroup {
+        max-height: unset;
+        min-height: unset;
+        height: 100%;
+    }
+    .contactme-section .portfoliogroup {
+        height: unset !important;
+    }
     /*============== Typography Responsive Css Start ==============*/
     section {
         margin: 80px 0px;
@@ -2262,6 +2324,17 @@ section {
         width: 150px;
         height: 150px;
     }
+
+    .contactme-section .contact-circle span {
+        height: 75px;
+        width: 75px;
+    }
+
+    .contactme-section .selfinfo {
+        border-radius: 25px;
+        justify-content: center;
+    }
+    
 
     .ourwork-section .innerbody {
         padding: 50px 0px 150px;
@@ -2583,11 +2656,11 @@ section {
         gap: 12px;
     }
 
-    .brandsection .card .card-body {
+    .brand-section .card .card-body {
         padding: 40px;
     }
 
-    .gallerysection .galleryimg {
+    .gallery-section .galleryimg {
         border-radius: 20px;
     }
 
@@ -2711,7 +2784,9 @@ section {
         height: 35px;
         padding: 8px;
     }
-
+    .contactForm .formGroup.message .input-icon {
+        top: 18px;
+    }
     /*-------------- Footer Responsive Css End -------------*/
 }
 
@@ -2735,7 +2810,8 @@ section {
     }
 
     .contactme-section .contact-circle span {
-        height: 16px;
+        height: 60px;
+        width: 60px;
     }
 
     .contactme-section .user-lorem {
@@ -2743,7 +2819,23 @@ section {
     }
 
     .contactme-section .mail {
-        margin-top: 26px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    
+    .contactme-section .portfolio-user {
+        height: unset !important;
+    }
+
+    .contactme-section .selfinfo {
+        justify-content: start;
+        border-radius: 20px;
+        gap: 20px;
+    }
+    
+    .contactme-section .selfinfo .infoname  {
+        font-size: 18px;
     }
 
     .contactme-section .mail span {
@@ -2922,7 +3014,7 @@ section {
     }
 
     .contactForm .formGroup .form-control {
-        padding: 10px 18px 10px 45px;
+        padding: 10px 18px 10px 39px;
         font-size: 14px;
     }
 
@@ -2938,7 +3030,7 @@ section {
     }
 
     .contactForm .formGroup.message .input-icon {
-        top: 10px;
+        top: 14px;
     }
 
     /*-------------- Contact Form Responsive Css End -------------*/
@@ -3017,9 +3109,6 @@ section {
         line-height: 56px;
     }
 
-    .contactme-section .portfolio-user {
-        height: unset !important;
-    }
 
     .contactme-section .mail {
         margin-top: 15px;
@@ -3029,6 +3118,23 @@ section {
     .contactme-section .mail span {
         width: 38px;
         height: 38px;
+    }
+
+    .contactme-section .selfinfo {
+        padding: 25px;
+    }
+    
+    .contactme-section .selfinfo .counters {
+        gap: 10px;
+    }
+    
+    .contactme-section .selfinfo .counters span {
+        width: 45px;
+        height: 45px;
+    }
+
+    .contactme-section .selfinfo .infoname  {
+        font-size: 16px;
     }
 
     .ourwork-section .innerbody>div .card {
@@ -3061,11 +3167,11 @@ section {
         height: 80px;
     }
 
-    .brandsection .card .card-body {
+    .brand-section .card .card-body {
         padding: 30px 20px;
     }
 
-    .gallerysection .galleryimg {
+    .gallery-section .galleryimg {
         border-radius: 15px;
     }
 
@@ -3199,7 +3305,7 @@ section {
     }
 
     .footer .bottom-footer .letstalk {
-        padding: 15px 0px;
+        padding: 15px 0px 20px;
     }
 
     .footer .bottom-footer .logo {
