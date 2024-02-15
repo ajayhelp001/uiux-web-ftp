@@ -572,6 +572,9 @@ section {
     max-width: 1920px;
     margin: 0px auto;
 }
+.herosection .content-side {
+    padding-top: 40px;
+}
 
 .herosection .innerfluid .down-arrow {
     position: absolute;
@@ -2568,6 +2571,10 @@ section {
         padding: 230px 0px 150px;
     }
 
+    .herosection .content-side {
+        padding-top: 0px;
+    }
+    
     .herosection .innerfluid .left-side .loremtext {
         width: 100%;
     }
